@@ -1,0 +1,134 @@
+{
+  "ok": true,
+  "stage2_validation": {
+    "ok": true,
+    "errors": [],
+    "summary": {
+      "skills": {
+        "repository-discovery": {
+          "trigger_cases": 10,
+          "positive": 5,
+          "negative": 5
+        },
+        "requirements-specification": {
+          "trigger_cases": 10,
+          "positive": 5,
+          "negative": 5
+        },
+        "architecture-design": {
+          "trigger_cases": 10,
+          "positive": 5,
+          "negative": 5
+        },
+        "implementation-planning": {
+          "trigger_cases": 10,
+          "positive": 5,
+          "negative": 5
+        },
+        "project-state-handoff": {
+          "trigger_cases": 10,
+          "positive": 5,
+          "negative": 5
+        }
+      },
+      "pressure_cases": 20
+    }
+  },
+  "stage3_validation": {
+    "ok": true,
+    "errors": [],
+    "summary": {
+      "workflow_skills": 12,
+      "new_skills": {
+        "incremental-implementation": {
+          "trigger": 12,
+          "positive": 6,
+          "negative": 6,
+          "quality": 3
+        },
+        "test-engineering": {
+          "trigger": 12,
+          "positive": 6,
+          "negative": 6,
+          "quality": 3
+        },
+        "systematic-debugging": {
+          "trigger": 12,
+          "positive": 6,
+          "negative": 6,
+          "quality": 3
+        },
+        "quality-assurance": {
+          "trigger": 12,
+          "positive": 6,
+          "negative": 6,
+          "quality": 3
+        },
+        "code-review": {
+          "trigger": 12,
+          "positive": 6,
+          "negative": 6,
+          "quality": 3
+        },
+        "preflight-verification": {
+          "trigger": 12,
+          "positive": 6,
+          "negative": 6,
+          "quality": 3
+        }
+      },
+      "links": 42,
+      "trigger_cases": 72,
+      "quality_cases": 18,
+      "stage3_pressure_cases": 24,
+      "regression_cases": 24,
+      "behavior_cases": 18
+    }
+  },
+  "comprehensive_errors": [],
+  "workflow_skill_line_counts": {
+    "workflows/repository-discovery/SKILL.md": 352,
+    "workflows/systematic-debugging/SKILL.md": 253,
+    "workflows/intent-interview/SKILL.md": 446,
+    "workflows/quality-assurance/SKILL.md": 232,
+    "workflows/preflight-verification/SKILL.md": 234,
+    "workflows/architecture-design/SKILL.md": 415,
+    "workflows/code-review/SKILL.md": 258,
+    "workflows/implementation-planning/SKILL.md": 396,
+    "workflows/test-engineering/SKILL.md": 281,
+    "workflows/project-state-handoff/SKILL.md": 440,
+    "workflows/incremental-implementation/SKILL.md": 269,
+    "workflows/requirements-specification/SKILL.md": 403
+  },
+  "evaluation": {
+    "all_trigger_cases": 132,
+    "stage3_new_trigger_cases": 72,
+    "quality_behavior_cases": 18,
+    "stage3_pressure_cases": 24,
+    "regression_cases": 24,
+    "behavior_cases": 18,
+    "model_behavior_attempt_status": "BLOCKED_NO_MODEL_RUNNER",
+    "model_behavior_runs": 0,
+    "harness_self_test_status": "COMPLETED",
+    "harness_self_test_runs": 54
+  },
+  "claim_boundary": {
+    "verified": [
+      "Static structure",
+      "Frontmatter",
+      "Relative links",
+      "JSON schemas/required fields",
+      "Trigger balance",
+      "Harness transport",
+      "ZIP integrity (after packaging)"
+    ],
+    "not_verified": [
+      "Real RED baseline behavior",
+      "Real GREEN behavior",
+      "Real model regression pass rate",
+      "Improvement delta"
+    ],
+    "reason": "No authenticated or local model runner was available for isolated sessions."
+  },
+  "zip_integrity_note": "Final ZIP hashes and integrity are recorded in the external Stage3 validation report to avoid circular self-hashing."
+}

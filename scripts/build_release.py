@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import datetime as dt, hashlib, json, os, stat, zipfile
+ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'dist'; OUT.mkdir(exist_ok=True); VERSION=(ROOT/'VERSION').read_text().strip()
+EPOCH=max(int(os.environ.get('SOURCE_DATE_EPOCH','315532800')),315532800); DT=dt.datetime.fromtimestamp(EPOCH,dt.timezone.utc); ZIP_DT=(DT.year,DT.month,DT.day,DT.hour,DT.minute,DT.second)
+EXCLUDE={'dist','.git','__pycache__','.pytest_cache','.mypy_cache','qualification-results'}
+def files(source):
+ for p in sorted(source.rglob('*')):
+  if not p.is_file() or any(part in EXCLUDE for part in p.parts) or p.suffix in {'.pyc','.pyo'}: continue
+  yield p
+def make(path,source,arc_root):
+ with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
+  for p in files(source):
+   arc=(Path(arc_root)/p.relative_to(source)).as_posix(); info=zipfile.ZipInfo(arc,ZIP_DT); info.compress_type=zipfile.ZIP_DEFLATED; mode=0o755 if p.suffix=='.py' and p.read_bytes().startswith(b'#!') else 0o644; info.external_attr=((stat.S_IFREG|mode)<<16); info.create_system=3; z.writestr(info,p.read_bytes())
+ return {'path':str(path.relative_to(ROOT)),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'bytes':path.stat().st_size,'entries':len(zipfile.ZipFile(path).infolist())}
+for p in OUT.iterdir():
+ if p.is_file(): p.unlink()
+packages=[]
+packages.append(make(OUT/f'Senior-FullStack-Engineer-Agent-{VERSION}-Plugin.zip',ROOT/'plugins/senior-fullstack-engineer-agent','senior-fullstack-engineer-agent'))
+packages.append(make(OUT/f'Senior-FullStack-Engineer-Agent-{VERSION}-Skill-Source.zip',ROOT/'source/senior-fullstack-engineer-agent','senior-fullstack-engineer-agent'))
+packages.append(make(OUT/f'Senior-FullStack-Engineer-Agent-{VERSION}-Complete-Source.zip',ROOT,ROOT.name))
+(OUT/'release-packages.json').write_text(json.dumps({'version':VERSION,'source_date_epoch':EPOCH,'packages':packages},indent=2)+'\n')
+(OUT/'CHECKSUMS.sha256').write_text(''.join(f"{x['sha256']}  {Path(x['path']).name}\n" for x in packages))
+print(json.dumps({'ok':True,'version':VERSION,'packages':packages},indent=2))

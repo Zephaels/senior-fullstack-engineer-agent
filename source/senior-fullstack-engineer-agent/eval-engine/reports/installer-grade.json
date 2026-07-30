@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "status": "COMPLETED",
+  "tests": {
+    "fresh_install_verify_uninstall": "PASS",
+    "upgrade_and_rollback": "PASS",
+    "injected_failure_restores_previous_install": "PASS"
+  },
+  "note": "This is deterministic installer evidence, not model behavior evidence."
+}

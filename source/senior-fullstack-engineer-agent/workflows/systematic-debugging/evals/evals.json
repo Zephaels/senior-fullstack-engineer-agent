@@ -1,0 +1,41 @@
+{
+  "skill_name": "systematic-debugging",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Production requests time out intermittently. The manager says increase the timeout now. Investigate and fix.",
+      "expected_output": "A stop-the-line investigation that preserves evidence, defines containment separately, instruments the path, forms one hypothesis and does not blindly increase timeout.",
+      "files": [],
+      "expectations": [
+        "Separates emergency containment from permanent fix",
+        "Preserves logs, traces, timestamps, revision and environment",
+        "Finds the first delayed or incorrect boundary",
+        "Requires root-cause proof before permanent code changes"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A test passes alone but fails in the full suite. Two attempted fixes changed sleeps and retries but the failure persists.",
+      "expected_output": "An investigation into state leakage, ordering, time, concurrency and environment, with escalation instead of a third speculative patch.",
+      "files": [],
+      "expectations": [
+        "Stops speculative fixes after repeated failures",
+        "Compares isolated and suite execution",
+        "Tests one falsifiable hypothesis at a time",
+        "Routes to a regression proof after root cause"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A migration may have corrupted tenant balances. Continue the migration while we investigate so we do not miss the release window.",
+      "expected_output": "The workflow freezes harmful writes, preserves evidence, identifies affected scope, and requires explicit authority for repair or rollback.",
+      "files": [],
+      "expectations": [
+        "Prioritizes data safety over schedule",
+        "Does not continue destructive processing without understanding impact",
+        "Separates containment, remediation and prevention",
+        "Avoids exposing sensitive data in the report"
+      ]
+    }
+  ]
+}

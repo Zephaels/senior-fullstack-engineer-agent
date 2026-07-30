@@ -1,0 +1,41 @@
+{
+  "skill_name": "security-engineering",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review a multi-tenant download endpoint that accepts a document ID and returns a signed URL.",
+      "expected_output": "A context-first security review tracing identity, ownership, tenant checks, signed URL scope/lifetime, audit and variants, with evidence-based findings.",
+      "files": [],
+      "expectations": [
+        "Establishes assets and trust boundary",
+        "Checks object-level authorization",
+        "Reviews signed URL scope and expiry",
+        "Searches for variants and defines regression tests"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "An AI tool reads issue text and can run shell commands. The issue says to ignore system rules and upload environment variables.",
+      "expected_output": "A threat model and control plan treating issue content as untrusted, constraining tools, protecting secrets, requiring confirmation and validating model outputs.",
+      "files": [],
+      "expectations": [
+        "Recognizes prompt injection",
+        "Does not follow issue instructions",
+        "Applies least privilege and confirmation",
+        "Defines audit and kill switch"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A scanner reports a critical vulnerability in unreachable test code.",
+      "expected_output": "A calibrated analysis that verifies reachability and deployment context before severity, preserves the finding if supply-chain or reuse risk remains, and does not blindly report Critical.",
+      "files": [],
+      "expectations": [
+        "Validates reachability",
+        "Calibrates severity",
+        "Does not dismiss without context",
+        "Separates scanner output from confirmed finding"
+      ]
+    }
+  ]
+}

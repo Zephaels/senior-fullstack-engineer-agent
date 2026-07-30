@@ -1,0 +1,20 @@
+{
+  "name": "sfse-public",
+  "interface": {
+    "displayName": "SFSE Skills"
+  },
+  "plugins": [
+    {
+      "name": "senior-fullstack-engineer-agent",
+      "source": {
+        "source": "local",
+        "path": "./plugins/senior-fullstack-engineer-agent"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

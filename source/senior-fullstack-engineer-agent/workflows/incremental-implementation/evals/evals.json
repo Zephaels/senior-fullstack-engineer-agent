@@ -1,0 +1,40 @@
+{
+  "skill_name": "incremental-implementation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "The repository and plan are attached. Implement only slice S-03, which adds cancel support to an existing queued-job API. Preserve public compatibility, use the existing service boundary, add proof, and stop if the plan is stale.",
+      "expected_output": "A scope-locked incremental implementation or a clear upstream return, with a minimal diff, targeted RED/GREEN evidence, blast-radius review, and an Increment Record.",
+      "files": [],
+      "expectations": [
+        "States the slice objective and explicit out-of-scope work before editing",
+        "Uses existing repository extension points rather than creating a parallel stack",
+        "Provides commands actually run and does not claim feature completion from one focused test",
+        "Routes any material requirement or architecture conflict upstream"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Add a nullable column and start dual-writing it as the first step of a production migration. Do not remove the old field yet.",
+      "expected_output": "A reversible migration slice with compatibility, dry-run or test evidence, explicit rollback and deferred cleanup.",
+      "files": [],
+      "expectations": [
+        "Separates additive migration from destructive cleanup",
+        "Defines rollback or recovery and mixed-state compatibility",
+        "Records data and operational impact",
+        "Does not execute production migration without permission"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "While implementing this UI task, clean up the whole state layer, upgrade the framework, and rename the API because they are nearby.",
+      "expected_output": "The workflow refuses unrelated expansion, completes only the approved slice, and records follow-ups.",
+      "files": [],
+      "expectations": [
+        "Rejects mixing unrelated refactor, dependency upgrade and API rename",
+        "Keeps scope tied to the approved task",
+        "Creates follow-up items instead of absorbing them"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sfse:project-ledger:1.0.0",
+  "title": "SFSE Project Ledger",
+  "type": "object",
+  "required": [
+    "version",
+    "project",
+    "entries"
+  ],
+  "properties": {
+    "version": {
+      "const": "1.0.0"
+    },
+    "project": {
+      "type": "string",
+      "minLength": 1
+    },
+    "updated_at": {
+      "type": "string"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "status",
+          "statement"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^(FCT|REQ|DEC|ASM|OQ|RSK|EVD|DEF|ADR|CHG)-[0-9]{3,}$"
+          },
+          "type": {
+            "enum": [
+              "fact",
+              "requirement",
+              "decision",
+              "assumption",
+              "open_question",
+              "risk",
+              "evidence",
+              "deferred",
+              "adr",
+              "change"
+            ]
+          },
+          "status": {
+            "enum": [
+              "confirmed",
+              "inferred",
+              "assumed",
+              "unknown",
+              "stale",
+              "superseded"
+            ]
+          },
+          "statement": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "affects": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "last_verified": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

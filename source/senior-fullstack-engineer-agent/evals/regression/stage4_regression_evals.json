@@ -1,0 +1,198 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "R4-001",
+      "prompt": "Determine whether this feature solves a real problem and what assumptions to test.",
+      "expected_route": "product-discovery",
+      "must_not_route": [
+        "requirements-specification",
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R4-002",
+      "prompt": "The product direction is approved; convert it into observable normative requirements.",
+      "expected_route": "requirements-specification",
+      "must_not_route": [
+        "product-discovery"
+      ]
+    },
+    {
+      "id": "R4-003",
+      "prompt": "Verify the current official SDK behavior for the version in package.json.",
+      "expected_route": "source-verification",
+      "must_not_route": [
+        "repository-discovery"
+      ]
+    },
+    {
+      "id": "R4-004",
+      "prompt": "Read package.json and lockfile to identify the installed SDK version.",
+      "expected_route": "repository-discovery",
+      "must_not_route": [
+        "source-verification"
+      ]
+    },
+    {
+      "id": "R4-005",
+      "prompt": "Design the cross-platform user experience and complete state model.",
+      "expected_route": "ux-platform-design",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R4-006",
+      "prompt": "Implement the approved UX specification in the existing design system.",
+      "expected_route": "incremental-implementation",
+      "must_not_route": [
+        "ux-platform-design"
+      ]
+    },
+    {
+      "id": "R4-007",
+      "prompt": "Threat-model the new tenant administration flow before implementation.",
+      "expected_route": "security-engineering",
+      "must_not_route": [
+        "code-review"
+      ]
+    },
+    {
+      "id": "R4-008",
+      "prompt": "Review the whole diff for specification compliance and engineering quality.",
+      "expected_route": "code-review",
+      "must_not_route": [
+        "security-engineering"
+      ]
+    },
+    {
+      "id": "R4-009",
+      "prompt": "Run exact final checks for the general availability but do not deploy.",
+      "expected_route": "preflight-verification",
+      "must_not_route": [
+        "release-deployment"
+      ]
+    },
+    {
+      "id": "R4-010",
+      "prompt": "Deploy the approved exact artifact to staging and verify the target.",
+      "expected_route": "release-deployment",
+      "must_not_route": [
+        "preflight-verification"
+      ]
+    },
+    {
+      "id": "R4-011",
+      "prompt": "Evaluate whether this Skill triggers correctly and improves model behavior.",
+      "expected_route": "skill-evaluation",
+      "must_not_route": [
+        "quality-assurance"
+      ]
+    },
+    {
+      "id": "R4-012",
+      "prompt": "Run browser QA on the application flow, not the Skill package.",
+      "expected_route": "quality-assurance",
+      "must_not_route": [
+        "skill-evaluation"
+      ]
+    },
+    {
+      "id": "R4-013",
+      "prompt": "A market claim affects product direction and may be outdated.",
+      "expected_route": "source-verification",
+      "must_not_route": [
+        "product-discovery"
+      ]
+    },
+    {
+      "id": "R4-014",
+      "prompt": "External facts are verified; decide the product opportunity and experiment.",
+      "expected_route": "product-discovery",
+      "must_not_route": [
+        "source-verification"
+      ]
+    },
+    {
+      "id": "R4-015",
+      "prompt": "The security reviewer found an unexplained invariant violation in runtime.",
+      "expected_route": "systematic-debugging",
+      "must_not_route": [
+        "security-engineering"
+      ]
+    },
+    {
+      "id": "R4-016",
+      "prompt": "The root cause and security fix are validated; assess threat variants and residual risk.",
+      "expected_route": "security-engineering",
+      "must_not_route": [
+        "systematic-debugging"
+      ]
+    },
+    {
+      "id": "R4-017",
+      "prompt": "Release completed; save exact artifact, health evidence, incidents and next steps.",
+      "expected_route": "project-state-handoff",
+      "must_not_route": [
+        "release-deployment"
+      ]
+    },
+    {
+      "id": "R4-018",
+      "prompt": "Resume an old handoff, but the current repository and environment changed.",
+      "expected_route": "project-state-handoff",
+      "must_not_route": [
+        "release-deployment"
+      ]
+    },
+    {
+      "id": "R4-019",
+      "prompt": "The Figma design conflicts with platform accessibility and navigation conventions.",
+      "expected_route": "ux-platform-design",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R4-020",
+      "prompt": "The plugin manifest structure may have changed since the package was written.",
+      "expected_route": "source-verification",
+      "must_not_route": [
+        "skill-evaluation"
+      ]
+    },
+    {
+      "id": "R4-021",
+      "prompt": "Use the current verified plugin specification to inspect this local package and benchmark it.",
+      "expected_route": "skill-evaluation",
+      "must_not_route": [
+        "source-verification"
+      ]
+    },
+    {
+      "id": "R4-022",
+      "prompt": "A release failed because the cause is unknown.",
+      "expected_route": "systematic-debugging",
+      "must_not_route": [
+        "release-deployment"
+      ]
+    },
+    {
+      "id": "R4-023",
+      "prompt": "A deployment plan is requested, but architecture and migration semantics are unresolved.",
+      "expected_route": "architecture-design",
+      "must_not_route": [
+        "release-deployment"
+      ]
+    },
+    {
+      "id": "R4-024",
+      "prompt": "A product experiment succeeded and the team needs a bounded requirements delta.",
+      "expected_route": "requirements-specification",
+      "must_not_route": [
+        "product-discovery"
+      ]
+    }
+  ]
+}

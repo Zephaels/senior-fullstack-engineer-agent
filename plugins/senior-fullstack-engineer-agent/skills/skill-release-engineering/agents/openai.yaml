@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Release Engineering"
+  short_description: "Validate, version, package, and release Agent Skills and Plugins"
+  default_prompt: "Use $skill-release-engineering to qualify and package this skill for release."

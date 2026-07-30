@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Verify the current official Next.js guidance for this installed major version before changing the caching implementation, and cite the exact sources.",
+    "should_trigger": true
+  },
+  {
+    "query": "Check whether this Stripe API version and webhook behavior are current for our account and migration plan.",
+    "should_trigger": true
+  },
+  {
+    "query": "The repository uses an older authentication pattern. Compare it with the official current documentation and record the conflict without rewriting code yet.",
+    "should_trigger": true
+  },
+  {
+    "query": "Confirm the latest Codex plugin manifest structure and package paths from OpenAI's official documentation.",
+    "should_trigger": true
+  },
+  {
+    "query": "This security advisory may affect our dependency version. Verify affected ranges, fixed versions, publication date, and authoritative source.",
+    "should_trigger": true
+  },
+  {
+    "query": "Create a Source Verification Record for platform support, versions, exceptions, freshness, and the architecture decision affected.",
+    "should_trigger": true
+  },
+  {
+    "query": "Read the current repository and tell me which Node version is configured locally.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain binary search without using external sources.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write the implementation plan from the approved architecture.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run browser QA on the local checkout flow.",
+    "should_trigger": false
+  },
+  {
+    "query": "Summarize the supplied article exactly as written without verifying it.",
+    "should_trigger": false
+  },
+  {
+    "query": "Rename this variable.",
+    "should_trigger": false
+  }
+]

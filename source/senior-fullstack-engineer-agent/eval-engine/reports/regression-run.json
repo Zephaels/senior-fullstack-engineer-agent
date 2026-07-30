@@ -1,0 +1,10 @@
+{
+  "suite": "real-plugin-regression-v2",
+  "status": "BLOCKED_NO_CODEX_RUNTIME_RUNNER",
+  "plugin_path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent",
+  "cases_requested": 60,
+  "runs": [],
+  "limitations": [
+    "Regression requires a fresh Codex session with Plugin discovery and forceReload. Prompt concatenation is not accepted as runtime evidence."
+  ]
+}

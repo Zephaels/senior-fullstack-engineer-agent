@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Evaluate this local Skill with direct, indirect, negative, pressure, and regression cases, comparing without-skill and with-skill behavior.",
+    "should_trigger": true
+  },
+  {
+    "query": "Analyze why this Skill over-triggers, measure token usage, and recommend the highest-impact fix without overfitting.",
+    "should_trigger": true
+  },
+  {
+    "query": "Benchmark this Codex plugin across OpenAI, Claude, and Gemini runners and report blocked runners honestly.",
+    "should_trigger": true
+  },
+  {
+    "query": "Validate the plugin manifest, skill paths, references, scripts, permissions, license, and packaging before release.",
+    "should_trigger": true
+  },
+  {
+    "query": "Create a held-out RED/GREEN/REGRESSION evaluation set and preserve raw outputs and tool traces.",
+    "should_trigger": true
+  },
+  {
+    "query": "The Skill works on one example. Determine whether it is production-ready using measurable release gates.",
+    "should_trigger": true
+  },
+  {
+    "query": "Use this product Skill to discover what customers need.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review the application code for security vulnerabilities.",
+    "should_trigger": false
+  },
+  {
+    "query": "Package the plugin files only, without evaluating behavior.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain what an Agent Skill is.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run the application's unit tests.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write a README for the plugin.",
+    "should_trigger": false
+  }
+]

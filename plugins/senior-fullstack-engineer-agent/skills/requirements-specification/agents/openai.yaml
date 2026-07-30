@@ -1,0 +1,4 @@
+interface:
+  display_name: "Requirements Specification"
+  short_description: "Define observable behavior, boundaries, failures, and acceptance"
+  default_prompt: "Use $requirements-specification to create or repair the behavioral specification."

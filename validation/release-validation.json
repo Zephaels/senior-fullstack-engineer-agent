@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "version": "1.0.0-rc.4.3",
+  "checks": [
+    {
+      "name": "rc",
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"version\": \"1.0.0-rc.4.3\",\n  \"checks\": [\n    {\n      \"name\": \"skill-count\",\n      \"ok\": true,\n      \"detail\": \"source=20\"\n    },\n    {\n      \"name\": \"skill-count\",\n      \"ok\": true,\n      \"detail\": \"plugin=20\"\n    },\n    {\n      \"name\": \"source-plugin-sync\",\n      \"ok\": true,\n      \"detail\": \"specialist skills match\"\n    },\n    {\n      \"name\": \"manifest-coverage\",\n      \"ok\": true,\n      \"detail\": \"/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/source/senior-fullstack-engineer-agent: 163 files\"\n    },\n    {\n      \"name\": \"manifest-coverage\",\n      \"ok\": true,\n      \"detail\": \"/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent: 81 files\"\n    }\n  ],\n  \"errors\": [],\n  \"stats\": {\n    \"source_skills\": 20,\n    \"plugin_skills\": 20,\n    \"eval_ids\": 179,\n    \"trigger_cases\": 228,\n    \"python_files\": 27\n  },\n  \"eval_ids\": 179\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "plugin",
+      "returncode": 0,
+      "stdout": "Plugin validation passed: /mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent\n",
+      "stderr": ""
+    },
+    {
+      "name": "marketplace",
+      "returncode": 0,
+      "stdout": "marketplace validation passed"
+    }
+  ]
+}

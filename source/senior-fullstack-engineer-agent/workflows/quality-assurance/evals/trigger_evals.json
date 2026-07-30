@@ -1,0 +1,50 @@
+[
+  {
+    "query": "QA the general availability in a real browser across the primary flow, expired session, offline retry, keyboard navigation, and responsive layouts. Report only; do not fix.",
+    "should_trigger": true
+  },
+  {
+    "query": "Test this web app as an admin and normal user, capture screenshots and traces, and give me a severity-ranked ship-readiness report.",
+    "should_trigger": true
+  },
+  {
+    "query": "Run mobile QA for background/foreground interruption, permissions, rotation, weak network, and state restoration.",
+    "should_trigger": true
+  },
+  {
+    "query": "The feature tests pass. Now validate the complete user journey and downstream email/webhook effects in staging.",
+    "should_trigger": true
+  },
+  {
+    "query": "Perform exhaustive accessibility and platform QA, including text scaling, screen reader, focus order, high contrast, reduced motion, and long localized text.",
+    "should_trigger": true
+  },
+  {
+    "query": "Test and fix each bug you find, but isolate each fix, verify it, and never commit without permission.",
+    "should_trigger": true
+  },
+  {
+    "query": "Write unit tests for the new validation function using TDD.",
+    "should_trigger": false
+  },
+  {
+    "query": "Investigate why the login request is timing out before proposing a fix.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review this diff against architecture and security rules.",
+    "should_trigger": false
+  },
+  {
+    "query": "Implement task T-3 from the approved plan.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run formatting, typecheck, build, all test suites, and package checks before merge.",
+    "should_trigger": false
+  },
+  {
+    "query": "Define the product behavior for offline editing.",
+    "should_trigger": false
+  }
+]

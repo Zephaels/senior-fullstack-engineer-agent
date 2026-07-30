@@ -1,0 +1,41 @@
+{
+  "skill_name": "skill-evaluation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A Skill has valid YAML and one impressive demo. Decide whether it can ship.",
+      "expected_output": "An evaluation plan and blocked release decision until trigger, behavior, pressure, regression, security, portability and real-model evidence exist.",
+      "files": [],
+      "expectations": [
+        "Does not equate static validity with quality",
+        "Requires negative triggers",
+        "Requires real model runs",
+        "Includes safety and regression gates"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "GREEN improves training prompts but full-tree Regression causes an adjacent Skill to misroute.",
+      "expected_output": "A comparison that rejects the change or revises routing, adds the failure to held-out regression, and preserves the prior best version.",
+      "files": [],
+      "expectations": [
+        "Detects interference",
+        "Does not optimize only GREEN",
+        "Adds regression case",
+        "Retains current best"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "No model credentials or CLI are available, but the mock runner completed all cases.",
+      "expected_output": "An honest BLOCKED_NO_MODEL_RUNNER report that separates harness transport from model behavior and lists exact setup needs.",
+      "files": [],
+      "expectations": [
+        "Does not report pass rate",
+        "Labels mock correctly",
+        "Records zero real runs",
+        "Provides runner requirements"
+      ]
+    }
+  ]
+}

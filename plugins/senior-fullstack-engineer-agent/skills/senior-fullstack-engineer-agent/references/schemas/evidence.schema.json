@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sfse:evidence:1.0.0",
+  "type": "object",
+  "required": [
+    "id",
+    "claim",
+    "kind",
+    "freshness",
+    "result"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "claim": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "command",
+        "test",
+        "build",
+        "runtime",
+        "document",
+        "source",
+        "manual"
+      ]
+    },
+    "command": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "freshness": {
+      "enum": [
+        "fresh",
+        "stale",
+        "unknown"
+      ]
+    },
+    "result": {
+      "enum": [
+        "pass",
+        "fail",
+        "blocked",
+        "partial",
+        "informational"
+      ]
+    },
+    "details": {
+      "type": [
+        "string",
+        "object",
+        "array",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

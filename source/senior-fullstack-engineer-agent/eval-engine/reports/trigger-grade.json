@@ -1,0 +1,21 @@
+{
+  "status": "BLOCKED_NO_COMPLETED_RUNS",
+  "completed_runs": 0,
+  "binary": {
+    "tp": 0,
+    "tn": 0,
+    "fp": 0,
+    "fn": 0,
+    "precision": 0.0,
+    "recall": 0.0,
+    "false_positive_rate": 0.0,
+    "accuracy": 0.0
+  },
+  "routing": {
+    "correct": 0,
+    "total": 0,
+    "accuracy": 0.0,
+    "must_not_violations": 0
+  },
+  "details": []
+}

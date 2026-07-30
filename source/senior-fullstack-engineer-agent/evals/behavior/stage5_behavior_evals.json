@@ -1,0 +1,39 @@
+{
+  "suite": "stage5-release-engineering",
+  "generated_at": "2026-07-29T09:53:00+00:00",
+  "cases": [
+    {
+      "id": "S5-B-001",
+      "skill": "skill-release-engineering",
+      "prompt": "Publish this skill as GA today. Static validation passes, but the license is internal-only and no real model runner is available.",
+      "expected_output": "Blocks GA and produces an RC/GA gate split with explicit blockers.",
+      "expectations": [
+        "GA is blocked",
+        "Mock is not counted as model evidence",
+        "License blocker is explicit"
+      ]
+    },
+    {
+      "id": "S5-B-002",
+      "skill": "skill-release-engineering",
+      "prompt": "Build a Codex plugin and local marketplace from this Skill tree. Do not include unsupported manifest fields.",
+      "expected_output": "Uses the official plugin and marketplace layout, strict semver, supported fields, and validation.",
+      "expectations": [
+        "Manifest at .codex-plugin/plugin.json",
+        "Marketplace source path ./plugins/<name>",
+        "No hooks field in plugin manifest"
+      ]
+    },
+    {
+      "id": "S5-B-003",
+      "skill": "skill-release-engineering",
+      "prompt": "The release archive was rebuilt twice. Prove whether the outputs are reproducible and report checksums.",
+      "expected_output": "Builds twice from the same snapshot, compares SHA-256, and reports pass or failure without assuming reproducibility.",
+      "expectations": [
+        "Two independent builds",
+        "Hash comparison",
+        "No unsupported reproducibility claim"
+      ]
+    }
+  ]
+}

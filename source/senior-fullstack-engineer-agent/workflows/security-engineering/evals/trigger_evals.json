@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Threat-model a multi-tenant export feature, including object authorization, tenant isolation, audit, data retention, and abuse cases.",
+    "should_trigger": true
+  },
+  {
+    "query": "Perform a read-only security review of this auth diff and trace identity, session, authorization, secrets, and trust boundaries.",
+    "should_trigger": true
+  },
+  {
+    "query": "A file upload endpoint was added. Review parser, path, content, storage, malware, authorization, and denial-of-service risks.",
+    "should_trigger": true
+  },
+  {
+    "query": "Design security controls for an AI agent that reads untrusted documents and can call external tools with write permissions.",
+    "should_trigger": true
+  },
+  {
+    "query": "Validate this reported IDOR, search for variants, propose the smallest safe remediation, and define regression tests.",
+    "should_trigger": true
+  },
+  {
+    "query": "Prepare the security readiness report for a payment release, including residual risk and approval owner.",
+    "should_trigger": true
+  },
+  {
+    "query": "Review this code for general readability and naming only.",
+    "should_trigger": false
+  },
+  {
+    "query": "Inspect the repository architecture before any security findings.",
+    "should_trigger": false
+  },
+  {
+    "query": "Implement the approved UI slice.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain OAuth 2.0 conceptually.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run final release commands.",
+    "should_trigger": false
+  },
+  {
+    "query": "Fix a typo in a test description.",
+    "should_trigger": false
+  }
+]

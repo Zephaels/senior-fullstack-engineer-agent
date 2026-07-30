@@ -1,0 +1,134 @@
+{
+  "version": "2.0",
+  "contexts": {
+    "architecture-design": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/architecture-design/SKILL.md",
+      "templates/architecture.md",
+      "templates/adr.md"
+    ],
+    "code-review": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/code-review/SKILL.md",
+      "templates/code-review-report.md"
+    ],
+    "implementation-planning": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/implementation-planning/SKILL.md",
+      "templates/implementation-plan.md"
+    ],
+    "incremental-implementation": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/incremental-implementation/SKILL.md"
+    ],
+    "intent-interview": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/intent-interview/SKILL.md",
+      "templates/interview-ledger.md"
+    ],
+    "preflight-verification": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/preflight-verification/SKILL.md",
+      "templates/preflight-report.md"
+    ],
+    "product-discovery": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/product-discovery/SKILL.md",
+      "templates/product-brief.md"
+    ],
+    "project-state-handoff": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/project-state-handoff/SKILL.md",
+      "templates/project-handoff.md"
+    ],
+    "quality-assurance": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/quality-assurance/SKILL.md",
+      "templates/qa-report.md"
+    ],
+    "release-deployment": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/release-deployment/SKILL.md",
+      "templates/release-record.md"
+    ],
+    "repository-discovery": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/repository-discovery/SKILL.md",
+      "templates/repository-map.md"
+    ],
+    "requirements-specification": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/requirements-specification/SKILL.md",
+      "templates/requirement-spec.md"
+    ],
+    "security-engineering": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/security-engineering/SKILL.md",
+      "templates/security-report.md"
+    ],
+    "skill-evaluation": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/skill-evaluation/SKILL.md"
+    ],
+    "skill-release-engineering": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/skill-release-engineering/SKILL.md"
+    ],
+    "source-verification": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/source-verification/SKILL.md"
+    ],
+    "systematic-debugging": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/systematic-debugging/SKILL.md"
+    ],
+    "test-engineering": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/test-engineering/SKILL.md",
+      "templates/test-plan.md"
+    ],
+    "ux-platform-design": [
+      "core/constitution.md",
+      "core/task-classifier.md",
+      "core/decision-policy.md",
+      "workflows/ux-platform-design/SKILL.md",
+      "templates/ux-platform-spec.md"
+    ]
+  }
+}

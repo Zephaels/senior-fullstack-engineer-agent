@@ -1,0 +1,56 @@
+test_trigger_metrics (test_graders.TestGraders.test_trigger_metrics) ... {
+  "status": "COMPLETED",
+  "completed_runs": 4,
+  "binary": {
+    "tp": 1,
+    "tn": 1,
+    "fp": 1,
+    "fn": 0,
+    "precision": 0.5,
+    "recall": 1.0,
+    "false_positive_rate": 0.5,
+    "accuracy": 0.6666666666666666
+  },
+  "routing": {
+    "correct": 1,
+    "total": 1,
+    "accuracy": 1.0,
+    "must_not_violations": 0
+  },
+  "details": [
+    {
+      "id": "1",
+      "pass": true,
+      "selected": [
+        "a"
+      ]
+    },
+    {
+      "id": "2",
+      "pass": true,
+      "selected": []
+    },
+    {
+      "id": "3",
+      "pass": false,
+      "selected": [
+        "a"
+      ]
+    },
+    {
+      "id": "4",
+      "pass": true,
+      "selected": [
+        "b"
+      ],
+      "violations": []
+    }
+  ]
+}
+
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.604s
+
+OK

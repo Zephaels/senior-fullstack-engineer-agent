@@ -1,0 +1,4 @@
+interface:
+  display_name: "Security Engineering"
+  short_description: "Threat-model and verify authentication, authorization, data, and supply chain"
+  default_prompt: "Use $security-engineering to assess this change and produce evidence-backed findings."

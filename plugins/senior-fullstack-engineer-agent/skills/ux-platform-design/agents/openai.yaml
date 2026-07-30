@@ -1,0 +1,4 @@
+interface:
+  display_name: "UX and Platform Design"
+  short_description: "Unify product semantics while adapting each platform experience"
+  default_prompt: "Use $ux-platform-design to define the user flow, states, accessibility, and platform adaptations."

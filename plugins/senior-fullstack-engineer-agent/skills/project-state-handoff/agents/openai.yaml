@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project State and Handoff"
+  short_description: "Persist verified state and resume without relying on stale chat context"
+  default_prompt: "Use $project-state-handoff to save or restore the project ledger and next steps."

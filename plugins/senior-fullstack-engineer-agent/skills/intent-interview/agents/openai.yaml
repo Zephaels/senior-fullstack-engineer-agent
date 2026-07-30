@@ -1,0 +1,4 @@
+interface:
+  display_name: "Intent Interview"
+  short_description: "Clarify only material product and requirement decisions"
+  default_prompt: "Use $intent-interview to ask the single highest-value unresolved question."

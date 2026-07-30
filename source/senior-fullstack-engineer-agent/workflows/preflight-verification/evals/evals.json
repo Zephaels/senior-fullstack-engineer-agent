@@ -1,0 +1,40 @@
+{
+  "skill_name": "preflight-verification",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Verify the current working tree is ready for PR. Discover actual commands and run the applicable checks; report exact revision, exits, skips, and unsupported claims.",
+      "expected_output": "A project-specific Preflight Report with fresh command evidence and an honest readiness result.",
+      "files": [],
+      "expectations": [
+        "Discovers repository commands rather than inventing generic ones",
+        "Ties evidence to revision or dirty working tree",
+        "Distinguishes required checks from unavailable/skipped checks",
+        "Does not claim more than the evidence supports"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "GitHub is green, but the browser job was skipped and the security check is neutral. Approve the release.",
+      "expected_output": "The workflow inspects status semantics and project requirements instead of treating every green/neutral/skipped state as proof.",
+      "files": [],
+      "expectations": [
+        "Identifies the commit each check applies to",
+        "Does not treat skipped or neutral as equivalent to required evidence",
+        "Returns FAIL, BLOCKED or PARTIAL if mandatory evidence is absent"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The linter passed, so say the build, tests and migration are good too. We are late.",
+      "expected_output": "The workflow refuses unsupported claims and runs or explicitly marks each missing gate.",
+      "files": [],
+      "expectations": [
+        "States lint does not prove build/tests/migration",
+        "Requires fresh full commands",
+        "Resists deadline pressure",
+        "Reports unsupported claims"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "query": "The build started failing after yesterday's changes. Preserve the full error, reproduce it, compare recent commits, and find the root cause before proposing a fix.",
+    "should_trigger": true
+  },
+  {
+    "query": "This production timeout is intermittent. Instrument the path and isolate the first incorrect or delayed state instead of increasing the timeout.",
+    "should_trigger": true
+  },
+  {
+    "query": "Two attempted fixes failed. Stop patching and perform a structured root-cause investigation with one hypothesis at a time.",
+    "should_trigger": true
+  },
+  {
+    "query": "The test passes alone but fails in the suite. Investigate order dependence, leaked state, time, and concurrency.",
+    "should_trigger": true
+  },
+  {
+    "query": "Users report corrupted totals after the migration. Freeze harmful writes, identify the affected set, and trace the invariant breach.",
+    "should_trigger": true
+  },
+  {
+    "query": "The mobile app only crashes on one OS version. Establish the environment difference and a deterministic reproduction before fixing.",
+    "should_trigger": true
+  },
+  {
+    "query": "Implement the next approved feature slice and run its tests.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write acceptance criteria for the retry and cancellation behavior.",
+    "should_trigger": false
+  },
+  {
+    "query": "Do a read-only review of this PR for correctness and security.",
+    "should_trigger": false
+  },
+  {
+    "query": "Execute end-to-end QA on the general availability and report bugs.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run final preflight checks for this exact commit.",
+    "should_trigger": false
+  },
+  {
+    "query": "Create a system architecture for our event-driven workflow.",
+    "should_trigger": false
+  }
+]

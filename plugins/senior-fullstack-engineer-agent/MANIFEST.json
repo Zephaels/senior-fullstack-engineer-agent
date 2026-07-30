@@ -1,0 +1,414 @@
+{
+  "schema_version": "1.0",
+  "kind": "codex-plugin",
+  "version": "1.0.0-rc.4.3",
+  "root": "senior-fullstack-engineer-agent",
+  "file_count": 81,
+  "files": [
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "6590d06fc4c441392877ecddca0016aa714c67a500df3efd620ab7e8b5ec238d",
+      "bytes": 1777
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "c00f4dd6392f2a81547f2fb1cedfd3728473f7f4aa9ef849618a871a0508f79d",
+      "bytes": 1412
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "f53c38d70af1d91c02c788ab8589ba8f17caa3840e0467abc770451ec1778101",
+      "bytes": 345
+    },
+    {
+      "path": "README.md",
+      "sha256": "37bb0da9654cc1944418dd98e7c77294c9403305f2123b54fb5a55e874b75e0c",
+      "bytes": 1522
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "47c5d16fdf06d83fa868ffef987f83cf729a2475d8f3dbf5b3c3a546cb1c89bf",
+      "bytes": 882
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "de84c33d42444bd75e60dbd0d5a1ca5cc6a8777a0931d0d2f55b4ad55f1ddce6",
+      "bytes": 435
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "1efd87ddebd686490fbef077f25885a78ab06c7a04c9c0beae686e64c3cab685",
+      "bytes": 704
+    },
+    {
+      "path": "assets/composer-icon.svg",
+      "sha256": "aa7dd31cbb851d0f53e82b5239055587018a257cc4d79f008b8fae3a75608e9d",
+      "bytes": 234
+    },
+    {
+      "path": "assets/logo-dark.svg",
+      "sha256": "aa7dd31cbb851d0f53e82b5239055587018a257cc4d79f008b8fae3a75608e9d",
+      "bytes": 234
+    },
+    {
+      "path": "assets/logo.svg",
+      "sha256": "aa7dd31cbb851d0f53e82b5239055587018a257cc4d79f008b8fae3a75608e9d",
+      "bytes": 234
+    },
+    {
+      "path": "core/constitution.md",
+      "sha256": "d0eb37b7abfb76c8d64aaefb20ed7b18b7664a3c031811186cac5123b76122b0",
+      "bytes": 11985
+    },
+    {
+      "path": "core/decision-policy.md",
+      "sha256": "15079affcd55413497cce9e523aca4a62a271fcb88f6191accb9d60cff943c59",
+      "bytes": 11457
+    },
+    {
+      "path": "core/router-policy.md",
+      "sha256": "cc64749a41675dfdf0694615b95031735ed84672f0cbd724396dbdcc2a174b14",
+      "bytes": 2358
+    },
+    {
+      "path": "core/routing-matrix.yaml",
+      "sha256": "53ddab906b6274c375bbb13469f20f28f7aee4adf4f163bf4542caa5c4197931",
+      "bytes": 1547
+    },
+    {
+      "path": "core/task-classifier.md",
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
+    },
+    {
+      "path": "skills/architecture-design/SKILL.md",
+      "sha256": "88ac12babdbfbd99060a8cfe914600396f9490359e9ba2a9772705a17dfa4234",
+      "bytes": 14612
+    },
+    {
+      "path": "skills/architecture-design/agents/openai.yaml",
+      "sha256": "09baca370a9e813118e0b709dddccd117ac8ae2b5c91361c26b9c73d51af2af9",
+      "bytes": 225
+    },
+    {
+      "path": "skills/code-review/SKILL.md",
+      "sha256": "fb32f0053ae7809a25f199a218d6719b55f56819fc19b20d9e472da16f2f33d8",
+      "bytes": 8846
+    },
+    {
+      "path": "skills/code-review/agents/openai.yaml",
+      "sha256": "452734a92b2995d04dda6afde4b77e416a1a7950ab43b55b6bfcb46b7946ac7e",
+      "bytes": 230
+    },
+    {
+      "path": "skills/implementation-planning/SKILL.md",
+      "sha256": "8127ec86a0101224c59478cde722a429eb3871e807afb9c3dce060f0028723d5",
+      "bytes": 12494
+    },
+    {
+      "path": "skills/implementation-planning/agents/openai.yaml",
+      "sha256": "e673c0830e9f0fe9b669dc2aebe8079481e13157244e464c2a39132395d3a3a0",
+      "bytes": 227
+    },
+    {
+      "path": "skills/incremental-implementation/SKILL.md",
+      "sha256": "5a397424f794a6b65272acdfa9742e5ea6e994dff38d70d862f01d2b14aa3f4d",
+      "bytes": 11577
+    },
+    {
+      "path": "skills/incremental-implementation/agents/openai.yaml",
+      "sha256": "7d9b3282a91e6be3438e548816e6981ef3c561829b97d389ba636652b5fa062f",
+      "bytes": 235
+    },
+    {
+      "path": "skills/intent-interview/SKILL.md",
+      "sha256": "6872a4b7c183197af1dfddac7976138a7212d2d19e7267d0d39ff67538f45d93",
+      "bytes": 15158
+    },
+    {
+      "path": "skills/intent-interview/agents/openai.yaml",
+      "sha256": "e8f153a43994510982558b9974ccb0d42b7c097d4516438c4274a929a8345cb3",
+      "bytes": 220
+    },
+    {
+      "path": "skills/preflight-verification/SKILL.md",
+      "sha256": "e78df314c033b30bdf89e49191734240019b39b38b5ded4527328a6b92632875",
+      "bytes": 8910
+    },
+    {
+      "path": "skills/preflight-verification/agents/openai.yaml",
+      "sha256": "4623c1687367e2444c664978a257f0a8d15b4dd6153d49232f6d337a32ce0249",
+      "bytes": 240
+    },
+    {
+      "path": "skills/product-discovery/SKILL.md",
+      "sha256": "bd66da98b37f80c7b441b13b99db5affd64e9a982bfb99e2cc93be68ed228972",
+      "bytes": 11217
+    },
+    {
+      "path": "skills/product-discovery/agents/openai.yaml",
+      "sha256": "2ca8c400d1650aa32de8e6d9bdbcc3923600d1c7f650b0de508c9d3c2a3b6349",
+      "bytes": 218
+    },
+    {
+      "path": "skills/project-state-handoff/SKILL.md",
+      "sha256": "1ebe8cfd10761ca39e10979c02e5571536cf91ce5ffca1b79414cba69089f90e",
+      "bytes": 12320
+    },
+    {
+      "path": "skills/project-state-handoff/agents/openai.yaml",
+      "sha256": "eb2ed019beb32d47d637f6faddf022679a423eae4ce0fc8d0851a4d0ba651271",
+      "bytes": 251
+    },
+    {
+      "path": "skills/quality-assurance/SKILL.md",
+      "sha256": "d904d3c28e59c0519a26e14221e455657895a2f97ba988b22b41731cc5132aed",
+      "bytes": 8990
+    },
+    {
+      "path": "skills/quality-assurance/agents/openai.yaml",
+      "sha256": "7e7baa540df176c5200fe22fc3ecf6d65e9a73694d6ad3c3fff50f91c6f527fa",
+      "bytes": 238
+    },
+    {
+      "path": "skills/release-deployment/SKILL.md",
+      "sha256": "69a5f10d6b85909bffa515d137b7953a1b5a1ffad37014584cc9a1b3a574eb69",
+      "bytes": 9700
+    },
+    {
+      "path": "skills/release-deployment/agents/openai.yaml",
+      "sha256": "a5d1a9f6f42eb87fc2163422ba5813017c5ceadd12cb514ff560c3f9a3ae7c7e",
+      "bytes": 232
+    },
+    {
+      "path": "skills/repository-discovery/SKILL.md",
+      "sha256": "a1bdafa11be00113ccd6a96ea84ee01f4c76f9075612f59bf0da975b2335110a",
+      "bytes": 13522
+    },
+    {
+      "path": "skills/repository-discovery/agents/openai.yaml",
+      "sha256": "8f6a2fe2e2306492e5a63b8a3d536faf9a580e2f74cc085d17dd763ded8d9ee5",
+      "bytes": 226
+    },
+    {
+      "path": "skills/requirements-specification/SKILL.md",
+      "sha256": "a5e5729aacb948c872a840a181538fa5055c55a819e90e9bdf92cd0f2b225a4f",
+      "bytes": 14272
+    },
+    {
+      "path": "skills/requirements-specification/agents/openai.yaml",
+      "sha256": "bdd89b415e204e253cd81688c9a79155325fd0fc354fdb9bd78dcddce2c5023e",
+      "bytes": 246
+    },
+    {
+      "path": "skills/security-engineering/SKILL.md",
+      "sha256": "2085dd6239244bf53f9c8537b9dac1729e173954d449a5ab18c0d22096c4c286",
+      "bytes": 11823
+    },
+    {
+      "path": "skills/security-engineering/agents/openai.yaml",
+      "sha256": "4be37dd5562d6773d31a034a20c0f863ff2236441bc10e06a4ad8aea1c0077e6",
+      "bytes": 257
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/SKILL.md",
+      "sha256": "4b63083d36879d71ffd9828949da658146ab210d3e713a075f04486cf723900f",
+      "bytes": 7126
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/agents/openai.yaml",
+      "sha256": "f62a45f928a9b521d0ce7ed8b1c879133032c0a538f46fa3942e9c6ef912d83e",
+      "bytes": 316
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/adr.md",
+      "sha256": "75d11e3f9573567981781bcf2fcc9aca364b4d2690051018bc25be2da363a254",
+      "bytes": 248
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/architecture.md",
+      "sha256": "c773d37cec87ab19e0aef2c78eda701be4fa993beff95b4ff10e784b93fe50ad",
+      "bytes": 514
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/code-review-report.md",
+      "sha256": "11b403952d3867fe9359e149cfa739940ee13c0f30f5b1d01df70a8a0c5ff0e3",
+      "bytes": 393
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/implementation-plan.md",
+      "sha256": "15383ff236ebdf1dfb327a8a992b6ed3c04c7b641b7ee8073797cb7efe224ca9",
+      "bytes": 381
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/interview-ledger.md",
+      "sha256": "3fb63503bedbde8d747d1f68ba9be1759ff80393b410475fad29f46420db47f5",
+      "bytes": 223
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/preflight-report.md",
+      "sha256": "2c5053facae4e79f0b97be708260ffe849133d5dd1bed4f7ccf7004c026a23ae",
+      "bytes": 518
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/product-brief.md",
+      "sha256": "c95ac97646ecc3061118b8e2a4099a80076f545bece3a6bc6a5a8671a8b4b8c6",
+      "bytes": 254
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/project-handoff.md",
+      "sha256": "4bd0e9ae02bb01ef6fc5b30608747c4b87774226ee614c1f0bcaa91da1a2e984",
+      "bytes": 406
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/qa-report.md",
+      "sha256": "d2b7924b149d9725678fd3fa2774ea3b360f1d7c1e3de3af58a90bc994f7b0d6",
+      "bytes": 366
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/release-record.md",
+      "sha256": "f7585f267aab6331ae8e15ce63cd4dd85176f26a217f310cf15481764ed56e69",
+      "bytes": 331
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/repository-map.md",
+      "sha256": "7f1313bf2f53948459f98af35877f629c726efb55bf82794806e61b73caad33a",
+      "bytes": 542
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/requirement-spec.md",
+      "sha256": "2955dd8391d659f73fd364c75f836505b549db753756534b7e93290a698e9e65",
+      "bytes": 400
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/security-report.md",
+      "sha256": "e22849b48998f7aeaf3e5b483081d7615870c751417762fa7a5f955e7379eedb",
+      "bytes": 440
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/test-plan.md",
+      "sha256": "6723ac063b15d93ebf57a63fc58b16b552a44bd5d392bc7a54f7beeb0d675ee9",
+      "bytes": 385
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/assets/templates/ux-platform-spec.md",
+      "sha256": "f8515365ced7b8683329cbb2dde8c4dc118321289aac3747bd08c8e01479733a",
+      "bytes": 547
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/core/constitution.md",
+      "sha256": "d0eb37b7abfb76c8d64aaefb20ed7b18b7664a3c031811186cac5123b76122b0",
+      "bytes": 11985
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/core/decision-policy.md",
+      "sha256": "15079affcd55413497cce9e523aca4a62a271fcb88f6191accb9d60cff943c59",
+      "bytes": 11457
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/core/router-policy.md",
+      "sha256": "cc64749a41675dfdf0694615b95031735ed84672f0cbd724396dbdcc2a174b14",
+      "bytes": 2358
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/core/routing-matrix.yaml",
+      "sha256": "53ddab906b6274c375bbb13469f20f28f7aee4adf4f163bf4542caa5c4197931",
+      "bytes": 1547
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/core/task-classifier.md",
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/schemas/eval-case.schema.json",
+      "sha256": "38848587b18a523986239cf80ae41fbd2010d47af3374f4f2369288c4872ec12",
+      "bytes": 847
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/schemas/evidence.schema.json",
+      "sha256": "784fa520f06ac9c5b586f833eb93242712208e964a42d27c6727d25e4202beec",
+      "bytes": 1041
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/schemas/finding.schema.json",
+      "sha256": "ca90383d0558510b1a2e6d4ade26ee360d15d00a20e36a66053baa3d1ab68ba6",
+      "bytes": 974
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/schemas/project-ledger.schema.json",
+      "sha256": "4776a5b7bae3f40c9f83e30d4a86c40ea6193d65093aa0dc14898d52df15dd5b",
+      "bytes": 1839
+    },
+    {
+      "path": "skills/senior-fullstack-engineer-agent/references/schemas/release-record.schema.json",
+      "sha256": "3137a70acab4a542533bdd220a93cec2b0ea680913577ee306f17c7939d5a738",
+      "bytes": 910
+    },
+    {
+      "path": "skills/skill-evaluation/SKILL.md",
+      "sha256": "8c6ea39f640f8219b6cc4e7d07849bd2f880d11e0cac905f8cbc51c185cd550f",
+      "bytes": 9641
+    },
+    {
+      "path": "skills/skill-evaluation/agents/openai.yaml",
+      "sha256": "4c5b47f6bb8ec9c9ddc24f8677592be9c743f53893f55b3024dc172eb088b328",
+      "bytes": 240
+    },
+    {
+      "path": "skills/skill-release-engineering/SKILL.md",
+      "sha256": "184ef102c67ceeecbaed44e84afe5a336fd3e677d77a186fedeb235009fe4094",
+      "bytes": 7932
+    },
+    {
+      "path": "skills/skill-release-engineering/agents/openai.yaml",
+      "sha256": "bb5539b2a058bfc5141944ed124d18a30c87af04fb73e6141965a690b870bfa6",
+      "bytes": 241
+    },
+    {
+      "path": "skills/source-verification/SKILL.md",
+      "sha256": "3d87ddd20c5c4ccc2ed192283a0c21be6de279d677cb8d8242633c35e0a7cdd9",
+      "bytes": 9457
+    },
+    {
+      "path": "skills/source-verification/agents/openai.yaml",
+      "sha256": "d4828f028a082e78f4f6bd2510652dee5a8b9cee412121688d27dd300a9180ed",
+      "bytes": 242
+    },
+    {
+      "path": "skills/systematic-debugging/SKILL.md",
+      "sha256": "6ba4181372f346fa0413b40f8e5789109dd14ac5cc2c35b50700c8dc80192ca2",
+      "bytes": 9137
+    },
+    {
+      "path": "skills/systematic-debugging/agents/openai.yaml",
+      "sha256": "7b7948eecb0085068dfbe893e5ed006bfb88f32dc21419e3ce2756312605c1cc",
+      "bytes": 230
+    },
+    {
+      "path": "skills/test-engineering/SKILL.md",
+      "sha256": "3e9af8156ee84aab43ede957997c0607640a87d3e8a772579b7b97319d117026",
+      "bytes": 10555
+    },
+    {
+      "path": "skills/test-engineering/agents/openai.yaml",
+      "sha256": "d29d0b05a1d3dead5b59833d1c10e6524d5f64a073814f7860b136d64805b42c",
+      "bytes": 216
+    },
+    {
+      "path": "skills/ux-platform-design/SKILL.md",
+      "sha256": "05f50659b00534ba37ef38d875e446b091e676ff4524cafafe6d6ff7df441e1f",
+      "bytes": 10898
+    },
+    {
+      "path": "skills/ux-platform-design/agents/openai.yaml",
+      "sha256": "09f1a7f87456c9d2e1debedbc82d2b7ab67982753cb30681c9edaeb08b26e6a6",
+      "bytes": 257
+    }
+  ]
+}

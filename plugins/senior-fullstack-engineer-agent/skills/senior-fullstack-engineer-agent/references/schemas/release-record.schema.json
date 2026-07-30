@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sfse:release-record:1.0.0",
+  "type": "object",
+  "required": [
+    "version",
+    "revision",
+    "decision",
+    "evidence"
+  ],
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "decision": {
+      "enum": [
+        "pass",
+        "pass_with_accepted_risk",
+        "fail",
+        "blocked",
+        "partial"
+      ]
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "known_risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rollback": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

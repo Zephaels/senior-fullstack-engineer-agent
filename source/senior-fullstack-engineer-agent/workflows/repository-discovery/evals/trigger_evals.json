@@ -1,0 +1,62 @@
+[
+  {
+    "id": "RD-T01",
+    "query": "I uploaded an existing monorepo. Before changing the billing page, map the relevant apps, API, database, tests, and deployment impact.",
+    "should_trigger": true,
+    "reason": "Existing repository and blast radius are explicit."
+  },
+  {
+    "id": "RD-T02",
+    "query": "This production service sometimes creates duplicate jobs. Trace the current flow before proposing a fix.",
+    "should_trigger": true,
+    "reason": "Investigation requires repository facts and end-to-end flow."
+  },
+  {
+    "id": "RD-T03",
+    "query": "Review this repository architecture and tell me which modules own authentication and tenant isolation. Do not edit anything.",
+    "should_trigger": true,
+    "reason": "Read-only architecture discovery."
+  },
+  {
+    "id": "RD-T04",
+    "query": "Upgrade our ORM and database schema, but first identify migrations, consumers, tests, and rollback paths.",
+    "should_trigger": true,
+    "reason": "Brownfield migration discovery."
+  },
+  {
+    "id": "RD-T05",
+    "query": "Add keyboard shortcuts to this desktop app. Check existing command routing and platform-specific implementations first.",
+    "should_trigger": true,
+    "reason": "Existing platform project and impact analysis."
+  },
+  {
+    "id": "RD-T06",
+    "query": "Build a brand-new habit tracker. There is no repository yet.",
+    "should_trigger": false,
+    "reason": "Greenfield product discovery should precede repository discovery."
+  },
+  {
+    "id": "RD-T07",
+    "query": "What is dependency injection?",
+    "should_trigger": false,
+    "reason": "Pure conceptual question."
+  },
+  {
+    "id": "RD-T08",
+    "query": "We already have a fresh repository map for this exact commit. Change one typo in a private test description.",
+    "should_trigger": false,
+    "reason": "Mechanical edit with no meaningful discovery need."
+  },
+  {
+    "id": "RD-T09",
+    "query": "Should users be allowed to delete other members’ projects?",
+    "should_trigger": false,
+    "reason": "Product/permission decision belongs to intent interview."
+  },
+  {
+    "id": "RD-T10",
+    "query": "What is the latest Stripe API version?",
+    "should_trigger": false,
+    "reason": "Version-sensitive external fact belongs to source verification."
+  }
+]

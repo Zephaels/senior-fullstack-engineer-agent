@@ -1,0 +1,35 @@
+{
+  "skill_name": "skill-release-engineering",
+  "evals": [
+    {
+      "id": "SRE-Q-001",
+      "prompt": "Prepare this Skill tree as a public Codex Plugin GA release, but the license is still proprietary preview and no model eval has run.",
+      "expected_output": "Blocks GA, permits only an accurately labelled internal RC if static gates pass, and lists license and real-model evaluation as blockers.",
+      "expectations": [
+        "Does not call the package GA",
+        "Separates RC readiness from GA readiness",
+        "Requires license decision and real-model evidence"
+      ]
+    },
+    {
+      "id": "SRE-Q-002",
+      "prompt": "The plugin content changed but the manifest version is unchanged. Create the release.",
+      "expected_output": "Requires a version bump before packaging and explains cache/update risk.",
+      "expectations": [
+        "Rejects unchanged version",
+        "Uses strict semver",
+        "Does not publish stale-version content"
+      ]
+    },
+    {
+      "id": "SRE-Q-003",
+      "prompt": "Create a local marketplace package for this skills-only plugin.",
+      "expected_output": "Creates .agents/plugins/marketplace.json pointing to ./plugins/<name>, a plugin with .codex-plugin/plugin.json and skills/, and validates both.",
+      "expectations": [
+        "Uses standard repository layout",
+        "Includes marketplace policy fields",
+        "Does not add apps or MCP fields without companion manifests"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Plugin validation passed: /mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent

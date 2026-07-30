@@ -1,0 +1,41 @@
+{
+  "skill_name": "product-discovery",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A stakeholder demands an AI summarizer because competitors have one. Research supplied is mixed and no target metric exists.",
+      "expected_output": "A bounded Product Brief that reframes the outcome, separates evidence from assumptions, compares alternatives, defines critical experiments and does not start requirements or code.",
+      "files": [],
+      "expectations": [
+        "Does not accept competitor parity as proof",
+        "Separates desired outcome from solution",
+        "Includes value/usability/feasibility/viability assumptions",
+        "Defines measurable experiment thresholds and non-goals"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A team has 40 feature requests from different customer segments and wants a roadmap immediately.",
+      "expected_output": "An opportunity-led discovery analysis that groups evidence, identifies target segment and outcome, prioritizes opportunities, and defers roadmap commitment until critical assumptions are addressed.",
+      "files": [],
+      "expectations": [
+        "Does not rank features only by votes",
+        "Identifies segment conflicts",
+        "Produces prioritized opportunities",
+        "Surfaces missing evidence"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The founder says skip discovery because the product idea feels obvious.",
+      "expected_output": "A concise risk-adaptive discovery response that explains the minimum evidence needed and proposes the cheapest useful test rather than a full process or immediate build.",
+      "files": [],
+      "expectations": [
+        "Resists authority-based bypass",
+        "Uses task/risk proportionality",
+        "Proposes a low-cost experiment",
+        "Does not create production implementation tasks"
+      ]
+    }
+  ]
+}

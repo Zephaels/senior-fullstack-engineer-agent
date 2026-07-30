@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release and Deployment"
+  short_description: "Ship safely with migration, health checks, monitoring, and rollback"
+  default_prompt: "Use $release-deployment to prepare and execute a controlled release."

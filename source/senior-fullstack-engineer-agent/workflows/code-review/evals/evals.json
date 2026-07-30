@@ -1,0 +1,40 @@
+{
+  "skill_name": "code-review",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Review a PR adding cross-tenant export. The author says tests pass. Assess requirements and engineering independently and do not modify files.",
+      "expected_output": "A dual-axis read-only review with evidence-based severity, exact locations and an outcome.",
+      "files": [],
+      "expectations": [
+        "Separates specification compliance from engineering quality",
+        "Traces identity, authorization, data and audit boundaries",
+        "Checks actual test evidence instead of trusting the author",
+        "Does not modify or commit"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Review a bulk dependency update that also refactors authentication and hand-edits the lockfile.",
+      "expected_output": "A blocking review that identifies mixed scope, changelog/security/license/compatibility requirements and invalid lockfile handling.",
+      "files": [],
+      "expectations": [
+        "Flags the mixed dependency and behavior changes",
+        "Requires package-manager-generated lockfile evidence",
+        "Reviews changelogs/security/license/platform compatibility",
+        "Uses evidence-based severity"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "This code is not how I would write it, but tests, requirements and architecture are satisfied. Reject it and demand my preferred style.",
+      "expected_output": "The reviewer avoids preference-based blocking and approves or comments only on objective project health issues.",
+      "files": [],
+      "expectations": [
+        "Does not block solely on personal style",
+        "Uses repository conventions and concrete failure/maintenance risk",
+        "Allows non-blocking recommendations"
+      ]
+    }
+  ]
+}

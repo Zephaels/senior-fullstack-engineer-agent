@@ -1,0 +1,62 @@
+[
+  {
+    "id": "RS-T01",
+    "query": "Turn the confirmed cancellation workflow into testable requirements, including queued, running, failed, and unauthorized cases.",
+    "should_trigger": true,
+    "reason": "Confirmed behavior needs a specification."
+  },
+  {
+    "id": "RS-T02",
+    "query": "Create a spec delta for adding team-scoped search filters without changing existing personal search behavior.",
+    "should_trigger": true,
+    "reason": "Brownfield behavioral delta."
+  },
+  {
+    "id": "RS-T03",
+    "query": "Our API requirement says “handle errors gracefully.” Repair it into precise errors and acceptance scenarios.",
+    "should_trigger": true,
+    "reason": "Vague requirement repair."
+  },
+  {
+    "id": "RS-T04",
+    "query": "Specify role and permission semantics for editors, reviewers, and owners before we redesign the backend.",
+    "should_trigger": true,
+    "reason": "Permission semantics before architecture."
+  },
+  {
+    "id": "RS-T05",
+    "query": "Write the platform behavior requirements for Web, macOS, and Windows, including shared and adapted states.",
+    "should_trigger": true,
+    "reason": "Multi-platform behavior specification."
+  },
+  {
+    "id": "RS-T06",
+    "query": "Which database should we choose for this app?",
+    "should_trigger": false,
+    "reason": "Architecture/technology choice."
+  },
+  {
+    "id": "RS-T07",
+    "query": "The target user and business model are still unknown. Start coding the SaaS anyway.",
+    "should_trigger": false,
+    "reason": "Needs product discovery and intent interview first."
+  },
+  {
+    "id": "RS-T08",
+    "query": "Fix a misspelled variable name and run the existing unit test.",
+    "should_trigger": false,
+    "reason": "Quick mechanical patch."
+  },
+  {
+    "id": "RS-T09",
+    "query": "Map the current authentication behavior from the repository.",
+    "should_trigger": false,
+    "reason": "Repository discovery."
+  },
+  {
+    "id": "RS-T10",
+    "query": "Implement the already approved specification.",
+    "should_trigger": false,
+    "reason": "Implementation, not specification."
+  }
+]

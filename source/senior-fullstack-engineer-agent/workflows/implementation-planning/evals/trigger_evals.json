@@ -1,0 +1,62 @@
+[
+  {
+    "id": "IP-T01",
+    "query": "The requirements and architecture are approved. Break the feature into vertical slices with exact files, tests, dependencies, and rollback.",
+    "should_trigger": true,
+    "reason": "Ready for executable planning."
+  },
+  {
+    "id": "IP-T02",
+    "query": "Create a Brownfield implementation plan for this schema migration using expand, backfill, validate, contract, and rollback phases.",
+    "should_trigger": true,
+    "reason": "Migration sequencing."
+  },
+  {
+    "id": "IP-T03",
+    "query": "Split this approved multi-platform feature so Web, macOS, and Windows work can proceed without conflicting contracts.",
+    "should_trigger": true,
+    "reason": "Cross-platform dependency and parallel scope planning."
+  },
+  {
+    "id": "IP-T04",
+    "query": "Turn the approved specification into GitHub-ready vertical slice tasks, each with verification evidence.",
+    "should_trigger": true,
+    "reason": "Task planning from approved artifacts."
+  },
+  {
+    "id": "IP-T05",
+    "query": "Repair this plan: it says only “build backend, build frontend, write tests” and contains no paths or acceptance gates.",
+    "should_trigger": true,
+    "reason": "Plan repair."
+  },
+  {
+    "id": "IP-T06",
+    "query": "The authorization rules are undecided. Make a detailed implementation plan anyway.",
+    "should_trigger": false,
+    "reason": "Requirement gap blocks planning."
+  },
+  {
+    "id": "IP-T07",
+    "query": "Start coding the approved task now.",
+    "should_trigger": false,
+    "reason": "Implementation workflow."
+  },
+  {
+    "id": "IP-T08",
+    "query": "Should we use PostgreSQL or MongoDB?",
+    "should_trigger": false,
+    "reason": "Architecture decision."
+  },
+  {
+    "id": "IP-T09",
+    "query": "Read the repo and find the test command.",
+    "should_trigger": false,
+    "reason": "Repository discovery."
+  },
+  {
+    "id": "IP-T10",
+    "query": "Summarize this architecture document.",
+    "should_trigger": false,
+    "reason": "Pure summarization."
+  }
+]

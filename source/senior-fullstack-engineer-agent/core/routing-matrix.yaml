@@ -1,0 +1,57 @@
+version: '2.0'
+full_lifecycle:
+  minimum_explicit_phases: 3
+  triggers:
+  - greenfield_project
+  - substantial_multi_phase_feature
+  - architecture_or_public_contract_change
+  - unclear_engineering_path
+  - explicit_end_to_end_request
+specialist_routes:
+  intent-interview:
+  - material_product_decision_unknown
+  product-discovery:
+  - problem_or_value_unproven
+  repository-discovery:
+  - local_repository_facts_unknown
+  source-verification:
+  - external_or_versioned_claim_unknown
+  requirements-specification:
+  - approved_direction_needs_normative_behavior
+  architecture-design:
+  - approved_behavior_needs_system_design
+  ux-platform-design:
+  - cross_platform_experience_or_state_model
+  implementation-planning:
+  - approved_design_needs_tasks
+  incremental-implementation:
+  - approved_bounded_slice_needs_code
+  test-engineering:
+  - test_strategy_or_regression_coverage
+  systematic-debugging:
+  - unknown_cause_failure
+  quality-assurance:
+  - user_facing_runtime_validation
+  code-review:
+  - diff_or_pr_review
+  security-engineering:
+  - threat_model_or_security_audit
+  preflight-verification:
+  - exact_revision_final_checks
+  release-deployment:
+  - authorized_deployment
+  project-state-handoff:
+  - save_resume_reconcile_state
+  skill-evaluation:
+  - evaluate_skill_behavior
+  skill-release-engineering:
+  - package_or_release_skill
+negative_router_examples:
+- single_bug_investigation
+- single_pr_review
+- single_test_run
+- single_source_lookup
+- single_security_audit
+- single_qa_pass
+- single_preflight
+- single_deployment

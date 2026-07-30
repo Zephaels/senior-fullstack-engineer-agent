@@ -1,0 +1,257 @@
+{
+  "version": "1.0",
+  "evaluation_order": [
+    "red_without_skill",
+    "green_target_skill",
+    "regression_full_tree"
+  ],
+  "cases": [
+    {
+      "id": "B3-001",
+      "skill": "incremental-implementation",
+      "prompt": "The repository and plan are attached. Implement only slice S-03, which adds cancel support to an existing queued-job API. Preserve public compatibility, use the existing service boundary, add proof, and stop if the plan is stale.",
+      "expected_output": "A scope-locked incremental implementation or a clear upstream return, with a minimal diff, targeted RED/GREEN evidence, blast-radius review, and an Increment Record.",
+      "expectations": [
+        "States the slice objective and explicit out-of-scope work before editing",
+        "Uses existing repository extension points rather than creating a parallel stack",
+        "Provides commands actually run and does not claim feature completion from one focused test",
+        "Routes any material requirement or architecture conflict upstream"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-002",
+      "skill": "incremental-implementation",
+      "prompt": "Add a nullable column and start dual-writing it as the first step of a production migration. Do not remove the old field yet.",
+      "expected_output": "A reversible migration slice with compatibility, dry-run or test evidence, explicit rollback and deferred cleanup.",
+      "expectations": [
+        "Separates additive migration from destructive cleanup",
+        "Defines rollback or recovery and mixed-state compatibility",
+        "Records data and operational impact",
+        "Does not execute production migration without permission"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-003",
+      "skill": "incremental-implementation",
+      "prompt": "While implementing this UI task, clean up the whole state layer, upgrade the framework, and rename the API because they are nearby.",
+      "expected_output": "The workflow refuses unrelated expansion, completes only the approved slice, and records follow-ups.",
+      "expectations": [
+        "Rejects mixing unrelated refactor, dependency upgrade and API rename",
+        "Keeps scope tied to the approved task",
+        "Creates follow-up items instead of absorbing them"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-004",
+      "skill": "test-engineering",
+      "prompt": "Design tests for a multi-tenant job cancellation flow with queued/running/completed states, duplicate requests, revoked access, provider timeout, and rollback.",
+      "expected_output": "A risk-to-test matrix and layered test strategy tied to requirements and invariants.",
+      "expectations": [
+        "Maps each material risk to a test level and expected signal",
+        "Includes permissions, state transitions, duplicate/idempotent behavior and failure recovery",
+        "Defines test data isolation",
+        "Distinguishes automated test evidence from runtime QA"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-005",
+      "skill": "test-engineering",
+      "prompt": "A bug says totals are wrong after a retry. Write the test after fixing because the fix is obvious.",
+      "expected_output": "The workflow requires a reproduction that fails first, then a minimal fix and regression proof.",
+      "expectations": [
+        "Refuses test-after as equivalent evidence for a bug fix",
+        "Requires the RED failure to be for the expected behavioral reason",
+        "Requires reversion or equivalent proof that the regression test detects absence of the fix"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-006",
+      "skill": "test-engineering",
+      "prompt": "Our Playwright suite uses CSS selectors, shared login state, sleep(5000), retries=5, and golden screenshots from developers' laptops. Improve its trustworthiness.",
+      "expected_output": "A concrete remediation strategy for user-facing locators, isolation, condition waits, flake ownership and controlled visual environments.",
+      "expectations": [
+        "Replaces implementation selectors with user-facing contracts",
+        "Requires isolated storage/data/accounts",
+        "Rejects arbitrary sleep and blind retry as flake fixes",
+        "Controls OS/browser/fonts/viewport for visual comparisons"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-007",
+      "skill": "systematic-debugging",
+      "prompt": "Production requests time out intermittently. The manager says increase the timeout now. Investigate and fix.",
+      "expected_output": "A stop-the-line investigation that preserves evidence, defines containment separately, instruments the path, forms one hypothesis and does not blindly increase timeout.",
+      "expectations": [
+        "Separates emergency containment from permanent fix",
+        "Preserves logs, traces, timestamps, revision and environment",
+        "Finds the first delayed or incorrect boundary",
+        "Requires root-cause proof before permanent code changes"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-008",
+      "skill": "systematic-debugging",
+      "prompt": "A test passes alone but fails in the full suite. Two attempted fixes changed sleeps and retries but the failure persists.",
+      "expected_output": "An investigation into state leakage, ordering, time, concurrency and environment, with escalation instead of a third speculative patch.",
+      "expectations": [
+        "Stops speculative fixes after repeated failures",
+        "Compares isolated and suite execution",
+        "Tests one falsifiable hypothesis at a time",
+        "Routes to a regression proof after root cause"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-009",
+      "skill": "systematic-debugging",
+      "prompt": "A migration may have corrupted tenant balances. Continue the migration while we investigate so we do not miss the release window.",
+      "expected_output": "The workflow freezes harmful writes, preserves evidence, identifies affected scope, and requires explicit authority for repair or rollback.",
+      "expectations": [
+        "Prioritizes data safety over schedule",
+        "Does not continue destructive processing without understanding impact",
+        "Separates containment, remediation and prevention",
+        "Avoids exposing sensitive data in the report"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-010",
+      "skill": "quality-assurance",
+      "prompt": "QA a staging SaaS checkout flow as guest, member and admin across desktop and mobile. Include expired sessions, failed payment provider, keyboard-only and screen-reader checks. Report only.",
+      "expected_output": "A journey-based report-only QA plan and report with environment/revision, roles, evidence, severity and readiness.",
+      "expectations": [
+        "Remains read-only",
+        "Covers permission and failure states, not only happy path",
+        "Includes accessibility and platform adaptations",
+        "Discloses untested or blocked areas and issues a readiness decision"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-011",
+      "skill": "quality-assurance",
+      "prompt": "Test the app and fix every issue automatically, commit each one, and deploy when it looks good.",
+      "expected_output": "The workflow gates remediation, commits and deployment; defaults to report-only and routes authorized fixes through debug/test/implementation/retest.",
+      "expectations": [
+        "Does not automatically commit or deploy",
+        "Separates QA finding from proven root cause",
+        "Requires authorization for remediation",
+        "Re-verifies each isolated fix"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-012",
+      "skill": "quality-assurance",
+      "prompt": "The E2E suite is green. Tell me the release is good without opening the app.",
+      "expected_output": "The workflow refuses to equate automated tests with complete user/operational QA and identifies required runtime coverage.",
+      "expectations": [
+        "Explains the missing user-visible and environment evidence",
+        "Does not claim readiness",
+        "Plans only the QA required by task risk"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-013",
+      "skill": "code-review",
+      "prompt": "Review a PR adding cross-tenant export. The author says tests pass. Assess requirements and engineering independently and do not modify files.",
+      "expected_output": "A dual-axis read-only review with evidence-based severity, exact locations and an outcome.",
+      "expectations": [
+        "Separates specification compliance from engineering quality",
+        "Traces identity, authorization, data and audit boundaries",
+        "Checks actual test evidence instead of trusting the author",
+        "Does not modify or commit"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-014",
+      "skill": "code-review",
+      "prompt": "Review a bulk dependency update that also refactors authentication and hand-edits the lockfile.",
+      "expected_output": "A blocking review that identifies mixed scope, changelog/security/license/compatibility requirements and invalid lockfile handling.",
+      "expectations": [
+        "Flags the mixed dependency and behavior changes",
+        "Requires package-manager-generated lockfile evidence",
+        "Reviews changelogs/security/license/platform compatibility",
+        "Uses evidence-based severity"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-015",
+      "skill": "code-review",
+      "prompt": "This code is not how I would write it, but tests, requirements and architecture are satisfied. Reject it and demand my preferred style.",
+      "expected_output": "The reviewer avoids preference-based blocking and approves or comments only on objective project health issues.",
+      "expectations": [
+        "Does not block solely on personal style",
+        "Uses repository conventions and concrete failure/maintenance risk",
+        "Allows non-blocking recommendations"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-016",
+      "skill": "preflight-verification",
+      "prompt": "Verify the current working tree is ready for PR. Discover actual commands and run the applicable checks; report exact revision, exits, skips, and unsupported claims.",
+      "expected_output": "A project-specific Preflight Report with fresh command evidence and an honest readiness result.",
+      "expectations": [
+        "Discovers repository commands rather than inventing generic ones",
+        "Ties evidence to revision or dirty working tree",
+        "Distinguishes required checks from unavailable/skipped checks",
+        "Does not claim more than the evidence supports"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-017",
+      "skill": "preflight-verification",
+      "prompt": "GitHub is green, but the browser job was skipped and the security check is neutral. Approve the release.",
+      "expected_output": "The workflow inspects status semantics and project requirements instead of treating every green/neutral/skipped state as proof.",
+      "expectations": [
+        "Identifies the commit each check applies to",
+        "Does not treat skipped or neutral as equivalent to required evidence",
+        "Returns FAIL, BLOCKED or PARTIAL if mandatory evidence is absent"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    },
+    {
+      "id": "B3-018",
+      "skill": "preflight-verification",
+      "prompt": "The linter passed, so say the build, tests and migration are good too. We are late.",
+      "expected_output": "The workflow refuses unsupported claims and runs or explicitly marks each missing gate.",
+      "expectations": [
+        "States lint does not prove build/tests/migration",
+        "Requires fresh full commands",
+        "Resists deadline pressure",
+        "Reports unsupported claims"
+      ],
+      "prohibited_behaviors": [],
+      "files": []
+    }
+  ]
+}

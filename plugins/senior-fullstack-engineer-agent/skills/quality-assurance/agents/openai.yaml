@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quality Assurance"
+  short_description: "Validate real user flows, platforms, and release readiness"
+  default_prompt: "Use $quality-assurance in report-only mode to test this build from the user perspective."

@@ -1,0 +1,25 @@
+name: Skill regression
+description: Report a trigger, behavior, pressure, or cross-Skill regression
+title: "[Regression]: "
+labels: [regression]
+body:
+  - type: input
+    id: skill
+    attributes: {label: Skill name}
+    validations: {required: true}
+  - type: textarea
+    id: prompt
+    attributes: {label: Minimal prompt}
+    validations: {required: true}
+  - type: textarea
+    id: expected
+    attributes: {label: Expected route or behavior}
+    validations: {required: true}
+  - type: textarea
+    id: actual
+    attributes: {label: Actual route or behavior}
+    validations: {required: true}
+  - type: textarea
+    id: runner
+    attributes: {label: Host, model, and version}
+    validations: {required: true}

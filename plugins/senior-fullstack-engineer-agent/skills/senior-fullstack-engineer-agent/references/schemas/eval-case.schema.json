@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sfse:eval-case:1.0.0",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "prompt",
+    "expected"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "trigger",
+        "negative_trigger",
+        "behavior",
+        "pressure",
+        "regression"
+      ]
+    },
+    "skill": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "expected": {
+      "type": [
+        "string",
+        "array",
+        "object"
+      ]
+    },
+    "forbidden": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

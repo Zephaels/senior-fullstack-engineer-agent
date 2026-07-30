@@ -1,0 +1,4 @@
+interface:
+  display_name: "Preflight Verification"
+  short_description: "Verify the exact revision before completion or release"
+  default_prompt: "Use $preflight-verification to run the project’s real checks and report fresh evidence."

@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Review this PR read-only against the approved requirements and architecture, and separately assess correctness, security, data, performance, tests, and maintainability.",
+    "should_trigger": true
+  },
+  {
+    "query": "Check the diff from main to this branch. Label blocking findings with file/line, failure scenario, severity, and smallest safe correction.",
+    "should_trigger": true
+  },
+  {
+    "query": "Review the bug fix and its regression test before merge; do not trust the author's 'all tests pass' statement without checking evidence.",
+    "should_trigger": true
+  },
+  {
+    "query": "Review this dependency upgrade, including changelog, lockfile, security, license, and compatibility impact.",
+    "should_trigger": true
+  },
+  {
+    "query": "Assess whether the generated API client change matches the schema and whether manual edits will survive regeneration.",
+    "should_trigger": true
+  },
+  {
+    "query": "Perform a dual-axis review: specification compliance first, engineering quality second, and give an approve/request-changes outcome.",
+    "should_trigger": true
+  },
+  {
+    "query": "Implement the approved endpoint and tests.",
+    "should_trigger": false
+  },
+  {
+    "query": "The build fails with an import error; find the root cause.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run browser QA for the checkout journey and capture screenshots.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write the formal requirements for the subscription cancellation feature.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run the final repository commands and tell me if this exact commit is ready to merge.",
+    "should_trigger": false
+  },
+  {
+    "query": "Design the architecture for a new authorization service.",
+    "should_trigger": false
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "skill_name": "release-deployment",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Release a schema-changing service with old and new app versions running concurrently.",
+      "expected_output": "A compatible expand/backfill/validate/switch/contract release plan with artifact identity, canary, health, rollback and observation.",
+      "files": [],
+      "expectations": [
+        "Preserves mixed-version compatibility",
+        "Defines backup and validation",
+        "Uses staged exposure",
+        "Defines rollback triggers"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "The prior commit passed CI, but the current commit modifies deployment configuration and the user says deploy now.",
+      "expected_output": "A blocked release response requiring current-revision preflight and explicit permission, without reusing stale evidence.",
+      "files": [],
+      "expectations": [
+        "Rejects stale CI",
+        "Requires exact artifact/config",
+        "Requests operational confirmation",
+        "Does not deploy"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A canary shows increased error rate and a data invariant warning after migration.",
+      "expected_output": "A pause/rollback or escalation decision based on predefined criteria, preserving evidence and verifying the recovery action.",
+      "files": [],
+      "expectations": [
+        "Stops further rollout",
+        "Uses health criteria",
+        "Protects data",
+        "Verifies rollback or escalation"
+      ]
+    }
+  ]
+}

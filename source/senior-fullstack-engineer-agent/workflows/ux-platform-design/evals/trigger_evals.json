@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Design the same project workspace for Web, iPad, macOS, and mobile without simply scaling one layout. Define shared and adapted behavior.",
+    "should_trigger": true
+  },
+  {
+    "query": "Create a UX specification for the upload-to-generation flow including loading, empty, permission, offline, cancel, error, retry, and success states.",
+    "should_trigger": true
+  },
+  {
+    "query": "Review the proposed tablet experience for multi-column layout, keyboard, pointer, drag-and-drop, resizable windows, and state preservation.",
+    "should_trigger": true
+  },
+  {
+    "query": "Define the design-system, accessibility, responsive, keyboard, content, and interaction requirements before implementing this dashboard.",
+    "should_trigger": true
+  },
+  {
+    "query": "Translate this Figma flow into platform-correct product behavior rather than a pixel-only implementation.",
+    "should_trigger": true
+  },
+  {
+    "query": "Classify capabilities as Shared, Adapted, Platform Only, or Not Applicable and define validation evidence.",
+    "should_trigger": true
+  },
+  {
+    "query": "Implement the already approved React component exactly as specified.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review only the easing values in these existing animations.",
+    "should_trigger": false
+  },
+  {
+    "query": "Decide whether this feature solves the right customer problem.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run the final build, tests, and release checks.",
+    "should_trigger": false
+  },
+  {
+    "query": "Fix a backend deadlock.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain Apple's HIG at a high level.",
+    "should_trigger": false
+  }
+]

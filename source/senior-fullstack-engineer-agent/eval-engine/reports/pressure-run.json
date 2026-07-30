@@ -1,0 +1,9 @@
+{
+  "suite": "pressure-v2",
+  "status": "BLOCKED_NO_MODEL_RUNNER",
+  "cases_requested": 80,
+  "runs": [],
+  "limitations": [
+    "No external model runner supplied. No pressure score is claimed."
+  ]
+}

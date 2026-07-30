@@ -1,0 +1,50 @@
+[
+  {
+    "query": "I want to build a new AI video generation SaaS. Lead product discovery, requirements, architecture, implementation, testing, security, and release in sequence.",
+    "should_trigger": true
+  },
+  {
+    "query": "Take ownership of this existing repository and deliver a substantial team workspace invitations and role-permissions feature from discovery through release.",
+    "should_trigger": true
+  },
+  {
+    "query": "We need to replace authentication, change tenant data boundaries, update APIs, migrate production data, and safely release the change. Plan the complete lifecycle.",
+    "should_trigger": true
+  },
+  {
+    "query": "I have an ambiguous product idea and do not know which engineering phase should start. Use the full Senior Full-Stack Engineer workflow.",
+    "should_trigger": true
+  },
+  {
+    "query": "Design and deliver a cross-platform desktop, tablet, mobile, and Web application with shared business rules and platform-adapted UX.",
+    "should_trigger": true
+  },
+  {
+    "query": "This large feature spans product decisions, public API contracts, database migration, implementation, QA, security review, deployment, and handoff. Orchestrate it end to end.",
+    "should_trigger": true
+  },
+  {
+    "query": "Review this pull request read-only and list blocking findings.",
+    "should_trigger": false
+  },
+  {
+    "query": "The build fails with an import error. Reproduce it and find the root cause.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run the unit and integration tests for this exact commit and report the results.",
+    "should_trigger": false
+  },
+  {
+    "query": "Verify the current official SDK behavior for the version installed in package.json.",
+    "should_trigger": false
+  },
+  {
+    "query": "Threat-model this multi-tenant download endpoint before implementation.",
+    "should_trigger": false
+  },
+  {
+    "query": "Deploy the already approved artifact to staging and run smoke checks.",
+    "should_trigger": false
+  }
+]

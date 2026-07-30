@@ -1,0 +1,101 @@
+{
+  "suite": "stage5-routing-regression",
+  "cases": [
+    {
+      "id": "S5-R-001",
+      "prompt": "Deploy the customer application to production.",
+      "expected_route": "release-deployment",
+      "must_not_route": [
+        "skill-release-engineering"
+      ]
+    },
+    {
+      "id": "S5-R-002",
+      "prompt": "Package this Agent Skill as a Codex plugin general availability.",
+      "expected_route": "skill-release-engineering",
+      "must_not_route": [
+        "release-deployment"
+      ]
+    },
+    {
+      "id": "S5-R-003",
+      "prompt": "Evaluate whether the skill improves model behavior.",
+      "expected_route": "skill-evaluation",
+      "must_not_route": [
+        "skill-release-engineering"
+      ]
+    },
+    {
+      "id": "S5-R-004",
+      "prompt": "Create checksums, SBOM, marketplace metadata, and release archives for the skill.",
+      "expected_route": "skill-release-engineering",
+      "must_not_route": [
+        "preflight-verification"
+      ]
+    },
+    {
+      "id": "S5-R-005",
+      "prompt": "Check whether the application build is ready to deploy.",
+      "expected_route": "preflight-verification",
+      "must_not_route": [
+        "skill-release-engineering"
+      ]
+    },
+    {
+      "id": "S5-R-006",
+      "prompt": "Review the plugin supply chain and publication permissions.",
+      "expected_route": "security-engineering",
+      "must_not_route": [
+        "release-deployment"
+      ]
+    },
+    {
+      "id": "S5-R-007",
+      "prompt": "The plugin manifest changed; create version 1.0.0 and package it.",
+      "expected_route": "skill-release-engineering",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "S5-R-008",
+      "prompt": "Fix the broken unit test in the product repository.",
+      "expected_route": "systematic-debugging",
+      "must_not_route": [
+        "skill-release-engineering"
+      ]
+    },
+    {
+      "id": "S5-R-009",
+      "prompt": "Write a changelog entry for the skill release and build the plugin ZIP.",
+      "expected_route": "skill-release-engineering",
+      "must_not_route": [
+        "requirements-specification"
+      ]
+    },
+    {
+      "id": "S5-R-010",
+      "prompt": "Define user-facing payment refund behavior.",
+      "expected_route": "requirements-specification",
+      "must_not_route": [
+        "skill-release-engineering"
+      ]
+    },
+    {
+      "id": "S5-R-011",
+      "prompt": "Install this local plugin into a test marketplace and verify its manifest.",
+      "expected_route": "skill-release-engineering",
+      "must_not_route": [
+        "release-deployment"
+      ]
+    },
+    {
+      "id": "S5-R-012",
+      "prompt": "Create a threat model for the software product.",
+      "expected_route": "security-engineering",
+      "must_not_route": [
+        "skill-release-engineering"
+      ]
+    }
+  ]
+}

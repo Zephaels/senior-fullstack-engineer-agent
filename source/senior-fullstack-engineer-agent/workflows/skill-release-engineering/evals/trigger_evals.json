@@ -1,0 +1,74 @@
+[
+  {
+    "id": "SRE-T-P01",
+    "prompt": "Package this completed Agent Skill as a Codex plugin and create a general availability with checksums.",
+    "should_trigger": true,
+    "reason": "Requests packaging, validation, or publication of a Skill/plugin release."
+  },
+  {
+    "id": "SRE-T-P02",
+    "prompt": "Prepare version 1.0.0 of this skill repository for publication, including changelog, license, SBOM, and release workflow.",
+    "should_trigger": true,
+    "reason": "Requests packaging, validation, or publication of a Skill/plugin release."
+  },
+  {
+    "id": "SRE-T-P03",
+    "prompt": "Validate this .codex-plugin/plugin.json and marketplace entry against the current Codex contract.",
+    "should_trigger": true,
+    "reason": "Requests packaging, validation, or publication of a Skill/plugin release."
+  },
+  {
+    "id": "SRE-T-P04",
+    "prompt": "Build deterministic source and plugin ZIPs and produce a release gate report.",
+    "should_trigger": true,
+    "reason": "Requests packaging, validation, or publication of a Skill/plugin release."
+  },
+  {
+    "id": "SRE-T-P05",
+    "prompt": "Create CI that validates every SKILL.md and attests release artifacts when enabled.",
+    "should_trigger": true,
+    "reason": "Requests packaging, validation, or publication of a Skill/plugin release."
+  },
+  {
+    "id": "SRE-T-P06",
+    "prompt": "Upgrade the local plugin package, bump its version, and verify the installed copy matches the release hash.",
+    "should_trigger": true,
+    "reason": "Requests packaging, validation, or publication of a Skill/plugin release."
+  },
+  {
+    "id": "SRE-T-N01",
+    "prompt": "Deploy my Next.js application to Vercel.",
+    "should_trigger": false,
+    "reason": "Belongs to application delivery, implementation, review, architecture, information, or product planning."
+  },
+  {
+    "id": "SRE-T-N02",
+    "prompt": "Write the authentication feature described in this ticket.",
+    "should_trigger": false,
+    "reason": "Belongs to application delivery, implementation, review, architecture, information, or product planning."
+  },
+  {
+    "id": "SRE-T-N03",
+    "prompt": "Review this pull request for security vulnerabilities.",
+    "should_trigger": false,
+    "reason": "Belongs to application delivery, implementation, review, architecture, information, or product planning."
+  },
+  {
+    "id": "SRE-T-N04",
+    "prompt": "Design the release architecture for my mobile app backend.",
+    "should_trigger": false,
+    "reason": "Belongs to application delivery, implementation, review, architecture, information, or product planning."
+  },
+  {
+    "id": "SRE-T-N05",
+    "prompt": "Explain semantic versioning in general.",
+    "should_trigger": false,
+    "reason": "Belongs to application delivery, implementation, review, architecture, information, or product planning."
+  },
+  {
+    "id": "SRE-T-N06",
+    "prompt": "Create a product roadmap for the next quarter.",
+    "should_trigger": false,
+    "reason": "Belongs to application delivery, implementation, review, architecture, information, or product planning."
+  }
+]

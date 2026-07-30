@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:sfse:finding:1.0.0",
+  "type": "object",
+  "required": [
+    "id",
+    "severity",
+    "axis",
+    "summary",
+    "evidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "critical",
+        "required",
+        "recommended",
+        "nit",
+        "question",
+        "observation"
+      ]
+    },
+    "axis": {
+      "enum": [
+        "specification",
+        "engineering",
+        "security",
+        "qa",
+        "operations"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "location": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "string"
+    },
+    "failure_scenario": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "remediation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Deploy this exact reviewed commit to staging using the approved artifact, run smoke checks, and record the result.",
+    "should_trigger": true
+  },
+  {
+    "query": "Plan a canary release with feature flags, health metrics, rollback triggers, and post-release observation.",
+    "should_trigger": true
+  },
+  {
+    "query": "Sequence the compatible application and database migration, including backup, backfill, validation, switch, and contract steps.",
+    "should_trigger": true
+  },
+  {
+    "query": "The production rollout is unhealthy. Apply the predefined rollback criteria and verify the rollback.",
+    "should_trigger": true
+  },
+  {
+    "query": "Prepare the app-store phased release, exact build identity, approvals, monitoring, and release record.",
+    "should_trigger": true
+  },
+  {
+    "query": "Confirm operational permission, then publish the package and verify the actual registry artifact and version.",
+    "should_trigger": true
+  },
+  {
+    "query": "Run preflight checks and tell me whether this commit is eligible for release, but do not deploy.",
+    "should_trigger": false
+  },
+  {
+    "query": "Write code for the missing feature.",
+    "should_trigger": false
+  },
+  {
+    "query": "Design the architecture for deployment.",
+    "should_trigger": false
+  },
+  {
+    "query": "Investigate why the staging deployment failed before trying another release.",
+    "should_trigger": false
+  },
+  {
+    "query": "Save a session handoff without deploying.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain blue-green deployment.",
+    "should_trigger": false
+  }
+]

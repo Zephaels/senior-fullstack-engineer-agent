@@ -1,0 +1,41 @@
+{
+  "skill_name": "source-verification",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "The project uses a framework version different from the latest docs. Decide which routing API to implement.",
+      "expected_output": "A Source Verification Record that identifies the installed version, reads matching official documentation, records conflict with latest docs, and routes the conclusion without silently upgrading.",
+      "files": [],
+      "expectations": [
+        "Identifies local version first",
+        "Uses primary official sources",
+        "Records version/date/scope",
+        "Does not silently migrate"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Two official cloud pages disagree about regional availability for a production feature.",
+      "expected_output": "A conflict analysis that distinguishes page dates, product editions, region and preview/stable status, marks the conclusion conditional, and blocks unsafe commitment if unresolved.",
+      "files": [],
+      "expectations": [
+        "Surfaces the conflict",
+        "Checks region/edition/status",
+        "Does not choose the convenient page",
+        "Defines a recheck or escalation"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A user provides a blog with sample code and asks for a verified implementation.",
+      "expected_output": "A response that treats the blog as secondary, verifies the exact claim against current official documentation, and cites only supported conclusions.",
+      "files": [],
+      "expectations": [
+        "Does not treat blog as authoritative",
+        "Verifies the minimal claim",
+        "Flags unsupported parts",
+        "Records freshness"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "suite": "all-skill-trigger-evals-v2",
+  "skills": [
+    {
+      "skill": "senior-fullstack-engineer-agent",
+      "path": "router_trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "architecture-design",
+      "path": "../../workflows/architecture-design/evals/trigger_evals.json",
+      "cases": 10,
+      "positive": 5,
+      "negative": 5
+    },
+    {
+      "skill": "code-review",
+      "path": "../../workflows/code-review/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "implementation-planning",
+      "path": "../../workflows/implementation-planning/evals/trigger_evals.json",
+      "cases": 10,
+      "positive": 5,
+      "negative": 5
+    },
+    {
+      "skill": "incremental-implementation",
+      "path": "../../workflows/incremental-implementation/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "intent-interview",
+      "path": "../../workflows/intent-interview/evals/trigger_evals.json",
+      "cases": 10,
+      "positive": 5,
+      "negative": 5
+    },
+    {
+      "skill": "preflight-verification",
+      "path": "../../workflows/preflight-verification/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "product-discovery",
+      "path": "../../workflows/product-discovery/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "project-state-handoff",
+      "path": "../../workflows/project-state-handoff/evals/trigger_evals.json",
+      "cases": 10,
+      "positive": 5,
+      "negative": 5
+    },
+    {
+      "skill": "quality-assurance",
+      "path": "../../workflows/quality-assurance/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "release-deployment",
+      "path": "../../workflows/release-deployment/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "repository-discovery",
+      "path": "../../workflows/repository-discovery/evals/trigger_evals.json",
+      "cases": 10,
+      "positive": 5,
+      "negative": 5
+    },
+    {
+      "skill": "requirements-specification",
+      "path": "../../workflows/requirements-specification/evals/trigger_evals.json",
+      "cases": 10,
+      "positive": 5,
+      "negative": 5
+    },
+    {
+      "skill": "security-engineering",
+      "path": "../../workflows/security-engineering/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "skill-evaluation",
+      "path": "../../workflows/skill-evaluation/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "skill-release-engineering",
+      "path": "../../workflows/skill-release-engineering/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "source-verification",
+      "path": "../../workflows/source-verification/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "systematic-debugging",
+      "path": "../../workflows/systematic-debugging/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "test-engineering",
+      "path": "../../workflows/test-engineering/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    },
+    {
+      "skill": "ux-platform-design",
+      "path": "../../workflows/ux-platform-design/evals/trigger_evals.json",
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
+    }
+  ]
+}

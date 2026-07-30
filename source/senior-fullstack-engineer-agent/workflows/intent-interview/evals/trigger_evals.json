@@ -1,0 +1,42 @@
+[
+  {
+    "query": "I want to build a creator platform, but I have not decided who it is for, what the core workflow is, or what success means. Ask me one important question at a time before planning.",
+    "should_trigger": true
+  },
+  {
+    "query": "The refund feature request does not define eligibility, time limits, approval authority, or what happens after a partial refund. Clarify the product decisions first.",
+    "should_trigger": true
+  },
+  {
+    "query": "Before architecture, help me resolve the target users, must-have scope, explicit non-goals, data ownership, and business rules.",
+    "should_trigger": true
+  },
+  {
+    "query": "The repository shows how authentication works, but the product owner still needs to decide whether guests may create projects. Ask only the business decision.",
+    "should_trigger": true
+  },
+  {
+    "query": "This change could expose customer data and create billable provider usage. Identify the material unanswered decisions and interview me before implementation.",
+    "should_trigger": true
+  },
+  {
+    "query": "Read this existing repository and list its entry points, build commands, routes, state management, auth, database and deployment.",
+    "should_trigger": false
+  },
+  {
+    "query": "Turn the already confirmed product brief into numbered normative requirements and acceptance scenarios.",
+    "should_trigger": false
+  },
+  {
+    "query": "The requirements are approved. Design the system architecture and ADRs.",
+    "should_trigger": false
+  },
+  {
+    "query": "Implement task T-4 from the approved plan and run its tests.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review this PR read-only and report blocking findings.",
+    "should_trigger": false
+  }
+]

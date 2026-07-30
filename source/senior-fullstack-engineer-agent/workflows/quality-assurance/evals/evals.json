@@ -1,0 +1,40 @@
+{
+  "skill_name": "quality-assurance",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "QA a staging SaaS checkout flow as guest, member and admin across desktop and mobile. Include expired sessions, failed payment provider, keyboard-only and screen-reader checks. Report only.",
+      "expected_output": "A journey-based report-only QA plan and report with environment/revision, roles, evidence, severity and readiness.",
+      "files": [],
+      "expectations": [
+        "Remains read-only",
+        "Covers permission and failure states, not only happy path",
+        "Includes accessibility and platform adaptations",
+        "Discloses untested or blocked areas and issues a readiness decision"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Test the app and fix every issue automatically, commit each one, and deploy when it looks good.",
+      "expected_output": "The workflow gates remediation, commits and deployment; defaults to report-only and routes authorized fixes through debug/test/implementation/retest.",
+      "files": [],
+      "expectations": [
+        "Does not automatically commit or deploy",
+        "Separates QA finding from proven root cause",
+        "Requires authorization for remediation",
+        "Re-verifies each isolated fix"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "The E2E suite is green. Tell me the release is good without opening the app.",
+      "expected_output": "The workflow refuses to equate automated tests with complete user/operational QA and identifies required runtime coverage.",
+      "files": [],
+      "expectations": [
+        "Explains the missing user-visible and environment evidence",
+        "Does not claim readiness",
+        "Plans only the QA required by task risk"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,762 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "senior-fullstack-engineer-agent-plugin-1.0.0-rc.4.3",
+  "documentNamespace": "https://example.invalid/spdx/senior-fullstack-engineer-agent-plugin/1.0.0-rc.4.3",
+  "creationInfo": {
+    "creators": [
+      "Tool: sfse-manifest-generator"
+    ],
+    "created": "2026-07-30T00:00:00Z"
+  },
+  "packages": [
+    {
+      "name": "senior-fullstack-engineer-agent-plugin",
+      "SPDXID": "SPDXRef-Package",
+      "versionInfo": "1.0.0-rc.4.3",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "licenseConcluded": "Apache-2.0",
+      "licenseDeclared": "Apache-2.0"
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./.codex-plugin/plugin.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6590d06fc4c441392877ecddca0016aa714c67a500df3efd620ab7e8b5ec238d"
+        }
+      ]
+    },
+    {
+      "fileName": "./CHANGELOG.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c00f4dd6392f2a81547f2fb1cedfd3728473f7f4aa9ef849618a871a0508f79d"
+        }
+      ]
+    },
+    {
+      "fileName": "./LICENSE",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "fileName": "./NOTICE",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f53c38d70af1d91c02c788ab8589ba8f17caa3840e0467abc770451ec1778101"
+        }
+      ]
+    },
+    {
+      "fileName": "./README.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "37bb0da9654cc1944418dd98e7c77294c9403305f2123b54fb5a55e874b75e0c"
+        }
+      ]
+    },
+    {
+      "fileName": "./SECURITY.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "47c5d16fdf06d83fa868ffef987f83cf729a2475d8f3dbf5b3c3a546cb1c89bf"
+        }
+      ]
+    },
+    {
+      "fileName": "./SUPPORT.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "de84c33d42444bd75e60dbd0d5a1ca5cc6a8777a0931d0d2f55b4ad55f1ddce6"
+        }
+      ]
+    },
+    {
+      "fileName": "./THIRD_PARTY_NOTICES.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1efd87ddebd686490fbef077f25885a78ab06c7a04c9c0beae686e64c3cab685"
+        }
+      ]
+    },
+    {
+      "fileName": "./assets/composer-icon.svg",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aa7dd31cbb851d0f53e82b5239055587018a257cc4d79f008b8fae3a75608e9d"
+        }
+      ]
+    },
+    {
+      "fileName": "./assets/logo-dark.svg",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aa7dd31cbb851d0f53e82b5239055587018a257cc4d79f008b8fae3a75608e9d"
+        }
+      ]
+    },
+    {
+      "fileName": "./assets/logo.svg",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "aa7dd31cbb851d0f53e82b5239055587018a257cc4d79f008b8fae3a75608e9d"
+        }
+      ]
+    },
+    {
+      "fileName": "./core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d0eb37b7abfb76c8d64aaefb20ed7b18b7664a3c031811186cac5123b76122b0"
+        }
+      ]
+    },
+    {
+      "fileName": "./core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15079affcd55413497cce9e523aca4a62a271fcb88f6191accb9d60cff943c59"
+        }
+      ]
+    },
+    {
+      "fileName": "./core/router-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cc64749a41675dfdf0694615b95031735ed84672f0cbd724396dbdcc2a174b14"
+        }
+      ]
+    },
+    {
+      "fileName": "./core/routing-matrix.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "53ddab906b6274c375bbb13469f20f28f7aee4adf4f163bf4542caa5c4197931"
+        }
+      ]
+    },
+    {
+      "fileName": "./core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/architecture-design/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "88ac12babdbfbd99060a8cfe914600396f9490359e9ba2a9772705a17dfa4234"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/architecture-design/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "09baca370a9e813118e0b709dddccd117ac8ae2b5c91361c26b9c73d51af2af9"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/code-review/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fb32f0053ae7809a25f199a218d6719b55f56819fc19b20d9e472da16f2f33d8"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/code-review/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "452734a92b2995d04dda6afde4b77e416a1a7950ab43b55b6bfcb46b7946ac7e"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/implementation-planning/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8127ec86a0101224c59478cde722a429eb3871e807afb9c3dce060f0028723d5"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/implementation-planning/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e673c0830e9f0fe9b669dc2aebe8079481e13157244e464c2a39132395d3a3a0"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/incremental-implementation/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5a397424f794a6b65272acdfa9742e5ea6e994dff38d70d862f01d2b14aa3f4d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/incremental-implementation/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7d9b3282a91e6be3438e548816e6981ef3c561829b97d389ba636652b5fa062f"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/intent-interview/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6872a4b7c183197af1dfddac7976138a7212d2d19e7267d0d39ff67538f45d93"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/intent-interview/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e8f153a43994510982558b9974ccb0d42b7c097d4516438c4274a929a8345cb3"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/preflight-verification/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e78df314c033b30bdf89e49191734240019b39b38b5ded4527328a6b92632875"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/preflight-verification/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4623c1687367e2444c664978a257f0a8d15b4dd6153d49232f6d337a32ce0249"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/product-discovery/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bd66da98b37f80c7b441b13b99db5affd64e9a982bfb99e2cc93be68ed228972"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/product-discovery/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2ca8c400d1650aa32de8e6d9bdbcc3923600d1c7f650b0de508c9d3c2a3b6349"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/project-state-handoff/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1ebe8cfd10761ca39e10979c02e5571536cf91ce5ffca1b79414cba69089f90e"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/project-state-handoff/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "eb2ed019beb32d47d637f6faddf022679a423eae4ce0fc8d0851a4d0ba651271"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/quality-assurance/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d904d3c28e59c0519a26e14221e455657895a2f97ba988b22b41731cc5132aed"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/quality-assurance/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7e7baa540df176c5200fe22fc3ecf6d65e9a73694d6ad3c3fff50f91c6f527fa"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "69a5f10d6b85909bffa515d137b7953a1b5a1ffad37014584cc9a1b3a574eb69"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a5d1a9f6f42eb87fc2163422ba5813017c5ceadd12cb514ff560c3f9a3ae7c7e"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/repository-discovery/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a1bdafa11be00113ccd6a96ea84ee01f4c76f9075612f59bf0da975b2335110a"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/repository-discovery/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8f6a2fe2e2306492e5a63b8a3d536faf9a580e2f74cc085d17dd763ded8d9ee5"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/requirements-specification/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a5e5729aacb948c872a840a181538fa5055c55a819e90e9bdf92cd0f2b225a4f"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/requirements-specification/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bdd89b415e204e253cd81688c9a79155325fd0fc354fdb9bd78dcddce2c5023e"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/security-engineering/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2085dd6239244bf53f9c8537b9dac1729e173954d449a5ab18c0d22096c4c286"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/security-engineering/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4be37dd5562d6773d31a034a20c0f863ff2236441bc10e06a4ad8aea1c0077e6"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4b63083d36879d71ffd9828949da658146ab210d3e713a075f04486cf723900f"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f62a45f928a9b521d0ce7ed8b1c879133032c0a538f46fa3942e9c6ef912d83e"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/adr.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "75d11e3f9573567981781bcf2fcc9aca364b4d2690051018bc25be2da363a254"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/architecture.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c773d37cec87ab19e0aef2c78eda701be4fa993beff95b4ff10e784b93fe50ad"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/code-review-report.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "11b403952d3867fe9359e149cfa739940ee13c0f30f5b1d01df70a8a0c5ff0e3"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/implementation-plan.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15383ff236ebdf1dfb327a8a992b6ed3c04c7b641b7ee8073797cb7efe224ca9"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/interview-ledger.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3fb63503bedbde8d747d1f68ba9be1759ff80393b410475fad29f46420db47f5"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/preflight-report.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2c5053facae4e79f0b97be708260ffe849133d5dd1bed4f7ccf7004c026a23ae"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/product-brief.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c95ac97646ecc3061118b8e2a4099a80076f545bece3a6bc6a5a8671a8b4b8c6"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/project-handoff.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4bd0e9ae02bb01ef6fc5b30608747c4b87774226ee614c1f0bcaa91da1a2e984"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/qa-report.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d2b7924b149d9725678fd3fa2774ea3b360f1d7c1e3de3af58a90bc994f7b0d6"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/release-record.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f7585f267aab6331ae8e15ce63cd4dd85176f26a217f310cf15481764ed56e69"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/repository-map.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7f1313bf2f53948459f98af35877f629c726efb55bf82794806e61b73caad33a"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/requirement-spec.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "2955dd8391d659f73fd364c75f836505b549db753756534b7e93290a698e9e65"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/security-report.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e22849b48998f7aeaf3e5b483081d7615870c751417762fa7a5f955e7379eedb"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/test-plan.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6723ac063b15d93ebf57a63fc58b16b552a44bd5d392bc7a54f7beeb0d675ee9"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/ux-platform-spec.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f8515365ced7b8683329cbb2dde8c4dc118321289aac3747bd08c8e01479733a"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d0eb37b7abfb76c8d64aaefb20ed7b18b7664a3c031811186cac5123b76122b0"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "15079affcd55413497cce9e523aca4a62a271fcb88f6191accb9d60cff943c59"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/core/router-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "cc64749a41675dfdf0694615b95031735ed84672f0cbd724396dbdcc2a174b14"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/core/routing-matrix.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "53ddab906b6274c375bbb13469f20f28f7aee4adf4f163bf4542caa5c4197931"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/schemas/eval-case.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "38848587b18a523986239cf80ae41fbd2010d47af3374f4f2369288c4872ec12"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/schemas/evidence.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "784fa520f06ac9c5b586f833eb93242712208e964a42d27c6727d25e4202beec"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/schemas/finding.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "ca90383d0558510b1a2e6d4ade26ee360d15d00a20e36a66053baa3d1ab68ba6"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/schemas/project-ledger.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4776a5b7bae3f40c9f83e30d4a86c40ea6193d65093aa0dc14898d52df15dd5b"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/schemas/release-record.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3137a70acab4a542533bdd220a93cec2b0ea680913577ee306f17c7939d5a738"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/skill-evaluation/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "8c6ea39f640f8219b6cc4e7d07849bd2f880d11e0cac905f8cbc51c185cd550f"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/skill-evaluation/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4c5b47f6bb8ec9c9ddc24f8677592be9c743f53893f55b3024dc172eb088b328"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/skill-release-engineering/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "184ef102c67ceeecbaed44e84afe5a336fd3e677d77a186fedeb235009fe4094"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/skill-release-engineering/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "bb5539b2a058bfc5141944ed124d18a30c87af04fb73e6141965a690b870bfa6"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/source-verification/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3d87ddd20c5c4ccc2ed192283a0c21be6de279d677cb8d8242633c35e0a7cdd9"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/source-verification/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d4828f028a082e78f4f6bd2510652dee5a8b9cee412121688d27dd300a9180ed"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/systematic-debugging/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6ba4181372f346fa0413b40f8e5789109dd14ac5cc2c35b50700c8dc80192ca2"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/systematic-debugging/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7b7948eecb0085068dfbe893e5ed006bfb88f32dc21419e3ce2756312605c1cc"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/test-engineering/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3e9af8156ee84aab43ede957997c0607640a87d3e8a772579b7b97319d117026"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/test-engineering/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d29d0b05a1d3dead5b59833d1c10e6524d5f64a073814f7860b136d64805b42c"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/ux-platform-design/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "05f50659b00534ba37ef38d875e446b091e676ff4524cafafe6d6ff7df441e1f"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/ux-platform-design/agents/openai.yaml",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "09f1a7f87456c9d2e1debedbc82d2b7ab67982753cb30681c9edaeb08b26e6a6"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package"
+    }
+  ]
+}

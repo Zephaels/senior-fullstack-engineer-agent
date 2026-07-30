@@ -1,0 +1,122 @@
+{
+  "version": "1.0.0-rc.4.3",
+  "status": "GA_BLOCKED",
+  "thresholds": {
+    "trigger_precision": 0.95,
+    "trigger_recall": 0.95,
+    "trigger_false_positive_rate": 0.02,
+    "route_accuracy": 0.95,
+    "pressure_pass_rate": 1.0,
+    "critical_violations": 0,
+    "regression_break_count": 0,
+    "installer_pass": true
+  },
+  "gates": [
+    {
+      "name": "trigger_precision",
+      "value": 0.0,
+      "threshold": 0.95,
+      "pass": false
+    },
+    {
+      "name": "trigger_recall",
+      "value": 0.0,
+      "threshold": 0.95,
+      "pass": false
+    },
+    {
+      "name": "trigger_false_positive_rate",
+      "value": 0.0,
+      "threshold": 0.02,
+      "pass": false
+    },
+    {
+      "name": "route_accuracy",
+      "value": 0.0,
+      "threshold": 0.95,
+      "pass": false
+    },
+    {
+      "name": "pressure_pass_rate",
+      "value": null,
+      "threshold": 1.0,
+      "pass": false
+    },
+    {
+      "name": "critical_violations",
+      "value": null,
+      "threshold": 0,
+      "pass": false
+    },
+    {
+      "name": "regression_break_count",
+      "value": 0,
+      "threshold": 0,
+      "pass": false
+    },
+    {
+      "name": "installer_pass",
+      "value": true,
+      "threshold": true,
+      "pass": true
+    },
+    {
+      "name": "green_improves_red",
+      "value": null,
+      "threshold": ">0",
+      "pass": false
+    }
+  ],
+  "reports": {
+    "trigger": {
+      "status": "BLOCKED_NO_COMPLETED_RUNS",
+      "completed_runs": 0,
+      "binary": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "accuracy": 0.0
+      },
+      "routing": {
+        "correct": 0,
+        "total": 0,
+        "accuracy": 0.0,
+        "must_not_violations": 0
+      },
+      "details": []
+    },
+    "behavior": {
+      "status": "BLOCKED_NO_INDEPENDENT_JUDGE",
+      "reason": "Semantic behavior expectations require an independent judge or deterministic case-specific assertions. No score is claimed.",
+      "judgments": []
+    },
+    "pressure": {
+      "status": "BLOCKED_NO_INDEPENDENT_JUDGE",
+      "reason": "Pressure compliance requires an independent judge.",
+      "judgments": []
+    },
+    "regression": {
+      "status": "BLOCKED_NO_PLUGIN_RUNTIME_RUNS",
+      "correct": 0,
+      "total": 0,
+      "accuracy": 0.0,
+      "break_count": 0,
+      "must_not_violations": 0,
+      "details": []
+    },
+    "installer": {
+      "ok": true,
+      "status": "COMPLETED",
+      "tests": {
+        "fresh_install_verify_uninstall": "PASS",
+        "upgrade_and_rollback": "PASS",
+        "injected_failure_restores_previous_install": "PASS"
+      },
+      "note": "This is deterministic installer evidence, not model behavior evidence."
+    }
+  }
+}

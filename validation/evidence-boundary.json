@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "checks": {
+    "scorecard_status": "GA_BLOCKED",
+    "trigger_run": "BLOCKED_NO_MODEL_RUNNER",
+    "behavior_run": "BLOCKED_NO_MODEL_RUNNER",
+    "pressure_run": "BLOCKED_NO_MODEL_RUNNER",
+    "regression_run": "BLOCKED_NO_CODEX_RUNTIME_RUNNER"
+  },
+  "note": "Missing real runners block GA; no mock scores are substituted."
+}

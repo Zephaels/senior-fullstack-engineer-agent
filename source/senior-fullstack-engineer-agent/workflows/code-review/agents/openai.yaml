@@ -1,0 +1,4 @@
+interface:
+  display_name: "Code Review"
+  short_description: "Review specification compliance and engineering quality independently"
+  default_prompt: "Use $code-review to review this change on both compliance and quality axes."

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "PH-T01",
+    "query": "Save a handoff for the next engineer with current revision, verified work, unverified work, risks, decisions, and exact next action.",
+    "should_trigger": true,
+    "reason": "Explicit handoff."
+  },
+  {
+    "id": "PH-T02",
+    "query": "Resume the project from the previous handoff, but first check whether the branch, lockfile, specs, and environment changed.",
+    "should_trigger": true,
+    "reason": "Freshness-checked resume."
+  },
+  {
+    "id": "PH-T03",
+    "query": "Record this architecture milestone in the Project Ledger and route the next step to implementation planning.",
+    "should_trigger": true,
+    "reason": "Milestone persistence."
+  },
+  {
+    "id": "PH-T04",
+    "query": "The task is blocked on a product decision. Capture the blocker, owner, safe boundary, and next question for another session.",
+    "should_trigger": true,
+    "reason": "Blocker handoff."
+  },
+  {
+    "id": "PH-T05",
+    "query": "Create a release handoff with actual deployment evidence, health checks, flags, rollback triggers, and pending observation.",
+    "should_trigger": true,
+    "reason": "Release state transfer."
+  },
+  {
+    "id": "PH-T06",
+    "query": "Explain what a project handoff is.",
+    "should_trigger": false,
+    "reason": "Conceptual question only."
+  },
+  {
+    "id": "PH-T07",
+    "query": "Implement the next feature from scratch.",
+    "should_trigger": false,
+    "reason": "Implementation request without transfer context."
+  },
+  {
+    "id": "PH-T08",
+    "query": "Write the requirements for team invitations.",
+    "should_trigger": false,
+    "reason": "Requirements specification."
+  },
+  {
+    "id": "PH-T09",
+    "query": "Store my production API token in the handoff so the next agent can deploy.",
+    "should_trigger": false,
+    "reason": "Unsafe request; decision/security policy must block secret storage."
+  },
+  {
+    "id": "PH-T10",
+    "query": "Review this pull request.",
+    "should_trigger": false,
+    "reason": "Code review workflow."
+  }
+]

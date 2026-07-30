@@ -1,0 +1,593 @@
+{
+  "suite": "isolated-behavior-v2",
+  "status": "BLOCKED_NO_MODEL_RUNNER",
+  "cases_requested": 39,
+  "runs": [],
+  "blocked_configurations": [
+    {
+      "case_id": "B3-001",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-001",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-001",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-002",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-002",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-002",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-003",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-003",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-003",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-004",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-004",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-004",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-005",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-005",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-005",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-006",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-006",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-006",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-007",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-007",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-007",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-008",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-008",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-008",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-009",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-009",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-009",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-010",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-010",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-010",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-011",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-011",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-011",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-012",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-012",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-012",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-013",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-013",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-013",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-014",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-014",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-014",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-015",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-015",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-015",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-016",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-016",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-016",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-017",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-017",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-017",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B3-018",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-018",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B3-018",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-product-discovery-1",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-product-discovery-1",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-product-discovery-1",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-product-discovery-2",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-product-discovery-2",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-product-discovery-2",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-product-discovery-3",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-product-discovery-3",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-product-discovery-3",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-source-verification-1",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-source-verification-1",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-source-verification-1",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-source-verification-2",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-source-verification-2",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-source-verification-2",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-source-verification-3",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-source-verification-3",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-source-verification-3",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-1",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-1",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-1",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-2",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-2",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-2",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-3",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-3",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-ux-platform-design-3",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-security-engineering-1",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-security-engineering-1",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-security-engineering-1",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-security-engineering-2",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-security-engineering-2",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-security-engineering-2",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-security-engineering-3",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-security-engineering-3",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-security-engineering-3",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-release-deployment-1",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-release-deployment-1",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-release-deployment-1",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-release-deployment-2",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-release-deployment-2",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-release-deployment-2",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-release-deployment-3",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-release-deployment-3",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-release-deployment-3",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-1",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-1",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-1",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-2",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-2",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-2",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-3",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-3",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "B4-skill-evaluation-3",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "S5-B-001",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "S5-B-001",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "S5-B-001",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "S5-B-002",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "S5-B-002",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "S5-B-002",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    },
+    {
+      "case_id": "S5-B-003",
+      "configuration": "red",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "S5-B-003",
+      "configuration": "green",
+      "reason": "no model runner"
+    },
+    {
+      "case_id": "S5-B-003",
+      "configuration": "regression",
+      "reason": "no real Codex Plugin runtime runner"
+    }
+  ]
+}

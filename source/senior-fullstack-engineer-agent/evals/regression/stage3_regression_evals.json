@@ -1,0 +1,197 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "R3-001",
+      "prompt": "I need to know what the product should do before we code.",
+      "expected_route": "intent-interview",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-002",
+      "prompt": "Read this existing repository and map build commands, architecture and impact before proposing changes.",
+      "expected_route": "repository-discovery",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-003",
+      "prompt": "Turn the approved product brief into observable requirements and acceptance scenarios.",
+      "expected_route": "requirements-specification",
+      "must_not_route": [
+        "architecture-design"
+      ]
+    },
+    {
+      "id": "R3-004",
+      "prompt": "Select and document the architecture after the requirements are approved.",
+      "expected_route": "architecture-design",
+      "must_not_route": [
+        "requirements-specification"
+      ]
+    },
+    {
+      "id": "R3-005",
+      "prompt": "Break the approved architecture into vertical slices with exact files and verification.",
+      "expected_route": "implementation-planning",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-006",
+      "prompt": "Implement approved slice S-2 only and verify it.",
+      "expected_route": "incremental-implementation",
+      "must_not_route": [
+        "quality-assurance"
+      ]
+    },
+    {
+      "id": "R3-007",
+      "prompt": "Write a failing reproduction for this bug and design the regression suite.",
+      "expected_route": "test-engineering",
+      "must_not_route": [
+        "quality-assurance"
+      ]
+    },
+    {
+      "id": "R3-008",
+      "prompt": "The build fails unexpectedly. Find the root cause before editing.",
+      "expected_route": "systematic-debugging",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-009",
+      "prompt": "Use a real browser to validate the complete flow and report bugs only.",
+      "expected_route": "quality-assurance",
+      "must_not_route": [
+        "test-engineering"
+      ]
+    },
+    {
+      "id": "R3-010",
+      "prompt": "Review this diff against the spec and engineering quality without changing it.",
+      "expected_route": "code-review",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-011",
+      "prompt": "Run the exact final checks for this revision and tell me what claims are supported.",
+      "expected_route": "preflight-verification",
+      "must_not_route": [
+        "quality-assurance"
+      ]
+    },
+    {
+      "id": "R3-012",
+      "prompt": "Save a truthful handoff with current revision, evidence, risks and exact next step.",
+      "expected_route": "project-state-handoff",
+      "must_not_route": [
+        "preflight-verification"
+      ]
+    },
+    {
+      "id": "R3-013",
+      "prompt": "The bug cause is unknown, but the user asks to implement a likely fix.",
+      "expected_route": "systematic-debugging",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-014",
+      "prompt": "The tests pass, but the feature has never been exercised by a user in a browser.",
+      "expected_route": "quality-assurance",
+      "must_not_route": [
+        "preflight-verification"
+      ]
+    },
+    {
+      "id": "R3-015",
+      "prompt": "QA found a defect and remediation is authorized, but the root cause is unknown.",
+      "expected_route": "systematic-debugging",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-016",
+      "prompt": "Review passed, but required build and release checks have not run for the current commit.",
+      "expected_route": "preflight-verification",
+      "must_not_route": [
+        "code-review"
+      ]
+    },
+    {
+      "id": "R3-017",
+      "prompt": "A plan is stale because the repository changed since it was written.",
+      "expected_route": "repository-discovery",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-018",
+      "prompt": "Implementation reveals a new public behavior that was not specified.",
+      "expected_route": "requirements-specification",
+      "must_not_route": [
+        "incremental-implementation"
+      ]
+    },
+    {
+      "id": "R3-019",
+      "prompt": "A fix is verified locally and needs a read-only assessment before preflight.",
+      "expected_route": "code-review",
+      "must_not_route": [
+        "preflight-verification"
+      ]
+    },
+    {
+      "id": "R3-020",
+      "prompt": "The migration test fails for an unexplained data invariant violation.",
+      "expected_route": "systematic-debugging",
+      "must_not_route": [
+        "preflight-verification"
+      ]
+    },
+    {
+      "id": "R3-021",
+      "prompt": "The user wants a test strategy, not execution in a browser.",
+      "expected_route": "test-engineering",
+      "must_not_route": [
+        "quality-assurance"
+      ]
+    },
+    {
+      "id": "R3-022",
+      "prompt": "The user wants report-only browser validation, not automated unit-test design.",
+      "expected_route": "quality-assurance",
+      "must_not_route": [
+        "test-engineering"
+      ]
+    },
+    {
+      "id": "R3-023",
+      "prompt": "The task is a one-line typo in documentation with no executable effect.",
+      "expected_route": "quick-mechanical-edit",
+      "must_not_route": [
+        "senior-fullstack-engineer-agent"
+      ]
+    },
+    {
+      "id": "R3-024",
+      "prompt": "Explain what an index is; do not modify a project.",
+      "expected_route": "informational-answer",
+      "must_not_route": [
+        "senior-fullstack-engineer-agent"
+      ]
+    }
+  ]
+}

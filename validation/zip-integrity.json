@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "archives": [
+    {
+      "file": "Senior-FullStack-Engineer-Agent-1.0.0-rc.4.3-Complete-Source.zip",
+      "entries": 298,
+      "sha256": "3a7ecbe9b92514df6ccfe5d726d1698e6a416ac272bbb54b5c7926ae475d1751",
+      "bytes": 526293
+    },
+    {
+      "file": "Senior-FullStack-Engineer-Agent-1.0.0-rc.4.3-Plugin.zip",
+      "entries": 83,
+      "sha256": "3d7751e29e7b141377c92a2e27bfeac5d9f94b92e79054a9b65fb7749a1d083f",
+      "bytes": 163855
+    },
+    {
+      "file": "Senior-FullStack-Engineer-Agent-1.0.0-rc.4.3-Skill-Source.zip",
+      "entries": 165,
+      "sha256": "0725f59810f1ca0a069be9b47afc9741d1bcca31c3b6ff8fcd8ddee4cfcacf55",
+      "bytes": 267359
+    }
+  ]
+}

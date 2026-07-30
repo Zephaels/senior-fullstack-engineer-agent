@@ -1,0 +1,4 @@
+interface:
+  display_name: "Repository Discovery"
+  short_description: "Map an existing codebase before changing it"
+  default_prompt: "Use $repository-discovery to inspect this repository read-only and map its blast radius."

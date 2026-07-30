@@ -1,0 +1,50 @@
+[
+  {
+    "query": "We have an idea for an AI video workspace, but who it is really for, what outcome matters, and which assumptions should be tested first are unclear. Run product discovery before requirements.",
+    "should_trigger": true
+  },
+  {
+    "query": "Map one desired outcome to customer opportunities, compare at least three solution directions, and define experiments before we commit to a feature.",
+    "should_trigger": true
+  },
+  {
+    "query": "The CEO wants a dashboard because competitors have one. Determine whether the underlying user problem justifies building it.",
+    "should_trigger": true
+  },
+  {
+    "query": "Identify value, usability, feasibility, and viability assumptions for a paid team collaboration feature and prioritize what to test.",
+    "should_trigger": true
+  },
+  {
+    "query": "We have conflicting feature requests and no success metric. Help decide what problem to solve next without writing code.",
+    "should_trigger": true
+  },
+  {
+    "query": "Create a bounded Product Brief with target user, current journey, evidence, alternatives, non-goals, metrics, and experiment thresholds.",
+    "should_trigger": true
+  },
+  {
+    "query": "Turn this approved Product Brief into normative requirements and Given/When/Then acceptance scenarios.",
+    "should_trigger": false
+  },
+  {
+    "query": "Inspect package.json, routes, auth, database, tests, and build commands in this repository.",
+    "should_trigger": false
+  },
+  {
+    "query": "Implement the approved cancellation slice and run focused tests.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review this pull request for correctness and security.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain what an opportunity-solution tree is in one paragraph.",
+    "should_trigger": false
+  },
+  {
+    "query": "Fix the typo in the button label.",
+    "should_trigger": false
+  }
+]

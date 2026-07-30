@@ -1,0 +1,4 @@
+interface:
+  display_name: "Senior Full-Stack Engineer Orchestrator"
+  short_description: "Orchestrate complex, multi-phase software delivery"
+  default_prompt: "Use $senior-fullstack-engineer-agent for this end-to-end or ambiguous multi-phase software task; delegate bounded work to the smallest specialist Skill."

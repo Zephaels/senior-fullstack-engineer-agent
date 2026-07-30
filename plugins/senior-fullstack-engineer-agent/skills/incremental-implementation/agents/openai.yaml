@@ -1,0 +1,4 @@
+interface:
+  display_name: "Incremental Implementation"
+  short_description: "Implement one safe, testable, reversible slice at a time"
+  default_prompt: "Use $incremental-implementation to implement the next approved vertical slice."

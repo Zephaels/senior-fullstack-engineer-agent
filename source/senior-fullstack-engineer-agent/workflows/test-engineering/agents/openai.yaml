@@ -1,0 +1,4 @@
+interface:
+  display_name: "Test Engineering"
+  short_description: "Design risk-based tests and trustworthy evidence"
+  default_prompt: "Use $test-engineering to map requirements and risks to the right test levels."

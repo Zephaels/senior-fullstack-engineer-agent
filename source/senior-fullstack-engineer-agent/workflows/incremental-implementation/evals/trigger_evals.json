@@ -1,0 +1,50 @@
+[
+  {
+    "query": "We have an approved requirement, architecture document, and task plan. Implement slice API-02 only: validate the request, call the existing service, persist the result, and run the listed focused tests. Do not touch the UI yet.",
+    "should_trigger": true
+  },
+  {
+    "query": "Please take task T-17 from the plan and implement it as the smallest working vertical slice, keeping the public API stable and stopping if the repository no longer matches the plan.",
+    "should_trigger": true
+  },
+  {
+    "query": "The bug root cause is proven and the reproduction test is red. Apply the smallest fix in the existing extension point, make the test green, and record the evidence.",
+    "should_trigger": true
+  },
+  {
+    "query": "Add the backward-compatible database column and dual-read logic as the first migration increment; leave destructive cleanup for a later task.",
+    "should_trigger": true
+  },
+  {
+    "query": "Implement the approved feature behind a disabled-by-default flag and verify the backend path before adding the UI in the next increment.",
+    "should_trigger": true
+  },
+  {
+    "query": "The plan is complete. Work through it one slice at a time, verify each slice, and update the handoff before pausing.",
+    "should_trigger": true
+  },
+  {
+    "query": "I have an idea for an AI meeting assistant. What should the product do and who is it for?",
+    "should_trigger": false
+  },
+  {
+    "query": "Review this PR and tell me whether it matches the requirements. Do not change any files.",
+    "should_trigger": false
+  },
+  {
+    "query": "The checkout crashes sometimes, but I have no reproduction and no logs. Just guess the likely fix.",
+    "should_trigger": false
+  },
+  {
+    "query": "Create a detailed architecture for a multi-tenant billing system, including trust boundaries and data flows.",
+    "should_trigger": false
+  },
+  {
+    "query": "Test the general availability in Chrome, Safari, keyboard-only mode, and with expired sessions. Report bugs only.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run the final build, tests, security scans, and smoke checks and tell me if this commit is ready to merge.",
+    "should_trigger": false
+  }
+]

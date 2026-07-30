@@ -1,0 +1,4 @@
+interface:
+  display_name: "Source Verification"
+  short_description: "Verify changing technical facts against authoritative sources"
+  default_prompt: "Use $source-verification to verify versions, APIs, compatibility, and source freshness."

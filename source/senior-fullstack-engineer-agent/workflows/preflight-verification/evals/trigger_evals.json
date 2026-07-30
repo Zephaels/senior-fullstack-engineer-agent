@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Before I open the PR, discover this repository's real format, lint, typecheck, build, test, secret-scan, and smoke commands, run them, and report exact results for this working tree.",
+    "should_trigger": true
+  },
+  {
+    "query": "Verify this exact commit is ready to merge. Check required status checks, reviews, migrations, tests, build, and runtime evidence; distinguish skipped and stale checks.",
+    "should_trigger": true
+  },
+  {
+    "query": "Run release preflight for version 1.4.0, including package integrity, changelog, migration dry-run, rollback, health checks, and artifact checksum.",
+    "should_trigger": true
+  },
+  {
+    "query": "Can we honestly say the bug is fixed? Re-run the original scenario and regression suite and only make claims supported by fresh evidence.",
+    "should_trigger": true
+  },
+  {
+    "query": "Prepare a verified handoff: run the applicable Definition of Done and record commands, exits, skips, untested platforms, and remaining risk.",
+    "should_trigger": true
+  },
+  {
+    "query": "CI is green but two jobs were skipped and the browser test is from an older commit. Determine readiness without treating those as proof.",
+    "should_trigger": true
+  },
+  {
+    "query": "Write the implementation for the next vertical slice.",
+    "should_trigger": false
+  },
+  {
+    "query": "Design a complete test strategy for the new feature.",
+    "should_trigger": false
+  },
+  {
+    "query": "Investigate the failing migration and find the root cause.",
+    "should_trigger": false
+  },
+  {
+    "query": "QA the app in a browser and report usability bugs.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review the PR's architecture and code quality.",
+    "should_trigger": false
+  },
+  {
+    "query": "Clarify the expected behavior and business rules.",
+    "should_trigger": false
+  }
+]

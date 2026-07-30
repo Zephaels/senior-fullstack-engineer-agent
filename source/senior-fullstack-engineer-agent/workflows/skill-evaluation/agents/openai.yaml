@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Evaluation"
+  short_description: "Evaluate triggers, behavior, pressure resistance, and regressions"
+  default_prompt: "Use $skill-evaluation to design and run a measurable evaluation plan for this skill."

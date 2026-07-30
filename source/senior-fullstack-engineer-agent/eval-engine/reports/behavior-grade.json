@@ -1,0 +1,5 @@
+{
+  "status": "BLOCKED_NO_INDEPENDENT_JUDGE",
+  "reason": "Semantic behavior expectations require an independent judge or deterministic case-specific assertions. No score is claimed.",
+  "judgments": []
+}

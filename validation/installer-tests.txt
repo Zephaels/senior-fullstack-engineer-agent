@@ -1,0 +1,8 @@
+test_failure_rolls_back (test_transaction_installer.InstallerTests.test_failure_rolls_back) ... ok
+test_install_verify_uninstall (test_transaction_installer.InstallerTests.test_install_verify_uninstall) ... ok
+test_upgrade_rollback (test_transaction_installer.InstallerTests.test_upgrade_rollback) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 5.665s
+
+OK

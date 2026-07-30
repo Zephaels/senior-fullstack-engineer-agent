@@ -1,0 +1,9 @@
+{
+  "status": "BLOCKED_NO_PLUGIN_RUNTIME_RUNS",
+  "correct": 0,
+  "total": 0,
+  "accuracy": 0.0,
+  "break_count": 0,
+  "must_not_violations": 0,
+  "details": []
+}

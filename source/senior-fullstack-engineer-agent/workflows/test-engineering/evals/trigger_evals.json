@@ -1,0 +1,50 @@
+[
+  {
+    "query": "Design the test strategy for this cancellation workflow, including state transitions, duplicate requests, timeout, authorization, and recovery.",
+    "should_trigger": true
+  },
+  {
+    "query": "Before fixing this bug, write a regression test that fails for the original symptom and prove it turns green with the fix.",
+    "should_trigger": true
+  },
+  {
+    "query": "Our tests are flaky and rely on shared database state. Redesign the fixtures and isolation, then identify the minimum reliable suite.",
+    "should_trigger": true
+  },
+  {
+    "query": "Add contract tests for the API version change and mixed-version consumers, plus migration and rollback verification.",
+    "should_trigger": true
+  },
+  {
+    "query": "Create Playwright tests around user-visible behavior using roles and isolated accounts, with traces on failure.",
+    "should_trigger": true
+  },
+  {
+    "query": "Map the Critical-change risks to unit, integration, E2E, failure-injection, and recovery tests.",
+    "should_trigger": true
+  },
+  {
+    "query": "Click through the deployed site on several browsers and report whether the whole user journey feels correct.",
+    "should_trigger": false
+  },
+  {
+    "query": "The test fails in CI only. Investigate why before changing anything.",
+    "should_trigger": false
+  },
+  {
+    "query": "Review the code quality and architecture of this diff.",
+    "should_trigger": false
+  },
+  {
+    "query": "Implement the approved service and UI slices now.",
+    "should_trigger": false
+  },
+  {
+    "query": "Run everything required for final merge readiness and report exact command results.",
+    "should_trigger": false
+  },
+  {
+    "query": "Clarify what should happen when an unauthorized user cancels another tenant's job.",
+    "should_trigger": false
+  }
+]

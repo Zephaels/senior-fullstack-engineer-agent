@@ -1,0 +1,41 @@
+{
+  "skill_name": "ux-platform-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design a project editor for phone, tablet, desktop and Web. The current mockup is a stretched mobile screen.",
+      "expected_output": "A platform-adaptive UX specification with shared semantics, distinct navigation/input/windowing patterns, complete states, accessibility and validation.",
+      "files": [],
+      "expectations": [
+        "Rejects mechanical scaling",
+        "Classifies Shared/Adapted/Platform Only",
+        "Defines platform-specific input and navigation",
+        "Includes full state and accessibility model"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A destructive bulk-delete flow has only a red trash icon and a confirmation modal.",
+      "expected_output": "A safer interaction specification that uses text, selection summary, impact explanation, recovery/undo or recycle-bin strategy, keyboard/screen-reader behavior and error recovery.",
+      "files": [],
+      "expectations": [
+        "Does not rely on color/icon alone",
+        "Defines impact and recovery",
+        "Covers keyboard and screen reader",
+        "Includes partial failure state"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A high-frequency command palette uses 500ms entrance animation and cannot be interrupted.",
+      "expected_output": "A UX decision that removes or substantially reduces ornamental delay, preserves immediate input and reduced-motion behavior, and explains the interaction purpose.",
+      "files": [],
+      "expectations": [
+        "Prioritizes frequency and responsiveness",
+        "Requires interruptibility",
+        "Covers reduced motion",
+        "Does not apply animation for decoration"
+      ]
+    }
+  ]
+}

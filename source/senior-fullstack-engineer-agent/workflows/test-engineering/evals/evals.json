@@ -1,0 +1,40 @@
+{
+  "skill_name": "test-engineering",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Design tests for a multi-tenant job cancellation flow with queued/running/completed states, duplicate requests, revoked access, provider timeout, and rollback.",
+      "expected_output": "A risk-to-test matrix and layered test strategy tied to requirements and invariants.",
+      "files": [],
+      "expectations": [
+        "Maps each material risk to a test level and expected signal",
+        "Includes permissions, state transitions, duplicate/idempotent behavior and failure recovery",
+        "Defines test data isolation",
+        "Distinguishes automated test evidence from runtime QA"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A bug says totals are wrong after a retry. Write the test after fixing because the fix is obvious.",
+      "expected_output": "The workflow requires a reproduction that fails first, then a minimal fix and regression proof.",
+      "files": [],
+      "expectations": [
+        "Refuses test-after as equivalent evidence for a bug fix",
+        "Requires the RED failure to be for the expected behavioral reason",
+        "Requires reversion or equivalent proof that the regression test detects absence of the fix"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Our Playwright suite uses CSS selectors, shared login state, sleep(5000), retries=5, and golden screenshots from developers' laptops. Improve its trustworthiness.",
+      "expected_output": "A concrete remediation strategy for user-facing locators, isolation, condition waits, flake ownership and controlled visual environments.",
+      "files": [],
+      "expectations": [
+        "Replaces implementation selectors with user-facing contracts",
+        "Requires isolated storage/data/accounts",
+        "Rejects arbitrary sleep and blind retry as flake fixes",
+        "Controls OS/browser/fonts/viewport for visual comparisons"
+      ]
+    }
+  ]
+}

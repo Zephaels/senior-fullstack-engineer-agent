@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "version": "1.0.0-rc.4.3",
+  "checks": [
+    {
+      "name": "skill-count",
+      "ok": true,
+      "detail": "source=20"
+    },
+    {
+      "name": "skill-count",
+      "ok": true,
+      "detail": "plugin=20"
+    },
+    {
+      "name": "source-plugin-sync",
+      "ok": true,
+      "detail": "specialist skills match"
+    },
+    {
+      "name": "manifest-coverage",
+      "ok": true,
+      "detail": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/source/senior-fullstack-engineer-agent: 163 files"
+    },
+    {
+      "name": "manifest-coverage",
+      "ok": true,
+      "detail": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent: 81 files"
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "source_skills": 20,
+    "plugin_skills": 20,
+    "eval_ids": 179,
+    "trigger_cases": 228,
+    "python_files": 27
+  },
+  "eval_ids": 179
+}

@@ -1,0 +1,35 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+  id-token: write
+  attestations: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install PyYAML
+      - run: python scripts/validate_release.py
+      - run: python scripts/build_release.py
+      - name: Create draft release with all assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create "${{ github.ref_name }}"
+          dist/*.zip dist/CHECKSUMS.sha256
+          --generate-notes --verify-tag --draft
+      - name: Generate build provenance
+        if: ${{ vars.ENABLE_ARTIFACT_ATTESTATION == 'true' }}
+        uses: actions/attest@v4
+        with:
+          subject-path: 'dist/*.zip'
+      - name: Publish draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release edit "${{ github.ref_name }}" --draft=false

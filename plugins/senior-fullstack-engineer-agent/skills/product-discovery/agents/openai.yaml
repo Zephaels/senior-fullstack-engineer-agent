@@ -1,0 +1,4 @@
+interface:
+  display_name: "Product Discovery"
+  short_description: "Validate the problem, user value, scope, and assumptions"
+  default_prompt: "Use $product-discovery to turn this idea into a focused product brief."

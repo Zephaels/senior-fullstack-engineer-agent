@@ -1,0 +1,62 @@
+[
+  {
+    "id": "AD-T01",
+    "query": "The requirements are approved. Design the system boundaries, data flow, authorization, deployment, and rollback for this enterprise workflow.",
+    "should_trigger": true,
+    "reason": "Ready for architecture."
+  },
+  {
+    "id": "AD-T02",
+    "query": "Compare a modular monolith with microservices for this actual repository and record an ADR.",
+    "should_trigger": true,
+    "reason": "Consequential architecture options."
+  },
+  {
+    "id": "AD-T03",
+    "query": "Design the smallest architecture delta for introducing background video generation jobs into the existing service.",
+    "should_trigger": true,
+    "reason": "Brownfield architecture delta."
+  },
+  {
+    "id": "AD-T04",
+    "query": "Define API, state, data, failure, retry, timeout, cancellation, and observability boundaries for this AI workflow.",
+    "should_trigger": true,
+    "reason": "Cross-cutting architecture design."
+  },
+  {
+    "id": "AD-T05",
+    "query": "Review whether tenant authorization is enforced at the right trusted boundaries. Stay read-only.",
+    "should_trigger": true,
+    "reason": "Architecture/security review."
+  },
+  {
+    "id": "AD-T06",
+    "query": "We do not know who the target user is. Pick an architecture and build it.",
+    "should_trigger": false,
+    "reason": "Product intent is unresolved."
+  },
+  {
+    "id": "AD-T07",
+    "query": "Write the React component for the approved settings panel.",
+    "should_trigger": false,
+    "reason": "Implementation task."
+  },
+  {
+    "id": "AD-T08",
+    "query": "List the repository entry points and test commands.",
+    "should_trigger": false,
+    "reason": "Repository discovery."
+  },
+  {
+    "id": "AD-T09",
+    "query": "Create acceptance criteria for offline mode.",
+    "should_trigger": false,
+    "reason": "Requirements specification."
+  },
+  {
+    "id": "AD-T10",
+    "query": "Explain CAP theorem.",
+    "should_trigger": false,
+    "reason": "Conceptual explanation."
+  }
+]
