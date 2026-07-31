@@ -2,6 +2,7 @@
 from pathlib import Path
 import hashlib, json, py_compile, re, subprocess, sys
 import yaml
+from release_content import canonical_bytes
 try: import jsonschema
 except Exception: jsonschema=None
 ROOT=Path(__file__).resolve().parents[1]; NAME='senior-fullstack-engineer-agent'; VERSION=(ROOT/'VERSION').read_text(encoding='utf-8').strip(); SRC=ROOT/'source'/NAME; PLUGIN=ROOT/'plugins'/NAME
@@ -97,7 +98,7 @@ def manifest_expected(base):
  out={}
  for p in sorted(base.rglob('*')):
   if not p.is_file() or ignored(p) or p.suffix in {'.pyc','.pyo'} or p.name in {'MANIFEST.json','SBOM.spdx.json'}: continue
-  out[p.relative_to(base).as_posix()]=hashlib.sha256(p.read_bytes()).hexdigest()
+  out[p.relative_to(base).as_posix()]=hashlib.sha256(canonical_bytes(p)).hexdigest()
  return out
 for base in [SRC,PLUGIN]:
  mp=base/'MANIFEST.json'

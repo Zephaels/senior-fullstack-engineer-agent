@@ -87,8 +87,8 @@
     },
     {
       "path": "eval-engine/catalog/skill-catalog.json",
-      "sha256": "f615eab41ddff39578656121cdcb48bba803a8e42bcb21b0d1d2feda18a9fad7",
-      "bytes": 11008
+      "sha256": "433a3b204da2c151c407779688981c3147f86116ff75fe16d721531652ebb140",
+      "bytes": 10904
     },
     {
       "path": "eval-engine/config/context-map.json",
@@ -137,8 +137,8 @@
     },
     {
       "path": "eval-engine/reports/behavior-run.json",
-      "sha256": "555d5a2ee7d0119cfcad1b214fedbc3082b9a6bd225c36a9e3c6b862e8df8f12",
-      "bytes": 5776
+      "sha256": "25370c1ded11f24026175ea0c29b7f2c0942aa26a0e5b7553836392981eaeb58",
+      "bytes": 5651
     },
     {
       "path": "eval-engine/reports/installer-grade.json",
@@ -162,18 +162,18 @@
     },
     {
       "path": "eval-engine/reports/regression-run.json",
-      "sha256": "6e79d4d40faa919c8a6deb2d0998bd2073f4d7c608b7363703ed046e132facc8",
-      "bytes": 599
+      "sha256": "fcf8ab33e3e2bcaf4d7f9081972140594c3a8d09afb349f78c4eff8304599c22",
+      "bytes": 586
     },
     {
       "path": "eval-engine/reports/scorecard.json",
-      "sha256": "88155bfa09633bba420debbc8a14f270ff426e73615a5758531136b5ccfcbe7b",
-      "bytes": 3971
+      "sha256": "9a7a4fa707eb304c43d9e73e6a3fd163861832e4ce4b236c01c64cdd4f56acda",
+      "bytes": 3830
     },
     {
       "path": "eval-engine/reports/scorecard.md",
-      "sha256": "2d6841ad6fc4cffbd87a845481bfbb3576be6ee3f957ddab3867014f555cec59",
-      "bytes": 595
+      "sha256": "36d1ca744e8cd0cab7fcac6b4171c52e93c24fc9084b0efdd7ccbcc87a294b4c",
+      "bytes": 580
     },
     {
       "path": "eval-engine/reports/trigger-grade.json",
@@ -182,8 +182,8 @@
     },
     {
       "path": "eval-engine/reports/trigger-run.json",
-      "sha256": "72f9560e59ea68f1cfe1701d72dd991eff4a7d7119bea1d7888927c82a728e2c",
-      "bytes": 424
+      "sha256": "02823d927cf525baaa3bfce0ef47cfc093f4b26d94aa08fb2d4dee1b99dbc1d5",
+      "bytes": 410
     },
     {
       "path": "eval-engine/runners/build_skill_catalog.py",
@@ -672,28 +672,28 @@
     },
     {
       "path": "workflows/architecture-design/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/architecture-design/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/architecture-design/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/architecture-design/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/architecture-design/SKILL.md",
-      "sha256": "a312bc89b8f4bec50e0226d386b3d4f75a608a480c00394d3ec6fbf899859938",
-      "bytes": 14946
+      "sha256": "7348517fc468bee937ca8fa0407c30c23d461d0e2d966101309558b96d72348b",
+      "bytes": 14531
     },
     {
       "path": "workflows/code-review/agents/openai.yaml",
@@ -712,8 +712,8 @@
     },
     {
       "path": "workflows/code-review/SKILL.md",
-      "sha256": "fecc81bfeb7f93149b6c02f91959ed35f1b9832f7544ea53bb0da56164f758b7",
-      "bytes": 9104
+      "sha256": "fb32f0053ae7809a25f199a218d6719b55f56819fc19b20d9e472da16f2f33d8",
+      "bytes": 8846
     },
     {
       "path": "workflows/implementation-planning/agents/openai.yaml",
@@ -727,28 +727,28 @@
     },
     {
       "path": "workflows/implementation-planning/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/implementation-planning/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/implementation-planning/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/implementation-planning/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/implementation-planning/SKILL.md",
-      "sha256": "7ddb803547e4b69ca676fe989ab929b7ac11388d79565e172189b5e9612057d9",
-      "bytes": 12762
+      "sha256": "b2dbc2ecb24003c59199a572a9313b6d16e2bc60f073a7dddcd4e02b33a44f5e",
+      "bytes": 12366
     },
     {
       "path": "workflows/incremental-implementation/agents/openai.yaml",
@@ -767,8 +767,8 @@
     },
     {
       "path": "workflows/incremental-implementation/SKILL.md",
-      "sha256": "def16dcd6f468fcce82dedfa4429ce49f2ba131a597722f0128f6ba868de304d",
-      "bytes": 12654
+      "sha256": "3cb5174d5f92adc7bafc4a76202171cde2afff831ce8fa23b9af772a3a5656da",
+      "bytes": 12369
     },
     {
       "path": "workflows/intent-interview/agents/openai.yaml",
@@ -782,28 +782,28 @@
     },
     {
       "path": "workflows/intent-interview/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/intent-interview/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/intent-interview/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/intent-interview/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/intent-interview/SKILL.md",
-      "sha256": "34cfbf376f62d6aca3cf83f9eb6bbb8580bb0503fa655ae3e5aa852ec0989251",
-      "bytes": 15625
+      "sha256": "0618212d8a9352c0f93fd2c171f96e432ce37f367d0dfcc83ea11889799cdf79",
+      "bytes": 15179
     },
     {
       "path": "workflows/preflight-verification/agents/openai.yaml",
@@ -822,8 +822,8 @@
     },
     {
       "path": "workflows/preflight-verification/SKILL.md",
-      "sha256": "3950871e12854a8522c10715dd8a926fa9d70af98ad27409a2be778b7d0ef284",
-      "bytes": 9110
+      "sha256": "eba0984ba29cdac8ee6ab65ffc21de1481af7c44181cd225e3f5fcdf18c0bcfc",
+      "bytes": 8876
     },
     {
       "path": "workflows/product-discovery/agents/openai.yaml",
@@ -842,28 +842,28 @@
     },
     {
       "path": "workflows/product-discovery/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/product-discovery/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/product-discovery/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/product-discovery/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/product-discovery/SKILL.md",
-      "sha256": "58744b12a7a7731887cf75b89801b577a2e75670d305591e71388a0779d77f7b",
-      "bytes": 11397
+      "sha256": "6ad09e8644442eee9547024622af8730fe0ffce019e89575fd7a92f0cf6b6a9f",
+      "bytes": 11099
     },
     {
       "path": "workflows/project-state-handoff/agents/openai.yaml",
@@ -877,28 +877,28 @@
     },
     {
       "path": "workflows/project-state-handoff/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/project-state-handoff/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/project-state-handoff/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/project-state-handoff/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/project-state-handoff/SKILL.md",
-      "sha256": "82e56961306edc4654b894427ab994c51f95f0af33469d70b207096268545b44",
-      "bytes": 12781
+      "sha256": "e97b133481561b4f70adb43251b88d698d063a5c9b08ef61334c6c16a408b82b",
+      "bytes": 12341
     },
     {
       "path": "workflows/quality-assurance/agents/openai.yaml",
@@ -917,8 +917,8 @@
     },
     {
       "path": "workflows/quality-assurance/SKILL.md",
-      "sha256": "c1a198744bc6d96458f150e3567c3c569b225054c71c5c7b8c238fd00cb472da",
-      "bytes": 9118
+      "sha256": "0cee78c405f8e21cb18a82dd87b252e62e478d04bf98c478ac075d4dd35291f7",
+      "bytes": 8886
     },
     {
       "path": "workflows/release-deployment/agents/openai.yaml",
@@ -937,23 +937,23 @@
     },
     {
       "path": "workflows/release-deployment/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/release-deployment/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/release-deployment/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/release-deployment/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/release-deployment/references/schemas/autonomy-run-envelope.schema.json",
@@ -992,8 +992,8 @@
     },
     {
       "path": "workflows/release-deployment/SKILL.md",
-      "sha256": "71dd5cbc6a46707cb9474f93ae851fe9c687e7c42976fccb0ea3e5e42356bc16",
-      "bytes": 10752
+      "sha256": "40ba4c128162880550d10b5f6331309cad0a5ff94bee824813ae05e96f9c9d7a",
+      "bytes": 10472
     },
     {
       "path": "workflows/repository-discovery/agents/openai.yaml",
@@ -1007,28 +1007,28 @@
     },
     {
       "path": "workflows/repository-discovery/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/repository-discovery/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/repository-discovery/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/repository-discovery/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/repository-discovery/SKILL.md",
-      "sha256": "de7342dbb706953f142f2b76c3808dc3f407e8c0c351bca752f3b922beb45e73",
-      "bytes": 13895
+      "sha256": "4677541c57af79f1df4fe894af58097bb20751fdd181b31417a4c3c9dbaefcfd",
+      "bytes": 13543
     },
     {
       "path": "workflows/requirements-specification/agents/openai.yaml",
@@ -1042,28 +1042,28 @@
     },
     {
       "path": "workflows/requirements-specification/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/requirements-specification/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/requirements-specification/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/requirements-specification/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/requirements-specification/SKILL.md",
-      "sha256": "861bab670539cbdc5075b7803ae53420666cb499e4e899b0aee13271c28dba06",
-      "bytes": 14604
+      "sha256": "d530f915c445cdd2c34e2105138af37e4262d63a9ab85ab43f2276df7f73884c",
+      "bytes": 14201
     },
     {
       "path": "workflows/security-engineering/agents/openai.yaml",
@@ -1082,28 +1082,28 @@
     },
     {
       "path": "workflows/security-engineering/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/security-engineering/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/security-engineering/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/security-engineering/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/security-engineering/SKILL.md",
-      "sha256": "fd8570d6566c6f4229d2ddb6a911fcfbdd70fc35103a93c4cec3e4442e873240",
-      "bytes": 11880
+      "sha256": "0183fe5d33dd925d9640c85ad23652f2d300afd41af377fc0b0b594a986c9f86",
+      "bytes": 11609
     },
     {
       "path": "workflows/skill-evaluation/agents/openai.yaml",
@@ -1122,28 +1122,28 @@
     },
     {
       "path": "workflows/skill-evaluation/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/skill-evaluation/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/skill-evaluation/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/skill-evaluation/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/skill-evaluation/SKILL.md",
-      "sha256": "e368fb5424d3428cc39c4f99fae3f5ab98c06a47287842942b41c73da03970bd",
-      "bytes": 9776
+      "sha256": "e5bb27b30d75e53d57d08174404365502c85490d6d7382b972e3241163592e6f",
+      "bytes": 9511
     },
     {
       "path": "workflows/skill-release-engineering/agents/openai.yaml",
@@ -1162,8 +1162,8 @@
     },
     {
       "path": "workflows/skill-release-engineering/SKILL.md",
-      "sha256": "1c8a1942ad092f7106ad5cd6c22b300d45f308fe53777222438bd0ba42bec041",
-      "bytes": 7941
+      "sha256": "3979205bab1fc94920b930b10f69d82d6523d1b13a931b761ddcc5a7822a43d7",
+      "bytes": 7723
     },
     {
       "path": "workflows/source-verification/agents/openai.yaml",
@@ -1182,28 +1182,28 @@
     },
     {
       "path": "workflows/source-verification/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/source-verification/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/source-verification/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/source-verification/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/source-verification/SKILL.md",
-      "sha256": "51b97ab22ef6758d197c19b52473b54aac0bf64775d55a3e16e76222f1802bf9",
-      "bytes": 9603
+      "sha256": "6324bae91a44ab4fb1a1795d852315b552b54dd2997e149e1ab550ff6dbd149b",
+      "bytes": 9374
     },
     {
       "path": "workflows/systematic-debugging/agents/openai.yaml",
@@ -1222,8 +1222,8 @@
     },
     {
       "path": "workflows/systematic-debugging/SKILL.md",
-      "sha256": "dd4462e678b0e7283f613432568ae3559db85a05133d1efde1d15c69c31c2367",
-      "bytes": 9320
+      "sha256": "63366ee48b955d841f4525f32a5fffce134e457f52a651fa731d1405d670d571",
+      "bytes": 9067
     },
     {
       "path": "workflows/test-engineering/agents/openai.yaml",
@@ -1242,8 +1242,8 @@
     },
     {
       "path": "workflows/test-engineering/SKILL.md",
-      "sha256": "09a4fdb70b3fa85f6d628f5e43970e028d54183a692b19b485ba959e7357bc1e",
-      "bytes": 10670
+      "sha256": "6bf28f323a097132f87327bc2fff3cddad07295baaabf8dddfe208aa568c11f9",
+      "bytes": 10389
     },
     {
       "path": "workflows/ux-platform-design/agents/openai.yaml",
@@ -1262,28 +1262,28 @@
     },
     {
       "path": "workflows/ux-platform-design/references/core/autonomy-policy.md",
-      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
-      "bytes": 4554
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "workflows/ux-platform-design/references/core/constitution.md",
-      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
-      "bytes": 12296
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "workflows/ux-platform-design/references/core/decision-policy.md",
-      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
-      "bytes": 12322
+      "sha256": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49",
+      "bytes": 11983
     },
     {
       "path": "workflows/ux-platform-design/references/core/task-classifier.md",
-      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
-      "bytes": 11370
+      "sha256": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347",
+      "bytes": 11074
     },
     {
       "path": "workflows/ux-platform-design/SKILL.md",
-      "sha256": "91417c4bc16cc8dc0fb197e3b5ebee7ddba3a47d70f885a85c75a8f4f3754cd5",
-      "bytes": 11015
+      "sha256": "79ccbdb832ef6aca658017c7120b9e8ed191d2fd5c81cd66e4806c671fbeeadf",
+      "bytes": 10725
     }
   ]
 }

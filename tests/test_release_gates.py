@@ -7,9 +7,19 @@ import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from release_content import canonical_bytes
 
 
 class ReleaseGateTests(unittest.TestCase):
+    def test_release_hashes_are_independent_of_text_line_endings(self):
+        with tempfile.TemporaryDirectory() as directory:
+            lf = Path(directory) / "lf.txt"
+            crlf = Path(directory) / "crlf.txt"
+            lf.write_bytes(b"first\nsecond\n")
+            crlf.write_bytes(b"first\r\nsecond\r\n")
+            self.assertEqual(canonical_bytes(lf), canonical_bytes(crlf))
+
     def test_all_actions_are_pinned_to_full_commit_shas(self):
         for path in (ROOT / ".github/workflows").glob("*.yml"):
             for line in path.read_text(encoding="utf-8").splitlines():

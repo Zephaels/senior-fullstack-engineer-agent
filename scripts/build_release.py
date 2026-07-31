@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import datetime as dt, hashlib, json, os, stat, zipfile
+from release_content import canonical_bytes
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'dist'; OUT.mkdir(exist_ok=True); VERSION=(ROOT/'VERSION').read_text(encoding='utf-8').strip()
 EPOCH=max(int(os.environ.get('SOURCE_DATE_EPOCH','315532800')),315532800); DT=dt.datetime.fromtimestamp(EPOCH,dt.timezone.utc); ZIP_DT=(DT.year,DT.month,DT.day,DT.hour,DT.minute,DT.second)
 EXCLUDE={'dist','.git','__pycache__','.pytest_cache','.mypy_cache','qualification-results','release-evidence','validation'}
@@ -11,7 +12,7 @@ def files(source):
 def make(path,source,arc_root):
  with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
   for p in files(source):
-   arc=(Path(arc_root)/p.relative_to(source)).as_posix(); info=zipfile.ZipInfo(arc,ZIP_DT); info.compress_type=zipfile.ZIP_DEFLATED; mode=0o755 if p.suffix=='.py' and p.read_bytes().startswith(b'#!') else 0o644; info.external_attr=((stat.S_IFREG|mode)<<16); info.create_system=3; z.writestr(info,p.read_bytes())
+   content=canonical_bytes(p); arc=(Path(arc_root)/p.relative_to(source)).as_posix(); info=zipfile.ZipInfo(arc,ZIP_DT); info.compress_type=zipfile.ZIP_DEFLATED; mode=0o755 if p.suffix=='.py' and content.startswith(b'#!') else 0o644; info.external_attr=((stat.S_IFREG|mode)<<16); info.create_system=3; z.writestr(info,content)
  return {'path':str(path.relative_to(ROOT)),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'bytes':path.stat().st_size,'entries':len(zipfile.ZipFile(path).infolist())}
 for p in OUT.iterdir():
  if p.is_file(): p.unlink()
