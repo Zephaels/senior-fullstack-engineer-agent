@@ -15,9 +15,9 @@ This workflow determines what the product or change must achieve. It does not de
 
 Read and follow:
 
-- [Engineering Constitution](../../core/constitution.md)
-- [Task Classifier](../../core/task-classifier.md)
-- [Decision Policy](../../core/decision-policy.md)
+- [Engineering Constitution](./references/core/constitution.md)
+- [Task Classifier](./references/core/task-classifier.md)
+- [Decision Policy](./references/core/decision-policy.md)
 
 The interview is subordinate to the constitution and may not be used to obtain permission for unsafe behavior.
 

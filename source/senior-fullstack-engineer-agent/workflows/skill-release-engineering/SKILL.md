@@ -20,8 +20,8 @@ Turn an authored Skill tree into a reproducible, reviewable, installable, and tr
 
 ## Do Not Use
 
-- To deploy a user's web, mobile, desktop, cloud, database, or AI product. Use [`release-deployment`](../release-deployment/SKILL.md).
-- To claim model quality without executing real model evaluations. Use [`skill-evaluation`](../skill-evaluation/SKILL.md).
+- To deploy a user's web, mobile, desktop, cloud, database, or AI product. Use `release-deployment`.
+- To claim model quality without executing real model evaluations. Use `skill-evaluation`.
 - To choose product behavior or user requirements.
 - To change license terms without an explicit owner decision.
 
@@ -137,11 +137,11 @@ Validate independently:
 - License and attribution state.
 - Evaluation state.
 
-Use [`preflight-verification`](../preflight-verification/SKILL.md) for evidence discipline and [`security-engineering`](../security-engineering/SKILL.md) for release supply-chain review.
+Use `preflight-verification` for evidence discipline and `security-engineering` for release supply-chain review.
 
 ### 7. Run evaluation gates
 
-Use [`skill-evaluation`](../skill-evaluation/SKILL.md) to execute:
+Use `skill-evaluation` to execute:
 
 - Trigger evaluations.
 - Negative trigger evaluations.
@@ -178,7 +178,7 @@ Record:
 - Accepted risks and owner.
 - Rollback or unpublish procedure.
 
-Update [`project-state-handoff`](../project-state-handoff/SKILL.md) with release status and remaining blockers.
+Update `project-state-handoff` with release status and remaining blockers.
 
 ## Output Contract
 

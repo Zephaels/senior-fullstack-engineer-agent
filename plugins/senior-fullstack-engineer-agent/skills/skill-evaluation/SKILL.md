@@ -37,11 +37,11 @@ Do not use this workflow to:
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
-- [`../source-verification/SKILL.md`](../source-verification/SKILL.md) for current host specifications and model/tool behavior
-- [`../security-engineering/SKILL.md`](../security-engineering/SKILL.md) for untrusted scripts, hooks, tools, or third-party Skills
-- [`../project-state-handoff/SKILL.md`](../project-state-handoff/SKILL.md) to persist results and release status
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
+- `source-verification` for current host specifications and model/tool behavior
+- `security-engineering` for untrusted scripts, hooks, tools, or third-party Skills
+- `project-state-handoff` to persist results and release status
 
 Required inputs:
 

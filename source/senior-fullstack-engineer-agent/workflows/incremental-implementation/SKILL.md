@@ -11,6 +11,22 @@ Turn an approved requirement and implementation plan into the smallest complete 
 
 This workflow executes decisions already made. It must not silently redefine product behavior, architecture, public contracts, permissions, data policy, platform scope, or release policy.
 
+## Non-Negotiable First Gate
+
+Before editing or returning a blocker, state the slice objective and a Scope Lock.
+
+If the repository, plan, acceptance behavior, or baseline is missing or stale, do **not** answer with only a request for more context. Produce a **Partial Scope Lock** first:
+
+- The objective stated by the approved task or request.
+- What remains in scope if work later resumes.
+- What is explicitly out of scope now.
+- Which governing evidence is missing or stale.
+- The exact condition that permits editing to begin.
+- Commands actually run, including an explicit `none` when no command ran.
+- Files changed, including an explicit `none` when no file changed.
+
+Then return upstream. Never invent behavior merely to fill the Partial Scope Lock.
+
 ## When to Use
 
 Use this skill when:
@@ -25,9 +41,9 @@ Use this skill when:
 
 Do not use this skill when:
 
-- The user outcome, business rule, permission, data lifecycle, or public behavior is materially unclear. Return to [Intent Interview](../intent-interview/SKILL.md) or [Requirements Specification](../requirements-specification/SKILL.md).
-- The implementation would require inventing a new architecture or changing an approved boundary. Return to [Architecture Design](../architecture-design/SKILL.md).
-- There is an unexplained failure, regression, performance anomaly, or incident. Use [Systematic Debugging](../systematic-debugging/SKILL.md).
+- The user outcome, business rule, permission, data lifecycle, or public behavior is materially unclear. Return to `intent-interview` or `requirements-specification`.
+- The implementation would require inventing a new architecture or changing an approved boundary. Return to `architecture-design`.
+- There is an unexplained failure, regression, performance anomaly, or incident. Use `systematic-debugging`.
 - The request is only to audit, review, or test. Stay read-only and use the relevant assurance workflow.
 - A deployment, merge, push, database write, destructive migration, or external side effect has not been authorized.
 
@@ -43,7 +59,7 @@ Before implementation, read the smallest sufficient set of:
 - Existing tests, fixtures, design system, API contracts, migrations, and deployment conventions relevant to the slice.
 - The current Project Ledger or handoff, then revalidate its freshness.
 
-If a required source is missing, stale, contradictory, or unapproved, stop and return to its owning workflow.
+If a required source is missing, stale, contradictory, or unapproved, stop and return to its owning workflow. The blocked response must still state the slice objective and an explicit partial Scope Lock: what remains in scope for later resumption, what is out of scope now, what evidence is missing, and what must happen before editing can begin.
 
 ## Implementation Modes
 
@@ -121,7 +137,7 @@ Avoid creating all database types, then all services, then all APIs, then all UI
 
 ### Step 3: Establish a failing proof when behavior changes
 
-Route to [Test Engineering](../test-engineering/SKILL.md) and create or identify a test that:
+Route to `test-engineering` and create or identify a test that:
 
 - Expresses the required behavior.
 - Fails for the expected reason before the implementation.
@@ -174,7 +190,7 @@ After every accepted increment:
 - Mark implementation as `implemented_unverified` until the required evidence is complete.
 - Record an exact resume point when pausing.
 
-Use [Project State and Handoff](../project-state-handoff/SKILL.md) for cross-session or cross-Agent continuation.
+Use `project-state-handoff` for cross-session or cross-Agent continuation.
 
 ### Step 8: Continue, stop, or return upstream
 

@@ -21,6 +21,7 @@ def run(name, command):
 
 ok = run("rc", [sys.executable, "scripts/validate_rc.py"])
 ok = run("plugin", [sys.executable, "scripts/validate_plugin.py", "plugins/senior-fullstack-engineer-agent"]) and ok
+ok = run("release-security", [sys.executable, "scripts/run_release_security_review.py", "--output", "qualification-results/security/release-security-report.json"]) and ok
 
 try:
     marketplace = json.loads((ROOT / ".agents/plugins/marketplace.json").read_text())

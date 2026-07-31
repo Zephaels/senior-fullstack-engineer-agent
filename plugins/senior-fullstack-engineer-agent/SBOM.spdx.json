@@ -2,8 +2,8 @@
   "spdxVersion": "SPDX-2.3",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "name": "senior-fullstack-engineer-agent-plugin-1.0.0-rc.4.3",
-  "documentNamespace": "https://example.invalid/spdx/senior-fullstack-engineer-agent-plugin/1.0.0-rc.4.3",
+  "name": "senior-fullstack-engineer-agent-plugin-1.0.0-rc.4.8",
+  "documentNamespace": "https://example.invalid/spdx/senior-fullstack-engineer-agent-plugin/1.0.0-rc.4.8",
   "creationInfo": {
     "creators": [
       "Tool: sfse-manifest-generator"
@@ -14,7 +14,7 @@
     {
       "name": "senior-fullstack-engineer-agent-plugin",
       "SPDXID": "SPDXRef-Package",
-      "versionInfo": "1.0.0-rc.4.3",
+      "versionInfo": "1.0.0-rc.4.8",
       "downloadLocation": "NOASSERTION",
       "filesAnalyzed": true,
       "licenseConcluded": "Apache-2.0",
@@ -27,70 +27,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "6590d06fc4c441392877ecddca0016aa714c67a500df3efd620ab7e8b5ec238d"
-        }
-      ]
-    },
-    {
-      "fileName": "./CHANGELOG.md",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "c00f4dd6392f2a81547f2fb1cedfd3728473f7f4aa9ef849618a871a0508f79d"
-        }
-      ]
-    },
-    {
-      "fileName": "./LICENSE",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
-        }
-      ]
-    },
-    {
-      "fileName": "./NOTICE",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "f53c38d70af1d91c02c788ab8589ba8f17caa3840e0467abc770451ec1778101"
-        }
-      ]
-    },
-    {
-      "fileName": "./README.md",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "37bb0da9654cc1944418dd98e7c77294c9403305f2123b54fb5a55e874b75e0c"
-        }
-      ]
-    },
-    {
-      "fileName": "./SECURITY.md",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "47c5d16fdf06d83fa868ffef987f83cf729a2475d8f3dbf5b3c3a546cb1c89bf"
-        }
-      ]
-    },
-    {
-      "fileName": "./SUPPORT.md",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "de84c33d42444bd75e60dbd0d5a1ca5cc6a8777a0931d0d2f55b4ad55f1ddce6"
-        }
-      ]
-    },
-    {
-      "fileName": "./THIRD_PARTY_NOTICES.md",
-      "checksums": [
-        {
-          "algorithm": "SHA256",
-          "checksumValue": "1efd87ddebd686490fbef077f25885a78ab06c7a04c9c0beae686e64c3cab685"
+          "checksumValue": "5237455ef3b383f45ee4f5a0094de9ec84ed1471eb30d1663fdbbd5d752eac16"
         }
       ]
     },
@@ -118,6 +55,15 @@
         {
           "algorithm": "SHA256",
           "checksumValue": "aa7dd31cbb851d0f53e82b5239055587018a257cc4d79f008b8fae3a75608e9d"
+        }
+      ]
+    },
+    {
+      "fileName": "./CHANGELOG.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1711c8246ec14b44a74769b933e3761d3c6433266ae67be844652bc842a47110"
         }
       ]
     },
@@ -167,11 +113,38 @@
       ]
     },
     {
-      "fileName": "./skills/architecture-design/SKILL.md",
+      "fileName": "./LICENSE",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "88ac12babdbfbd99060a8cfe914600396f9490359e9ba2a9772705a17dfa4234"
+          "checksumValue": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        }
+      ]
+    },
+    {
+      "fileName": "./NOTICE",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "f53c38d70af1d91c02c788ab8589ba8f17caa3840e0467abc770451ec1778101"
+        }
+      ]
+    },
+    {
+      "fileName": "./README.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "3c47f966f3beeec78b9bd0c54084be41eb466dd41ebdca4d1f6d00d847b24d48"
+        }
+      ]
+    },
+    {
+      "fileName": "./SECURITY.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "47c5d16fdf06d83fa868ffef987f83cf729a2475d8f3dbf5b3c3a546cb1c89bf"
         }
       ]
     },
@@ -185,11 +158,47 @@
       ]
     },
     {
-      "fileName": "./skills/code-review/SKILL.md",
+      "fileName": "./skills/architecture-design/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "fb32f0053ae7809a25f199a218d6719b55f56819fc19b20d9e472da16f2f33d8"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/architecture-design/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/architecture-design/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/architecture-design/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/architecture-design/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7348517fc468bee937ca8fa0407c30c23d461d0e2d966101309558b96d72348b"
         }
       ]
     },
@@ -203,11 +212,11 @@
       ]
     },
     {
-      "fileName": "./skills/implementation-planning/SKILL.md",
+      "fileName": "./skills/code-review/SKILL.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "8127ec86a0101224c59478cde722a429eb3871e807afb9c3dce060f0028723d5"
+          "checksumValue": "fb32f0053ae7809a25f199a218d6719b55f56819fc19b20d9e472da16f2f33d8"
         }
       ]
     },
@@ -221,11 +230,47 @@
       ]
     },
     {
-      "fileName": "./skills/incremental-implementation/SKILL.md",
+      "fileName": "./skills/implementation-planning/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "5a397424f794a6b65272acdfa9742e5ea6e994dff38d70d862f01d2b14aa3f4d"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/implementation-planning/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/implementation-planning/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/implementation-planning/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/implementation-planning/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b2dbc2ecb24003c59199a572a9313b6d16e2bc60f073a7dddcd4e02b33a44f5e"
         }
       ]
     },
@@ -239,11 +284,11 @@
       ]
     },
     {
-      "fileName": "./skills/intent-interview/SKILL.md",
+      "fileName": "./skills/incremental-implementation/SKILL.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "6872a4b7c183197af1dfddac7976138a7212d2d19e7267d0d39ff67538f45d93"
+          "checksumValue": "3cb5174d5f92adc7bafc4a76202171cde2afff831ce8fa23b9af772a3a5656da"
         }
       ]
     },
@@ -257,11 +302,47 @@
       ]
     },
     {
-      "fileName": "./skills/preflight-verification/SKILL.md",
+      "fileName": "./skills/intent-interview/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "e78df314c033b30bdf89e49191734240019b39b38b5ded4527328a6b92632875"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/intent-interview/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/intent-interview/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/intent-interview/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/intent-interview/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0618212d8a9352c0f93fd2c171f96e432ce37f367d0dfcc83ea11889799cdf79"
         }
       ]
     },
@@ -275,11 +356,11 @@
       ]
     },
     {
-      "fileName": "./skills/product-discovery/SKILL.md",
+      "fileName": "./skills/preflight-verification/SKILL.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "bd66da98b37f80c7b441b13b99db5affd64e9a982bfb99e2cc93be68ed228972"
+          "checksumValue": "eba0984ba29cdac8ee6ab65ffc21de1481af7c44181cd225e3f5fcdf18c0bcfc"
         }
       ]
     },
@@ -293,11 +374,47 @@
       ]
     },
     {
-      "fileName": "./skills/project-state-handoff/SKILL.md",
+      "fileName": "./skills/product-discovery/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "1ebe8cfd10761ca39e10979c02e5571536cf91ce5ffca1b79414cba69089f90e"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/product-discovery/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/product-discovery/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/product-discovery/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/product-discovery/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6ad09e8644442eee9547024622af8730fe0ffce019e89575fd7a92f0cf6b6a9f"
         }
       ]
     },
@@ -311,11 +428,47 @@
       ]
     },
     {
-      "fileName": "./skills/quality-assurance/SKILL.md",
+      "fileName": "./skills/project-state-handoff/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "d904d3c28e59c0519a26e14221e455657895a2f97ba988b22b41731cc5132aed"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/project-state-handoff/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/project-state-handoff/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/project-state-handoff/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/project-state-handoff/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e97b133481561b4f70adb43251b88d698d063a5c9b08ef61334c6c16a408b82b"
         }
       ]
     },
@@ -329,11 +482,11 @@
       ]
     },
     {
-      "fileName": "./skills/release-deployment/SKILL.md",
+      "fileName": "./skills/quality-assurance/SKILL.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "69a5f10d6b85909bffa515d137b7953a1b5a1ffad37014584cc9a1b3a574eb69"
+          "checksumValue": "0cee78c405f8e21cb18a82dd87b252e62e478d04bf98c478ac075d4dd35291f7"
         }
       ]
     },
@@ -347,11 +500,110 @@
       ]
     },
     {
-      "fileName": "./skills/repository-discovery/SKILL.md",
+      "fileName": "./skills/release-deployment/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "a1bdafa11be00113ccd6a96ea84ee01f4c76f9075612f59bf0da975b2335110a"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/references/schemas/autonomy-run-envelope.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0b4bff4a63cf05d876f46fcb659cf018e4b572d674e2e7a37d69bd698365a53b"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/references/schemas/autonomy-run-plan.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0e72b39db46d361c05d23245c2b0880136936eb2b45906bcf98958d3d7eedbbf"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/references/templates/autonomy-run-envelope.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4bc1a9287324bc459364941f2bf73d5ecf33e3db3e229dba5e5402217cb3d003"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/references/templates/autonomy-run-plan.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "734593741e6d8a950be04356531b7af744518d9c6ebe3547590e5faac1e2a8c3"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/scripts/autonomy_supervisor.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "b380ee984fd3be11d42fe66b2d17134c05ae946b6d6237bab8224e42fa50da29"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/scripts/validate_autonomy_envelope.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "27a6dd062249efb4882d158a1483e6c5aa0c5f14e18c7aabd9206ec6c49b640c"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/scripts/validate_autonomy_plan.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5d2063fcb5102034e376ee46915ed0c75af5bef552ccdd23d5566097490e99f2"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/release-deployment/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "40ba4c128162880550d10b5f6331309cad0a5ff94bee824813ae05e96f9c9d7a"
         }
       ]
     },
@@ -365,11 +617,47 @@
       ]
     },
     {
-      "fileName": "./skills/requirements-specification/SKILL.md",
+      "fileName": "./skills/repository-discovery/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "a5e5729aacb948c872a840a181538fa5055c55a819e90e9bdf92cd0f2b225a4f"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/repository-discovery/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/repository-discovery/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/repository-discovery/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/repository-discovery/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4677541c57af79f1df4fe894af58097bb20751fdd181b31417a4c3c9dbaefcfd"
         }
       ]
     },
@@ -383,11 +671,47 @@
       ]
     },
     {
-      "fileName": "./skills/security-engineering/SKILL.md",
+      "fileName": "./skills/requirements-specification/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "2085dd6239244bf53f9c8537b9dac1729e173954d449a5ab18c0d22096c4c286"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/requirements-specification/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/requirements-specification/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/requirements-specification/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/requirements-specification/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "d530f915c445cdd2c34e2105138af37e4262d63a9ab85ab43f2276df7f73884c"
         }
       ]
     },
@@ -401,11 +725,47 @@
       ]
     },
     {
-      "fileName": "./skills/senior-fullstack-engineer-agent/SKILL.md",
+      "fileName": "./skills/security-engineering/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "4b63083d36879d71ffd9828949da658146ab210d3e713a075f04486cf723900f"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/security-engineering/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/security-engineering/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/security-engineering/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/security-engineering/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0183fe5d33dd925d9640c85ad23652f2d300afd41af377fc0b0b594a986c9f86"
         }
       ]
     },
@@ -433,6 +793,24 @@
         {
           "algorithm": "SHA256",
           "checksumValue": "c773d37cec87ab19e0aef2c78eda701be4fa993beff95b4ff10e784b93fe50ad"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/autonomy-run-envelope.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "4bc1a9287324bc459364941f2bf73d5ecf33e3db3e229dba5e5402217cb3d003"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/assets/templates/autonomy-run-plan.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "734593741e6d8a950be04356531b7af744518d9c6ebe3547590e5faac1e2a8c3"
         }
       ]
     },
@@ -554,11 +932,20 @@
       ]
     },
     {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/core/autonomy-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
       "fileName": "./skills/senior-fullstack-engineer-agent/references/core/constitution.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "d0eb37b7abfb76c8d64aaefb20ed7b18b7664a3c031811186cac5123b76122b0"
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
         }
       ]
     },
@@ -567,7 +954,7 @@
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "15079affcd55413497cce9e523aca4a62a271fcb88f6191accb9d60cff943c59"
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
         }
       ]
     },
@@ -595,6 +982,24 @@
         {
           "algorithm": "SHA256",
           "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/schemas/autonomy-run-envelope.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0b4bff4a63cf05d876f46fcb659cf018e4b572d674e2e7a37d69bd698365a53b"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/references/schemas/autonomy-run-plan.schema.json",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "0e72b39db46d361c05d23245c2b0880136936eb2b45906bcf98958d3d7eedbbf"
         }
       ]
     },
@@ -644,11 +1049,38 @@
       ]
     },
     {
-      "fileName": "./skills/skill-evaluation/SKILL.md",
+      "fileName": "./skills/senior-fullstack-engineer-agent/scripts/autonomy_supervisor.py",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "8c6ea39f640f8219b6cc4e7d07849bd2f880d11e0cac905f8cbc51c185cd550f"
+          "checksumValue": "b380ee984fd3be11d42fe66b2d17134c05ae946b6d6237bab8224e42fa50da29"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/scripts/validate_autonomy_envelope.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "27a6dd062249efb4882d158a1483e6c5aa0c5f14e18c7aabd9206ec6c49b640c"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/scripts/validate_autonomy_plan.py",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "5d2063fcb5102034e376ee46915ed0c75af5bef552ccdd23d5566097490e99f2"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/senior-fullstack-engineer-agent/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "16b937825a072e939836cc4d1c8b37bdec8f5dedfdc10972a1ba544365ce1b38"
         }
       ]
     },
@@ -662,11 +1094,47 @@
       ]
     },
     {
-      "fileName": "./skills/skill-release-engineering/SKILL.md",
+      "fileName": "./skills/skill-evaluation/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "184ef102c67ceeecbaed44e84afe5a336fd3e677d77a186fedeb235009fe4094"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/skill-evaluation/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/skill-evaluation/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/skill-evaluation/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/skill-evaluation/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e5bb27b30d75e53d57d08174404365502c85490d6d7382b972e3241163592e6f"
         }
       ]
     },
@@ -680,11 +1148,11 @@
       ]
     },
     {
-      "fileName": "./skills/source-verification/SKILL.md",
+      "fileName": "./skills/skill-release-engineering/SKILL.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "3d87ddd20c5c4ccc2ed192283a0c21be6de279d677cb8d8242633c35e0a7cdd9"
+          "checksumValue": "3979205bab1fc94920b930b10f69d82d6523d1b13a931b761ddcc5a7822a43d7"
         }
       ]
     },
@@ -698,11 +1166,47 @@
       ]
     },
     {
-      "fileName": "./skills/systematic-debugging/SKILL.md",
+      "fileName": "./skills/source-verification/references/core/autonomy-policy.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "6ba4181372f346fa0413b40f8e5789109dd14ac5cc2c35b50700c8dc80192ca2"
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/source-verification/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/source-verification/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/source-verification/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/source-verification/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6324bae91a44ab4fb1a1795d852315b552b54dd2997e149e1ab550ff6dbd149b"
         }
       ]
     },
@@ -716,11 +1220,11 @@
       ]
     },
     {
-      "fileName": "./skills/test-engineering/SKILL.md",
+      "fileName": "./skills/systematic-debugging/SKILL.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "3e9af8156ee84aab43ede957997c0607640a87d3e8a772579b7b97319d117026"
+          "checksumValue": "63366ee48b955d841f4525f32a5fffce134e457f52a651fa731d1405d670d571"
         }
       ]
     },
@@ -734,11 +1238,11 @@
       ]
     },
     {
-      "fileName": "./skills/ux-platform-design/SKILL.md",
+      "fileName": "./skills/test-engineering/SKILL.md",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "05f50659b00534ba37ef38d875e446b091e676ff4524cafafe6d6ff7df441e1f"
+          "checksumValue": "6bf28f323a097132f87327bc2fff3cddad07295baaabf8dddfe208aa568c11f9"
         }
       ]
     },
@@ -748,6 +1252,69 @@
         {
           "algorithm": "SHA256",
           "checksumValue": "09f1a7f87456c9d2e1debedbc82d2b7ab67982753cb30681c9edaeb08b26e6a6"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/ux-platform-design/references/core/autonomy-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/ux-platform-design/references/core/constitution.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/ux-platform-design/references/core/decision-policy.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "51dd7575a5ddcc832d3843e8e8f195a09eecc565f9ef43a9069e96e017416c49"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/ux-platform-design/references/core/task-classifier.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "c53ab0d544a52047f78d188e44abd0103b2413d9662bff6b0445d7dcbcc5e347"
+        }
+      ]
+    },
+    {
+      "fileName": "./skills/ux-platform-design/SKILL.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "79ccbdb832ef6aca658017c7120b9e8ed191d2fd5c81cd66e4806c671fbeeadf"
+        }
+      ]
+    },
+    {
+      "fileName": "./SUPPORT.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "de84c33d42444bd75e60dbd0d5a1ca5cc6a8777a0931d0d2f55b4ad55f1ddce6"
+        }
+      ]
+    },
+    {
+      "fileName": "./THIRD_PARTY_NOTICES.md",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1efd87ddebd686490fbef077f25885a78ab06c7a04c9c0beae686e64c3cab685"
         }
       ]
     }

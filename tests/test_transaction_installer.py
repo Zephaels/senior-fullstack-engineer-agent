@@ -4,6 +4,17 @@ ROOT=Path(__file__).resolve().parents[1]; SCRIPT=ROOT/'scripts/sfse_installer.py
 def run(*args,env=None):
  cp=subprocess.run([sys.executable,str(SCRIPT),*map(str,args)],text=True,capture_output=True,env=env); return cp,json.loads(cp.stdout)
 class InstallerTests(unittest.TestCase):
+ def test_install_uses_short_staging_path_on_windows(self):
+  with tempfile.TemporaryDirectory() as td:
+   # Keep the final installed tree below MAX_PATH while making the old
+   # plugin-name-plus-timestamp staging path exceed it.
+   home=Path(td)/('qualification-' + ('x'*45))/'disposable-home'
+   home.mkdir(parents=True)
+   cp,r=run('install','--source',PLUGIN,'--home',home)
+   self.assertEqual(cp.returncode,0,r)
+   cp,r=run('verify','--home',home)
+   self.assertEqual(cp.returncode,0,r)
+
  def test_install_verify_uninstall(self):
   with tempfile.TemporaryDirectory() as td:
    cp,r=run('install','--source',PLUGIN,'--home',td); self.assertEqual(cp.returncode,0,r); self.assertTrue(r['ok'])

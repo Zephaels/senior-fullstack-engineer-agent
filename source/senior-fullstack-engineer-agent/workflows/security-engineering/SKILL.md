@@ -38,14 +38,14 @@ Do not use this workflow to:
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/task-classifier.md`](../../core/task-classifier.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
-- [`../repository-discovery/SKILL.md`](../repository-discovery/SKILL.md)
-- [`../requirements-specification/SKILL.md`](../requirements-specification/SKILL.md)
-- [`../architecture-design/SKILL.md`](../architecture-design/SKILL.md)
-- [`../source-verification/SKILL.md`](../source-verification/SKILL.md) for current advisories, standards, or provider guidance
-- [`../code-review/SKILL.md`](../code-review/SKILL.md) for general engineering-quality review
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/task-classifier.md`](./references/core/task-classifier.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
+- `repository-discovery`
+- `requirements-specification`
+- `architecture-design`
+- `source-verification` for current advisories, standards, or provider guidance
+- `code-review` for general engineering-quality review
 
 Required inputs depend on mode but should include scope, revision, architecture, assets, actors, trust boundaries, data classes, deployment context, and permissions.
 

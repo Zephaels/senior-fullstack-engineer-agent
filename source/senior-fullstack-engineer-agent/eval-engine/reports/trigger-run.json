@@ -1,10 +1,14 @@
 {
   "suite": "metadata-first-trigger-v2",
   "status": "BLOCKED_NO_MODEL_RUNNER",
+  "suite_fingerprint": "528b6b61bc5b17048a465d0ae900bae03ba082ccdf806172fadb406942e36c4b",
   "catalog_size": 20,
-  "cases_requested": 288,
+  "cases_requested": 230,
   "runs": [],
   "limitations": [
     "No external model runner supplied. No trigger metrics are claimed."
-  ]
+  ],
+  "runner_configured": false,
+  "cases_completed": 0,
+  "cases_blocked": 230
 }

@@ -12,11 +12,11 @@ def tree_hash(root: Path):
  return h.hexdigest()
 def atomic_json(path: Path,data):
  path.parent.mkdir(parents=True,exist_ok=True); tmp=path.with_name(path.name+'.tmp-'+uuid.uuid4().hex); tmp.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8'); os.replace(tmp,path)
-def validate_plugin(root: Path):
+def validate_plugin(root: Path, *, allow_staging: bool = False):
  p=root/'.codex-plugin/plugin.json'
  if not p.is_file(): raise RuntimeError('missing .codex-plugin/plugin.json')
  m=json.loads(p.read_text(encoding='utf-8'))
- if m.get('name')!=root.name and not root.name.startswith(f'.{m.get("name")}.stage-'):
+ if m.get('name')!=root.name and not allow_staging:
         raise RuntimeError(f"plugin folder/name mismatch: {root.name} != {m.get('name')}")
  skills=root/'skills'
  if not skills.is_dir() or not list(skills.glob('*/SKILL.md')): raise RuntimeError('plugin contains no Skills')
@@ -51,8 +51,10 @@ def transaction(source: Path,home: Path,mode:str,dry=False):
  if dry: return {'ok':True,'plan':plan}
  with Lock(P['lock']):
   txn=dt.datetime.now(dt.timezone.utc).strftime('%Y%m%dT%H%M%SZ')+'-'+uuid.uuid4().hex[:8]; P['backups'].mkdir(parents=True,exist_ok=True); target.parent.mkdir(parents=True,exist_ok=True)
-  stage=target.parent/f'.{PLUGIN_NAME}.stage-{txn}'; backup=P['backups']/txn/'plugin'; market_backup=P['backups']/txn/'marketplace.json'; had_market=P['marketplace'].exists(); old_hash=tree_hash(target) if current else None
-  shutil.copytree(source,stage); validate_plugin(stage); staged_hash=tree_hash(stage); failpoint('after-stage')
+  # Keep the transient directory short.  The full plugin name plus a
+  # timestamp can push otherwise valid installations past Windows MAX_PATH.
+  stage=target.parent/f'.s-{uuid.uuid4().hex[:8]}'; backup=P['backups']/txn/'plugin'; market_backup=P['backups']/txn/'marketplace.json'; had_market=P['marketplace'].exists(); old_hash=tree_hash(target) if current else None
+  shutil.copytree(source,stage); validate_plugin(stage,allow_staging=True); staged_hash=tree_hash(stage); failpoint('after-stage')
   if had_market: market_backup.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(P['marketplace'],market_backup)
   switched=False
   try:

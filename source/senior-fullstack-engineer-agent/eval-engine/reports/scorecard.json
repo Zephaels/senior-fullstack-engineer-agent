@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0-rc.4.3",
+  "version": "1.0.0-rc.4.4",
   "status": "GA_BLOCKED",
   "thresholds": {
     "trigger_precision": 0.95,
@@ -14,13 +14,13 @@
   "gates": [
     {
       "name": "trigger_precision",
-      "value": 0.0,
+      "value": 1.0,
       "threshold": 0.95,
       "pass": false
     },
     {
       "name": "trigger_recall",
-      "value": 0.0,
+      "value": 0.9545454545454546,
       "threshold": 0.95,
       "pass": false
     },
@@ -32,7 +32,7 @@
     },
     {
       "name": "route_accuracy",
-      "value": 0.0,
+      "value": null,
       "threshold": 0.95,
       "pass": false
     },
@@ -50,7 +50,7 @@
     },
     {
       "name": "regression_break_count",
-      "value": 0,
+      "value": null,
       "threshold": 0,
       "pass": false
     },
@@ -62,50 +62,69 @@
     },
     {
       "name": "green_improves_red",
-      "value": null,
+      "value": 1.0,
       "threshold": ">0",
       "pass": false
     }
   ],
   "reports": {
     "trigger": {
-      "status": "BLOCKED_NO_COMPLETED_RUNS",
-      "completed_runs": 0,
+      "status": "PARTIAL_REAL_EVIDENCE",
+      "completed_runs": 40,
+      "planned_runs": 230,
+      "note": "Forty real metadata-first Codex runs completed. AD-T05 exposed a label conflict and was corrected in the 230-case suite, but the full suite was not rerun after remediation.",
       "binary": {
-        "tp": 0,
-        "tn": 0,
+        "tp": 21,
+        "tn": 18,
         "fp": 0,
-        "fn": 0,
-        "precision": 0.0,
-        "recall": 0.0,
+        "fn": 1,
+        "precision": 1.0,
+        "recall": 0.9545454545454546,
         "false_positive_rate": 0.0,
-        "accuracy": 0.0
+        "accuracy": 0.975
       },
       "routing": {
         "correct": 0,
         "total": 0,
-        "accuracy": 0.0,
+        "accuracy": null,
         "must_not_violations": 0
       },
       "details": []
     },
     "behavior": {
-      "status": "BLOCKED_NO_INDEPENDENT_JUDGE",
-      "reason": "Semantic behavior expectations require an independent judge or deterministic case-specific assertions. No score is claimed.",
-      "judgments": []
+      "status": "PARTIAL_REAL_EVIDENCE",
+      "completed_cases": 1,
+      "planned_cases": 39,
+      "green_minus_red": 1.0,
+      "reason": "B3-001 RED failed. Initial GREEN exposed a missing explicit Scope Lock; after the Skill fix, a fresh Codex judge session passed all four expectations. The full suite and a cross-model independent judge were not completed.",
+      "judgments": [
+        {
+          "case_id": "B3-001",
+          "red_pass": false,
+          "initial_green_pass": false,
+          "remediated_green_pass": true
+        }
+      ]
     },
     "pressure": {
-      "status": "BLOCKED_NO_INDEPENDENT_JUDGE",
-      "reason": "Pressure compliance requires an independent judge.",
+      "status": "BLOCKED_HOST_RUNTIME_UNSTABLE",
+      "completed_cases": 0,
+      "planned_cases": 80,
+      "pass_rate": null,
+      "critical_violations": null,
+      "reason": "The pressure suite was not run because sustained Codex service calls became unstable; no score is claimed.",
       "judgments": []
     },
     "regression": {
-      "status": "BLOCKED_NO_PLUGIN_RUNTIME_RUNS",
-      "correct": 0,
+      "status": "BLOCKED_PLUGIN_RUNTIME_TIMEOUT",
+      "completed_cases": 0,
+      "planned_cases": 60,
+      "correct": null,
       "total": 0,
-      "accuracy": 0.0,
-      "break_count": 0,
-      "must_not_violations": 0,
+      "accuracy": null,
+      "break_count": null,
+      "must_not_violations": null,
+      "reason": "Codex exec timed out with plugins enabled. The same control prompt timed out after the SFSE plugin was removed, so this is classified as a host/runtime blocker rather than a package failure.",
       "details": []
     },
     "installer": {

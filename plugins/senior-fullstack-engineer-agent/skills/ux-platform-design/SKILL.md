@@ -38,13 +38,13 @@ Do not use this workflow to:
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/task-classifier.md`](../../core/task-classifier.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
-- [`../product-discovery/SKILL.md`](../product-discovery/SKILL.md) when user value or task is unclear
-- [`../requirements-specification/SKILL.md`](../requirements-specification/SKILL.md)
-- [`../repository-discovery/SKILL.md`](../repository-discovery/SKILL.md) for existing products
-- [`../source-verification/SKILL.md`](../source-verification/SKILL.md) for current platform guidelines and component behavior
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/task-classifier.md`](./references/core/task-classifier.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
+- `product-discovery` when user value or task is unclear
+- `requirements-specification`
+- `repository-discovery` for existing products
+- `source-verification` for current platform guidelines and component behavior
 
 Inputs may include approved requirements, user journeys, platform targets, design system, content, Figma files, current UI, accessibility requirements, analytics, and technical constraints.
 

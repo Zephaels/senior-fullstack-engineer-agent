@@ -26,10 +26,10 @@ Use this skill when:
 
 Do not use this skill alone when:
 
-- A user-visible workflow must be exercised in a real browser, device, or deployed environment. Use [Quality Assurance](../quality-assurance/SKILL.md) as well.
-- The root cause of an unexpected failure is unknown. Use [Systematic Debugging](../systematic-debugging/SKILL.md).
-- The request is a general code review. Use [Code Review](../code-review/SKILL.md).
-- The task is ready for final completion claims. Use [Preflight Verification](../preflight-verification/SKILL.md).
+- A user-visible workflow must be exercised in a real browser, device, or deployed environment. Use `quality-assurance` as well.
+- The root cause of an unexpected failure is unknown. Use `systematic-debugging`.
+- The request is a general code review. Use `code-review`.
+- The task is ready for final completion claims. Use `preflight-verification`.
 - Security or performance requires specialized tooling and threat/risk analysis.
 
 ## Inputs
@@ -163,7 +163,7 @@ For bug fixes, the test must reproduce the original symptom or invariant violati
 
 ### Step 5: Implement and reach GREEN
 
-During [Incremental Implementation](../incremental-implementation/SKILL.md):
+During `incremental-implementation`:
 
 - Write the minimum code to make the focused proof pass.
 - Run affected tests after each meaningful code change.

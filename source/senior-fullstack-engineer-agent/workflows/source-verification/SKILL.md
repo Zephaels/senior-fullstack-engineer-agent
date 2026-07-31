@@ -36,10 +36,10 @@ Do not use this workflow when:
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
-- [`../repository-discovery/SKILL.md`](../repository-discovery/SKILL.md) to identify installed versions and current usage
-- [`../project-state-handoff/SKILL.md`](../project-state-handoff/SKILL.md) when evidence must persist
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
+- `repository-discovery` to identify installed versions and current usage
+- `project-state-handoff` when evidence must persist
 
 Inputs may include:
 

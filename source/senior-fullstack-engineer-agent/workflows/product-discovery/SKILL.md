@@ -38,12 +38,12 @@ Do not use this workflow to:
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/task-classifier.md`](../../core/task-classifier.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
-- [`../intent-interview/SKILL.md`](../intent-interview/SKILL.md) when material product decisions require user input
-- [`../repository-discovery/SKILL.md`](../repository-discovery/SKILL.md) for an existing product or codebase
-- [`../source-verification/SKILL.md`](../source-verification/SKILL.md) when external market, platform, legal, pricing, or technology facts affect the decision
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/task-classifier.md`](./references/core/task-classifier.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
+- `intent-interview` when material product decisions require user input
+- `repository-discovery` for an existing product or codebase
+- `source-verification` when external market, platform, legal, pricing, or technology facts affect the decision
 
 Inputs may include:
 

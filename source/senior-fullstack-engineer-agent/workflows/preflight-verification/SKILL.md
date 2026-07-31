@@ -27,7 +27,7 @@ Use immediately before:
 Do not use to:
 
 - Replace focused test-driven feedback during implementation.
-- Diagnose unexplained failures; route them to [Systematic Debugging](../systematic-debugging/SKILL.md).
+- Diagnose unexplained failures; route them to `systematic-debugging`.
 - Approve code that has not received required review.
 - Claim platforms or environments that were not actually tested.
 - Treat a skipped CI job, neutral check, cached result, or old report as fresh proof.

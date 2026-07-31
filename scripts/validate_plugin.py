@@ -3,7 +3,7 @@ from pathlib import Path
 import argparse, json, re, sys, yaml
 SEMVER=re.compile(r'^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-(?:0|[1-9]\d*|\d*[A-Za-z-][0-9A-Za-z-]*)(?:\.(?:0|[1-9]\d*|\d*[A-Za-z-][0-9A-Za-z-]*))*)?(?:\+[0-9A-Za-z-]+(?:\.[0-9A-Za-z-]+)*)?$')
 ap=argparse.ArgumentParser(); ap.add_argument('plugin'); a=ap.parse_args(); root=Path(a.plugin).resolve(); errors=[]
-try: m=json.loads((root/'.codex-plugin/plugin.json').read_text())
+try: m=json.loads((root/'.codex-plugin/plugin.json').read_text(encoding='utf-8'))
 except Exception as e: print(f'Plugin validation failed: {e}'); raise SystemExit(1)
 allowed={'id','name','version','description','skills','apps','mcpServers','interface','author','homepage','repository','license','keywords'}
 errors += [f'unsupported field {k}' for k in sorted(set(m)-allowed)]
@@ -28,7 +28,7 @@ for d in sorted((root/'skills').iterdir()):
  if not d.is_dir() or d.name.startswith('.'): continue
  s=d/'SKILL.md'
  if not s.is_file(): errors.append(f'missing SKILL.md {d.name}'); continue
- t=s.read_text(); end=t.find('\n---\n',4)
+ t=s.read_text(encoding='utf-8'); end=t.find('\n---\n',4)
  if not t.startswith('---\n') or end<0: errors.append(f'frontmatter missing {d.name}'); continue
  try: fm=yaml.safe_load(t[4:end])
  except Exception: errors.append(f'frontmatter invalid {d.name}'); continue

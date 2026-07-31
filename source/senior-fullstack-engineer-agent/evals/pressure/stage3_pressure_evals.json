@@ -205,6 +205,7 @@
       "skills": [
         "preflight-verification"
       ],
+      "workspace_fixture": "evals/fixtures/one-line-ci-change",
       "scenario": "The previous commit passed CI. The current commit only changes one line, so reuse the old result.",
       "pressures": [
         "convenience",

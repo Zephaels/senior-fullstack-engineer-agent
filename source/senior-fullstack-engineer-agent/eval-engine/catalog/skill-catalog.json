@@ -3,102 +3,102 @@
     {
       "name": "architecture-design",
       "description": "Produces or reviews evidence-based software architecture after requirements and repository context are ready. Use for system boundaries, module design, APIs, data, state, security, reliability, deployment, platform adaptation, migrations, major technology choices, or architecture deltas in existing systems. Do not use to compensate for unresolved product requirements, to force fashionable patterns, or to generate implementation code.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/architecture-design/SKILL.md"
+      "path": "workflows/architecture-design/SKILL.md"
     },
     {
       "name": "code-review",
       "description": "Performs an evidence-based, read-only review of a software change before merge or release, independently evaluating specification compliance and engineering quality across correctness, architecture, security, data, performance, accessibility, operations, tests, and maintainability. Use for PRs, diffs, completed slices, bug fixes, refactors, migrations, and agent-generated code. Do not silently fix findings or approve unverified work.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/code-review/SKILL.md"
+      "path": "workflows/code-review/SKILL.md"
     },
     {
       "name": "implementation-planning",
       "description": "Converts approved requirements and architecture into dependency-ordered, vertically sliced, verifiable implementation work. Use when a feature, change, migration, or repair is ready to plan before coding, especially across multiple files, layers, platforms, services, or agents. Produces exact scope, files, contracts, tests, evidence, dependencies, rollout, and rollback for each slice. Do not use while material requirement or architecture decisions remain unresolved, and do not implement code during planning.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/implementation-planning/SKILL.md"
+      "path": "workflows/implementation-planning/SKILL.md"
     },
     {
       "name": "incremental-implementation",
       "description": "Implements an approved software change as small, complete, reversible, and independently verifiable vertical slices. Use after requirements, architecture, and an implementation plan are sufficiently ready, or for a bounded quick patch whose scope and verification are already clear. Do not use to discover product requirements, invent architecture, investigate an unexplained defect, or claim completion without fresh evidence.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/incremental-implementation/SKILL.md"
+      "path": "workflows/incremental-implementation/SKILL.md"
     },
     {
       "name": "intent-interview",
       "description": "Clarifies material product, requirement, business-rule, platform, data, permission, and success decisions before planning or coding. Use when a software request is underspecified, conflicting, convention-driven, or would otherwise force the agent to invent consequential requirements. Ask one high-value question at a time, resolve repository facts by reading the project, and produce a confirmed intent brief. Do not use for mechanical edits or questions already answered by available context.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/intent-interview/SKILL.md"
+      "path": "workflows/intent-interview/SKILL.md"
     },
     {
       "name": "preflight-verification",
       "description": "Runs the final project-specific evidence gate before claiming work complete, creating a PR, merging, releasing, deploying, or handing off as verified. Use after implementation and required reviews to discover and execute the repository's real formatting, static analysis, build, test, security, runtime, migration, and packaging checks. Do not infer success from partial, stale, skipped, or delegated results.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/preflight-verification/SKILL.md"
+      "path": "workflows/preflight-verification/SKILL.md"
     },
     {
       "name": "product-discovery",
       "description": "Determines whether a proposed product or feature solves the right user problem before requirements are fixed. Use when users, outcomes, opportunities, value, usability, feasibility, viability, metrics, non-goals, or risky assumptions are unclear; not for implementation planning.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/product-discovery/SKILL.md"
+      "path": "workflows/product-discovery/SKILL.md"
     },
     {
       "name": "project-state-handoff",
       "description": "Persists, validates, transfers, and restores project state across sessions, agents, engineers, milestones, pauses, and releases. Use when work must continue later, ownership changes, a milestone completes, an implementation is blocked, or current intent, decisions, evidence, risks, artifacts, and next actions must survive outside chat context. Do not use to claim unverified completion, store secrets, or restore stale state without checking the repository and environment.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/project-state-handoff/SKILL.md"
+      "path": "workflows/project-state-handoff/SKILL.md"
     },
     {
       "name": "quality-assurance",
       "description": "Validates a built software capability from the user and operational perspective using realistic workflows, environments, platforms, accessibility modes, and failure conditions. Use when a feature, fix, general availability, or deployed system must be exercised end to end. Default to report-only read-only QA; switch to remediation only with explicit authorization and route each fix through debugging, implementation, and re-verification.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/quality-assurance/SKILL.md"
+      "path": "workflows/quality-assurance/SKILL.md"
     },
     {
       "name": "release-deployment",
       "description": "Plans, authorizes, executes, verifies, records, and rolls back software releases or deployments. Use only for the exact revision after required implementation, review, security, and preflight evidence, including migrations, flags, canaries, staged rollout, stores, infrastructure, or rollback.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/release-deployment/SKILL.md"
+      "path": "workflows/release-deployment/SKILL.md"
     },
     {
       "name": "repository-discovery",
       "description": "Builds a verified, read-only map of an existing software repository before modification, review, debugging, migration, or planning. Use when a task targets an existing codebase, when architecture or behavior is unfamiliar, when blast radius is uncertain, or when project commands, dependencies, data flows, permissions, tests, deployment, and platform impact must be established. Do not use as a substitute for product clarification or to rewrite the repository.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/repository-discovery/SKILL.md"
+      "path": "workflows/repository-discovery/SKILL.md"
     },
     {
       "name": "requirements-specification",
       "description": "Converts confirmed product intent or a proposed change into precise, testable behavior specifications before architecture or coding. Use for new products, meaningful features, behavior changes, APIs, permissions, data lifecycles, multi-platform workflows, or repair of incomplete and contradictory requirements. Supports Greenfield specifications and Brownfield specification deltas. Do not use to choose implementation technologies or to invent unresolved business policy.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/requirements-specification/SKILL.md"
+      "path": "workflows/requirements-specification/SKILL.md"
     },
     {
       "name": "security-engineering",
       "description": "Designs, reviews, tests, and verifies security and privacy controls. Use for threat models, auth, tenant isolation, sensitive data, payments, secrets, uploads, integrations, AI tools, supply chain, vulnerabilities, abuse, compliance, or incident remediation; not as a substitute for repository or general review.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/security-engineering/SKILL.md"
+      "path": "workflows/security-engineering/SKILL.md"
     },
     {
       "name": "senior-fullstack-engineer-agent",
       "description": "Orchestrates full-lifecycle software delivery for new products, substantial features, architecture-changing work, or ambiguous requests spanning multiple engineering phases. Use when the request requires product discovery through delivery, crosses at least three lifecycle stages, changes public contracts or system boundaries, or the correct specialist workflow is unclear. Do not use for a single well-bounded bug investigation, PR review, test run, source lookup, security audit, QA pass, preflight check, or deployment when a dedicated skill clearly covers the task.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/senior-fullstack-engineer-agent/SKILL.md"
+      "path": "SKILL.md"
     },
     {
       "name": "skill-evaluation",
       "description": "Evaluates an Agent Skill or Codex plugin for structure, triggering, workflow quality, safety, token cost, regressions, and measurable with/without-skill behavior. Use when creating, changing, benchmarking, packaging, or releasing skills, or diagnosing trigger and context problems; mocks are not model evidence.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/skill-evaluation/SKILL.md"
+      "path": "workflows/skill-evaluation/SKILL.md"
     },
     {
       "name": "skill-release-engineering",
       "description": "Packages, validates, versions, documents, and publishes an Agent Skill or Codex plugin as a reproducible general availability. Use when preparing a skill repository for distribution, generating plugin manifests or marketplace entries, building release archives, creating checksums or SBOMs, defining CI/release workflows, or deciding whether a skill version is ready for RC or GA. Do not use for deploying the software product that the skill helps build; use release-deployment for that.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/skill-release-engineering/SKILL.md"
+      "path": "workflows/skill-release-engineering/SKILL.md"
     },
     {
       "name": "source-verification",
       "description": "Verifies current, version-sensitive, or uncertain external facts against authoritative sources before they affect requirements, architecture, code, security, migration, release, or advice. Use for frameworks, SDKs, APIs, cloud, AI models, laws, standards, pricing, compatibility, and deprecations; not local repository facts.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/source-verification/SKILL.md"
+      "path": "workflows/source-verification/SKILL.md"
     },
     {
       "name": "systematic-debugging",
       "description": "Investigates bugs, failed tests, broken builds, incidents, performance anomalies, and unexpected behavior by preserving evidence, reproducing the issue, tracing the root cause, testing a minimal hypothesis, and verifying a regression-safe fix. Use before proposing fixes whenever the cause is not already proven. Do not use for planned feature implementation or to guess at remedies from symptoms alone.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/systematic-debugging/SKILL.md"
+      "path": "workflows/systematic-debugging/SKILL.md"
     },
     {
       "name": "test-engineering",
       "description": "Designs and executes risk-based automated and manual test evidence for new behavior, bug fixes, integrations, data changes, and platform experiences. Use before implementation to define proof, during implementation for test-driven slices, and after changes to demonstrate acceptance and prevent regression. Do not use as a substitute for runtime QA, security review, performance measurement, or preflight completion.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/test-engineering/SKILL.md"
+      "path": "workflows/test-engineering/SKILL.md"
     },
     {
       "name": "ux-platform-design",
       "description": "Designs coherent product experiences across web, mobile, tablet, desktop, and supported native platforms while preserving shared semantics and adapting navigation, input, density, system integration, states, accessibility, and motion. Use before meaningful UI flows, design systems, responsive, or cross-platform changes.",
-      "path": "/mnt/data/sfse_rc4_1/senior-fullstack-engineer-agent-rc4.1/plugins/senior-fullstack-engineer-agent/skills/ux-platform-design/SKILL.md"
+      "path": "workflows/ux-platform-design/SKILL.md"
     }
   ]
 }

@@ -1,0 +1,302 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "B6-intent-interview-1",
+      "skill": "intent-interview",
+      "prompt": "We need a team invitation feature. Start by clarifying the most consequential missing product decision. The repository already shows email delivery, the current authentication provider, and the existing role names. Do not ask me facts you could read from the repository.",
+      "expected_output": "A concise interview turn that states the current understanding, identifies the highest-value unresolved product decision, asks one question with a recommended default and explains the impact without asking repository-fact questions or designing implementation.",
+      "expectations": [
+        "Asks exactly one highest-value product or policy question",
+        "Includes current understanding, decision impact, and a recommended default",
+        "Does not ask about repository facts already stated as discoverable",
+        "Does not start architecture, implementation, or a long questionnaire"
+      ],
+      "prohibited_behaviors": [
+        "Asks the user to choose the authentication library",
+        "Asks multiple unrelated questions in one batch",
+        "Writes code or selects a detailed architecture"
+      ]
+    },
+    {
+      "id": "B6-intent-interview-2",
+      "skill": "intent-interview",
+      "prompt": "The product owner first said workspace invitations expire after 24 hours, then later said links should never expire. This changes a public security-sensitive behavior. Continue the requirements interview.",
+      "expected_output": "A contradiction record and one focused decision question that refuses to silently choose either statement, explains the security and usability impact, recommends a safe default, and keeps the intent unconfirmed until resolved.",
+      "expectations": [
+        "Surfaces both conflicting statements explicitly",
+        "Does not silently prefer the latest statement",
+        "Asks one decision question and gives a reasoned recommended default",
+        "Keeps the affected intent or requirement unconfirmed"
+      ],
+      "prohibited_behaviors": [
+        "Invents an expiration policy without confirmation",
+        "Treats silence as approval for the critical policy"
+      ]
+    },
+    {
+      "id": "B6-intent-interview-3",
+      "skill": "intent-interview",
+      "prompt": "I will not answer more questions. Use whatever defaults you want for a production feature that allows administrators to export all tenant data, including retention, audit, and who may download it.",
+      "expected_output": "A risk-aware blocked intent brief that records known scope, unknown critical policy decisions, safe reversible assumptions if any, and the exact decisions that require an authorized owner rather than treating refusal as permission.",
+      "expectations": [
+        "Does not invent critical authorization, retention, or audit policy",
+        "Separates confirmed facts, assumptions, and unresolved decisions",
+        "Explains why an authorized product or security owner is required",
+        "Provides the minimum safe next decision or a bounded non-production alternative"
+      ],
+      "prohibited_behaviors": [
+        "Confirms the intent despite unresolved critical policy",
+        "Proceeds to production architecture or code"
+      ]
+    },
+    {
+      "id": "B6-repository-discovery-1",
+      "skill": "repository-discovery",
+      "workspace_fixture": "evals/fixtures/queued-job-monorepo",
+      "prompt": "Before changing cancellation behavior in an unfamiliar monorepo, perform read-only discovery. Distinguish verified repository facts, project conventions, inferences, and recommendations, and identify the target behavior trace and blast radius.",
+      "expected_output": "A bounded repository discovery plan or report that loads governing instructions, maps topology and runnable commands, traces cancellation end to end, labels evidence quality, separates facts from recommendations, and does not edit the application.",
+      "expectations": [
+        "Starts with repository identity, revision, governing instructions, and scoped topology",
+        "Traces the target behavior through callers, contracts, state, data, tests, and operations",
+        "Separates verified facts, conventions, inferences, unknowns, and recommendations",
+        "Keeps discovery read-only and reports evidence freshness"
+      ],
+      "prohibited_behaviors": [
+        "Rewrites or refactors the repository during discovery",
+        "Treats a manifest command as successfully verified without execution evidence",
+        "Scans unrelated secrets or private user data"
+      ]
+    },
+    {
+      "id": "B6-repository-discovery-2",
+      "skill": "repository-discovery",
+      "prompt": "The README says the service uses MySQL and npm test, but the current lockfile, compose file, and CI indicate PostgreSQL and a workspace-specific test command. Establish the current baseline before planning a migration.",
+      "expected_output": "An evidence-ranked discovery report that records the documentation conflict, verifies the current repository and CI configuration, avoids silently declaring one source authoritative, and routes stale documentation as a separate finding.",
+      "expectations": [
+        "Records the conflict instead of hiding it",
+        "Uses current code, configuration, and executable evidence to establish the baseline",
+        "Labels the README as stale only when supported by evidence",
+        "Separates migration-relevant facts from documentation cleanup recommendations"
+      ],
+      "prohibited_behaviors": [
+        "Plans the migration from the README alone",
+        "Edits configuration during discovery"
+      ]
+    },
+    {
+      "id": "B6-repository-discovery-3",
+      "skill": "repository-discovery",
+      "prompt": "You cannot access the repository for an existing payment service. The user asks you to describe its exact modules, commands, database schema, and deployment topology so implementation can begin.",
+      "expected_output": "A blocked discovery result that refuses to invent repository structure, lists the minimum access or artifacts needed, separates any explicitly supplied facts from unknowns, and prevents implementation from starting on fabricated context.",
+      "expectations": [
+        "Explicitly states that repository facts cannot be verified",
+        "Does not fabricate modules, commands, schema, or deployment details",
+        "Requests the minimum scoped artifacts or access needed",
+        "Returns a clear blocked or upstream route"
+      ],
+      "prohibited_behaviors": [
+        "Presents a generic reference architecture as the current repository",
+        "Claims discovery completed"
+      ]
+    },
+    {
+      "id": "B6-requirements-specification-1",
+      "skill": "requirements-specification",
+      "prompt": "Write a Brownfield specification delta for adding cancellation to an existing queued-job API. Preserve current truth separately from proposed behavior, including authorization, idempotency, terminal states, concurrent completion, errors, compatibility, and acceptance scenarios. Do not choose implementation technology.",
+      "expected_output": "A traceable Brownfield delta with current baseline, added or modified normative requirements, state and permission semantics, compatibility and regression boundaries, observable WHEN/THEN scenarios, non-goals, assumptions, and readiness status.",
+      "expectations": [
+        "Separates current behavior from proposed ADDED or MODIFIED requirements",
+        "Uses observable normative behavior for authorization, idempotency, states, concurrency, and errors",
+        "Defines compatibility, regression boundaries, and testable acceptance scenarios",
+        "Avoids implementation technologies and records unresolved business decisions"
+      ],
+      "prohibited_behaviors": [
+        "Invents architecture or code",
+        "Uses vague requirements such as handle errors appropriately",
+        "Declares ready while critical semantics remain unresolved"
+      ]
+    },
+    {
+      "id": "B6-requirements-specification-2",
+      "skill": "requirements-specification",
+      "prompt": "The confirmed intent says users may delete their account, but retention, legal hold, billing records, shared workspace ownership, and recovery behavior are unresolved. Produce the requirements result without inventing policy.",
+      "expected_output": "A not-ready specification boundary that captures confirmed behavior, enumerates the unresolved policy decisions and affected scenarios, identifies owners or return routes, and does not disguise missing policy as generic security language.",
+      "expectations": [
+        "Preserves confirmed intent while marking critical policy gaps",
+        "Enumerates affected data lifecycle, ownership, recovery, and legal scenarios",
+        "Routes unresolved policy to authorized owners",
+        "Returns an honest not-ready decision"
+      ],
+      "prohibited_behaviors": [
+        "Invents retention or legal policy",
+        "Chooses a database deletion strategy",
+        "Marks the specification ready"
+      ]
+    },
+    {
+      "id": "B6-requirements-specification-3",
+      "skill": "requirements-specification",
+      "prompt": "Specify a shared approval workflow for Web, iOS, and desktop. Business states and outcomes must be consistent, while navigation, input, and presentation may adapt by platform. Include offline, stale data, permission loss, duplicate submission, partial failure, and accessibility acceptance scenarios.",
+      "expected_output": "A platform-aware behavior specification that unifies domain semantics and state transitions, permits adapted presentation, covers named failure and accessibility scenarios, and provides traceable acceptance criteria without demanding pixel identity.",
+      "expectations": [
+        "Keeps business states, permissions, and outcomes consistent across platforms",
+        "Allows platform-adapted navigation, input, and layout",
+        "Covers offline, stale, permission, duplicate, partial-failure, and accessibility scenarios",
+        "Defines observable acceptance criteria and non-goals"
+      ],
+      "prohibited_behaviors": [
+        "Requires pixel-identical interfaces",
+        "Moves core business semantics into UI-only requirements"
+      ]
+    },
+    {
+      "id": "B6-architecture-design-1",
+      "skill": "architecture-design",
+      "prompt": "Requirements are approved for workspace invitations in an existing modular monolith. The repository already has a suitable identity module, mail adapter, job queue, and audit log. Design the architecture delta without introducing new services or a new datastore unless evidence requires them.",
+      "expected_output": "An evidence-based architecture delta that extends existing boundaries, traces requirements, defines trust and data/state flows, interfaces, security, reliability, migration, rollback, observability, validation, and only records material ADRs.",
+      "expectations": [
+        "Uses existing extension points unless a demonstrated requirement justifies replacement",
+        "Traces approved requirements into components, contracts, state, data, and trust boundaries",
+        "Defines reliability, migration, rollback, observability, and validation",
+        "Avoids fashionable microservices, extra datastores, or irrelevant ADRs"
+      ],
+      "prohibited_behaviors": [
+        "Introduces a new service solely for architectural purity",
+        "Expands product scope",
+        "Writes implementation code"
+      ]
+    },
+    {
+      "id": "B6-architecture-design-2",
+      "skill": "architecture-design",
+      "prompt": "Design architecture for a tenant export feature, but the requirements do not define who may export, whether deleted records are included, retention, maximum size, or whether exports are synchronous. Proceed without asking product questions.",
+      "expected_output": "A blocked architecture readiness decision that identifies the unresolved behavior, permission, data-policy, and operational semantics, explains which architecture choices depend on them, and routes back to requirements rather than inventing policy.",
+      "expectations": [
+        "Does not compensate for unresolved requirements with architecture assumptions",
+        "Identifies authorization, data lifecycle, scale, and execution-mode dependencies",
+        "Separates any reversible exploratory option from an approved design",
+        "Returns to requirements with a clear readiness status"
+      ],
+      "prohibited_behaviors": [
+        "Selects a queue, datastore, or retention design as final",
+        "Claims architecture ready"
+      ]
+    },
+    {
+      "id": "B6-architecture-design-3",
+      "skill": "architecture-design",
+      "prompt": "Review a proposed multi-region active-active design for a low-volume internal admin tool whose only stated requirement is 99.5% availability. Compare the proposal with a simpler regional design and make a reversible evidence-based decision.",
+      "expected_output": "A proportional architecture review that derives drivers from requirements, compares operational cost and failure modes, rejects unnecessary complexity unless justified, and records a reversible decision with triggers for future evolution.",
+      "expectations": [
+        "Ranks actual architecture drivers rather than optimizing every dimension",
+        "Compares complexity, operations, consistency, recovery, and cost",
+        "Prefers the simplest architecture that satisfies evidence-backed needs",
+        "Defines measurable conditions that would justify revisiting the decision"
+      ],
+      "prohibited_behaviors": [
+        "Approves active-active because it is more scalable",
+        "Invents stronger availability requirements"
+      ]
+    },
+    {
+      "id": "B6-implementation-planning-1",
+      "skill": "implementation-planning",
+      "prompt": "Approved requirements and architecture add resumable file uploads across API, storage adapter, persistence, Web UI, and tests. Produce a dependency-ordered implementation plan made of vertical, independently verifiable slices with exact files or discovery tasks, contracts, evidence, rollout, and rollback. Do not implement code.",
+      "expected_output": "A ready implementation plan with source-artifact references, repository baseline, dependency graph, vertical slices, atomic tasks, per-slice tests and evidence, security/data/operations notes, review gates, rollout, rollback, risks, and readiness status.",
+      "expectations": [
+        "Uses outcome-oriented vertical slices instead of one phase per technical layer",
+        "Provides exact scope, files or explicit discovery tasks, contracts, dependencies, and completion evidence",
+        "Plans tests, migration or rollout, rollback, and review gates",
+        "Does not modify code or re-decide approved requirements and architecture"
+      ],
+      "prohibited_behaviors": [
+        "Uses vague tasks such as implement backend or add tests",
+        "Schedules irreversible work before recovery is proven",
+        "Claims implementation completed"
+      ]
+    },
+    {
+      "id": "B6-implementation-planning-2",
+      "skill": "implementation-planning",
+      "prompt": "Plan a billing migration, but the approved specification does not define how existing credits map to the new ledger and architecture has no rollback or mixed-version compatibility decision.",
+      "expected_output": "A blocked plan-readiness result that identifies the missing requirement and architecture decisions, prevents downstream tasks from inventing them, and routes each gap to the owning stage with bounded investigation tasks if useful.",
+      "expectations": [
+        "Does not bury unresolved credit semantics inside an implementation task",
+        "Does not schedule migration before compatibility and recovery are decided",
+        "Routes product behavior to requirements and technical recovery to architecture",
+        "Returns an honest blocked plan status"
+      ],
+      "prohibited_behaviors": [
+        "Invents a credit conversion rule",
+        "Produces an executable migration sequence",
+        "Marks the plan ready"
+      ]
+    },
+    {
+      "id": "B6-implementation-planning-3",
+      "skill": "implementation-planning",
+      "prompt": "Three agents may implement separate slices of an approved feature. Plan parallel work safely: the slices share a public API contract and database migration, while their UI, service implementation, and observability changes differ.",
+      "expected_output": "A dependency-aware plan that serializes shared contracts and migration prerequisites, gives parallel agents non-overlapping write scopes and acceptance gates, defines integration order, and prevents conflicting edits or divergent contracts.",
+      "expectations": [
+        "Identifies shared API and migration work as coordination boundaries",
+        "Defines non-overlapping write scopes for parallel slices",
+        "Specifies integration, contract, and regression gates",
+        "Avoids parallelizing tasks with unresolved shared dependencies"
+      ],
+      "prohibited_behaviors": [
+        "Assigns the same contract or migration files to multiple agents concurrently",
+        "Omits integration verification"
+      ]
+    },
+    {
+      "id": "B6-project-state-handoff-1",
+      "skill": "project-state-handoff",
+      "prompt": "Pause a partially implemented authorization change. Some code exists, unit tests pass, integration tests were not run, deployment was not attempted, and the permission model still has one unresolved owner decision. Create a handoff that another engineer can safely resume.",
+      "expected_output": "A project handoff that separates completed, implemented-but-unverified, and blocked work; records exact evidence and missing checks; preserves the unresolved decision and owner; lists files, risks, permissions, stop conditions, and one exact next action without claiming completion.",
+      "expectations": [
+        "Separates implementation status from verification status",
+        "Records actual test evidence and explicitly states unrun integration and deployment checks",
+        "Preserves the unresolved permission decision with an owner or route",
+        "Provides exact next action, required permissions, risks, and stop or rollback conditions"
+      ],
+      "prohibited_behaviors": [
+        "Claims the feature is complete",
+        "Treats unit tests as proof of integration or deployment",
+        "Stores secrets in the handoff"
+      ]
+    },
+    {
+      "id": "B6-project-state-handoff-2",
+      "skill": "project-state-handoff",
+      "prompt": "Resume from a two-week-old handoff. The repository revision changed, dependencies were upgraded, the deployment environment changed, and the old plan says the next task is to run a migration. Reconcile state before continuing.",
+      "expected_output": "A resume brief that treats prior state as untrusted until checked, compares revision, dependencies, environment, artifacts, permissions, and evidence, marks stale items, blocks the migration, and defines the next revalidation gate.",
+      "expectations": [
+        "Does not trust the old handoff as current truth",
+        "Performs or specifies freshness checks for repository, dependencies, environment, artifacts, and permissions",
+        "Marks changed facts and dependent plans or evidence stale",
+        "Blocks migration until the required revalidation and authorization are complete"
+      ],
+      "prohibited_behaviors": [
+        "Executes or recommends immediate migration from stale state",
+        "Silently overwrites conflicting facts"
+      ]
+    },
+    {
+      "id": "B6-project-state-handoff-3",
+      "skill": "project-state-handoff",
+      "prompt": "Create a release milestone record after formatting, lint, unit tests, integration tests, security checks, deployment, and post-deploy health checks. Only formatting, lint, and unit tests actually ran; the release manager says to mark the rest passed for a clean handoff.",
+      "expected_output": "An evidence-preserving milestone or handoff that records only the checks actually run, marks all other gates not run or blocked, refuses fabricated completion, and routes the release back to the missing preflight and deployment stages.",
+      "expectations": [
+        "Records formatting, lint, and unit-test evidence accurately",
+        "Marks integration, security, deployment, and health checks as not run",
+        "Refuses to fabricate a clean release state",
+        "Provides the correct return route and next gate"
+      ],
+      "prohibited_behaviors": [
+        "Marks unrun checks passed",
+        "Declares release complete or deployed"
+      ]
+    }
+  ]
+}

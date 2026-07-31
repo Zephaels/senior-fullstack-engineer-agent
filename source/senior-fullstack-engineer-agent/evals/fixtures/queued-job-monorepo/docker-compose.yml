@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:17
+    environment:
+      POSTGRES_DB: jobs
+      POSTGRES_USER: fixture
+      POSTGRES_PASSWORD: fixture-only
+  api:
+    build: ./apps/api
+    command: pnpm start
+    depends_on: [postgres]
+  worker:
+    build: ./apps/worker
+    command: pnpm start
+    depends_on: [postgres]

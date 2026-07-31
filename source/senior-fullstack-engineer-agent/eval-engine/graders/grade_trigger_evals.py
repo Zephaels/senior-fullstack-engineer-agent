@@ -2,21 +2,27 @@
 from pathlib import Path
 import argparse, sys
 sys.path.insert(0,str(Path(__file__).resolve().parent))
-from common import read_json,write_json,safe_div
+from common import canonical_skill_names,read_json,write_json,safe_div
 
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--run',required=True); ap.add_argument('--output',required=True); a=ap.parse_args(); data=read_json(a.run)
     tp=tn=fp=fn=route_ok=route_total=must_not_violations=completed=0; details=[]
     for rec in data.get('runs',[]):
         if rec.get('result',{}).get('status')!='completed': continue
-        completed+=1; case=rec['case']; selected=set(rec['result'].get('selected_skills',[]))
+        completed+=1; case=rec['case']; selected=canonical_skill_names(rec['result'].get('selected_skills',[]))
         if 'target_skill' in case:
             actual=case['target_skill'] in selected; expected=case['should_trigger']
             if expected and actual: tp+=1
             elif expected and not actual: fn+=1
             elif not expected and actual: fp+=1
             else: tn+=1
-            details.append({'id':case['id'],'pass':actual==expected,'selected':sorted(selected)})
+            if expected:
+                route_total+=1
+                allowed={case['target_skill'],*case.get('allowed_companion_skills',[])}
+                valid_route=actual and selected.issubset(allowed)
+                route_ok+=int(valid_route)
+                must_not_violations+=len(selected-allowed)
+            details.append({'id':case['id'],'pass':actual==expected and (not expected or valid_route),'selected':sorted(selected)})
         else:
             route_total+=1; ok=case['expected_route'] in selected; route_ok+=int(ok)
             violations=sorted(selected.intersection(case.get('must_not_route',[]))); must_not_violations+=len(violations)

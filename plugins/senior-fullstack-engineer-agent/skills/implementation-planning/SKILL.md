@@ -37,12 +37,12 @@ Do not plan implementation and modify code in the same workflow.
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/task-classifier.md`](../../core/task-classifier.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
-- [`../repository-discovery/SKILL.md`](../repository-discovery/SKILL.md) for Brownfield work
-- [`../requirements-specification/SKILL.md`](../requirements-specification/SKILL.md)
-- [`../architecture-design/SKILL.md`](../architecture-design/SKILL.md)
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/task-classifier.md`](./references/core/task-classifier.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
+- `repository-discovery` for Brownfield work
+- `requirements-specification`
+- `architecture-design`
 
 Required inputs:
 

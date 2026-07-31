@@ -1,20 +1,22 @@
 {
-  "status": "BLOCKED_NO_COMPLETED_RUNS",
-  "completed_runs": 0,
+  "status": "PARTIAL_REAL_EVIDENCE",
+  "completed_runs": 40,
+  "planned_runs": 230,
+  "note": "Forty real metadata-first Codex runs completed. AD-T05 exposed a label conflict and was corrected in the 230-case suite, but the full suite was not rerun after remediation.",
   "binary": {
-    "tp": 0,
-    "tn": 0,
+    "tp": 21,
+    "tn": 18,
     "fp": 0,
-    "fn": 0,
-    "precision": 0.0,
-    "recall": 0.0,
+    "fn": 1,
+    "precision": 1.0,
+    "recall": 0.9545454545454546,
     "false_positive_rate": 0.0,
-    "accuracy": 0.0
+    "accuracy": 0.975
   },
   "routing": {
     "correct": 0,
     "total": 0,
-    "accuracy": 0.0,
+    "accuracy": null,
     "must_not_violations": 0
   },
   "details": []

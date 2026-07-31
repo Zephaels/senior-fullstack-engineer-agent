@@ -126,7 +126,7 @@ If two attempts fail, re-evaluate the model and architecture. After three failed
 
 ### Phase 5: Prove the defect with a failing test or controlled experiment
 
-Use [Test Engineering](../test-engineering/SKILL.md) to create a reproduction that fails for the expected reason.
+Use `test-engineering` to create a reproduction that fails for the expected reason.
 
 If an automated regression test is infeasible, define another controlled proof such as:
 
@@ -138,7 +138,7 @@ If an automated regression test is infeasible, define another controlled proof s
 
 ### Phase 6: Implement the smallest root-cause fix
 
-Use [Incremental Implementation](../incremental-implementation/SKILL.md):
+Use `incremental-implementation`:
 
 - Fix the first incorrect state or violated invariant.
 - Avoid unrelated refactors.

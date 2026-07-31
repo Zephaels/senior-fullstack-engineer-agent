@@ -36,9 +36,9 @@ Do not use this workflow to:
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/task-classifier.md`](../../core/task-classifier.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/task-classifier.md`](./references/core/task-classifier.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
 - Relevant workflow outputs for the current milestone
 
 Inputs may include:
