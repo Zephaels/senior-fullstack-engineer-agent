@@ -10,25 +10,62 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: '3.11'
-      - run: pip install PyYAML
+      - run: python -m pip install --disable-pip-version-check -r requirements-ci.txt
       - run: python scripts/validate_release.py
-      - run: python scripts/build_release.py
+      - run: python -m unittest discover -s tests -p 'test_*.py'
+      - run: python -m unittest discover -s source/senior-fullstack-engineer-agent/eval-engine/tests -p 'test_*.py'
+      - name: Collect successful checks for the exact tagged commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh api -H "Accept: application/vnd.github+json"
+          "repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}/check-runs"
+          > "${RUNNER_TEMP}/check-runs.json"
+      - run: python scripts/verify_github_checks.py --input "${RUNNER_TEMP}/check-runs.json" --output "${RUNNER_TEMP}/verified-checks.json" --commit "${GITHUB_SHA}"
+      - run: python scripts/qualify_autonomy.py --output "${RUNNER_TEMP}/autonomy-qualification.json"
+      - run: python scripts/run_release_security_review.py --output "${RUNNER_TEMP}/release-security-report.json"
+      - run: python scripts/qualify_reproducible_build.py --output "${RUNNER_TEMP}/reproducible-build.json"
+      - name: Enforce every public GA prerequisite
+        run: >-
+          python scripts/validate_public_release.py
+          --tag "${GITHUB_REF_NAME}"
+          --target-commit "${GITHUB_SHA}"
+          --security-report "${RUNNER_TEMP}/release-security-report.json"
+          --reproducibility-report "${RUNNER_TEMP}/reproducible-build.json"
+          --github-checks "${RUNNER_TEMP}/verified-checks.json"
+          --independent-security-report "release-evidence/$(cat VERSION)/independent-security-report.json"
+          --independent-judge-report "release-evidence/$(cat VERSION)/independent-judge-report.json"
+          --autonomy-rehearsal-report "release-evidence/$(cat VERSION)/autonomy-rehearsal-report.json"
       - name: Create draft release with all assets
         env:
           GH_TOKEN: ${{ github.token }}
         run: >-
           gh release create "${{ github.ref_name }}"
-          dist/*.zip dist/CHECKSUMS.sha256
+          dist/*.zip dist/CHECKSUMS.sha256 MANIFEST.json SBOM.spdx.json
+          release-evidence/$(cat VERSION)/scorecard.json
+          release-evidence/$(cat VERSION)/independent-security-report.json
+          release-evidence/$(cat VERSION)/independent-judge-report.json
+          release-evidence/$(cat VERSION)/autonomy-rehearsal-report.json
+          "${RUNNER_TEMP}/autonomy-qualification.json"
+          "${RUNNER_TEMP}/release-security-report.json"
+          "${RUNNER_TEMP}/reproducible-build.json"
+          "${RUNNER_TEMP}/verified-checks.json"
           --generate-notes --verify-tag --draft
       - name: Generate build provenance
-        if: ${{ vars.ENABLE_ARTIFACT_ATTESTATION == 'true' }}
-        uses: actions/attest@v4
+        uses: actions/attest@508db95dd578ae2727ebd6217d5ba78e4fbda05d # v4.2.1
         with:
           subject-path: 'dist/*.zip'
+      - name: Verify build provenance before publication
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for artifact in dist/*.zip; do
+            gh attestation verify "$artifact" --repo "${GITHUB_REPOSITORY}"
+          done
       - name: Publish draft release
         env:
           GH_TOKEN: ${{ github.token }}

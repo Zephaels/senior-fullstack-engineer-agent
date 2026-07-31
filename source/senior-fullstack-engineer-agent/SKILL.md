@@ -18,6 +18,7 @@ Read these controls before routing operational work:
 - [Routing Matrix](./core/routing-matrix.yaml)
 - [Task Classifier](./core/task-classifier.md)
 - [Decision Policy](./core/decision-policy.md)
+- [Bounded Production Autonomy Policy](./core/autonomy-policy.md)
 
 The constitution has the highest precedence. Risk can upgrade the route; convenience cannot downgrade it.
 
@@ -115,7 +116,7 @@ repository-discovery
 
 ### 5. Apply permission boundaries
 
-Before file writes, dependency changes, Git operations, external calls, paid resources, database changes, or deployment, apply [Decision Policy](./core/decision-policy.md). Audit Skills remain read-only unless remediation is separately authorized.
+Before file writes, dependency changes, Git operations, external calls, paid resources, database changes, or deployment, apply [Decision Policy](./core/decision-policy.md). Unattended operation additionally requires a valid [Bounded Production Autonomy Policy](./core/autonomy-policy.md) envelope. Audit Skills remain read-only unless remediation is separately authorized.
 
 ### 6. Preserve evidence and state
 

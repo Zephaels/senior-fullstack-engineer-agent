@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import datetime as dt, hashlib, json, os, stat, zipfile
-ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'dist'; OUT.mkdir(exist_ok=True); VERSION=(ROOT/'VERSION').read_text().strip()
+ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'dist'; OUT.mkdir(exist_ok=True); VERSION=(ROOT/'VERSION').read_text(encoding='utf-8').strip()
 EPOCH=max(int(os.environ.get('SOURCE_DATE_EPOCH','315532800')),315532800); DT=dt.datetime.fromtimestamp(EPOCH,dt.timezone.utc); ZIP_DT=(DT.year,DT.month,DT.day,DT.hour,DT.minute,DT.second)
-EXCLUDE={'dist','.git','__pycache__','.pytest_cache','.mypy_cache','qualification-results'}
+EXCLUDE={'dist','.git','__pycache__','.pytest_cache','.mypy_cache','qualification-results','release-evidence','validation'}
 def files(source):
  for p in sorted(source.rglob('*')):
   if not p.is_file() or any(part in EXCLUDE for part in p.parts) or p.suffix in {'.pyc','.pyo'}: continue
@@ -18,7 +18,7 @@ for p in OUT.iterdir():
 packages=[]
 packages.append(make(OUT/f'Senior-FullStack-Engineer-Agent-{VERSION}-Plugin.zip',ROOT/'plugins/senior-fullstack-engineer-agent','senior-fullstack-engineer-agent'))
 packages.append(make(OUT/f'Senior-FullStack-Engineer-Agent-{VERSION}-Skill-Source.zip',ROOT/'source/senior-fullstack-engineer-agent','senior-fullstack-engineer-agent'))
-packages.append(make(OUT/f'Senior-FullStack-Engineer-Agent-{VERSION}-Complete-Source.zip',ROOT,ROOT.name))
-(OUT/'release-packages.json').write_text(json.dumps({'version':VERSION,'source_date_epoch':EPOCH,'packages':packages},indent=2)+'\n')
-(OUT/'CHECKSUMS.sha256').write_text(''.join(f"{x['sha256']}  {Path(x['path']).name}\n" for x in packages))
+packages.append(make(OUT/f'Senior-FullStack-Engineer-Agent-{VERSION}-Complete-Source.zip',ROOT,f'senior-fullstack-engineer-agent-{VERSION}'))
+(OUT/'release-packages.json').write_text(json.dumps({'version':VERSION,'source_date_epoch':EPOCH,'packages':packages},indent=2)+'\n',encoding='utf-8')
+(OUT/'CHECKSUMS.sha256').write_text(''.join(f"{x['sha256']}  {Path(x['path']).name}\n" for x in packages),encoding='utf-8')
 print(json.dumps({'ok':True,'version':VERSION,'packages':packages},indent=2))

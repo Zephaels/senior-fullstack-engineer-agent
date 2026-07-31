@@ -20,7 +20,7 @@
     "should_trigger": true
   },
   {
-    "query": "The plan is complete. Work through it one slice at a time, verify each slice, and update the handoff before pausing.",
+    "query": "The plan is complete. Implement the next approved vertical slice now, verify that slice, and stop before starting another slice.",
     "should_trigger": true
   },
   {

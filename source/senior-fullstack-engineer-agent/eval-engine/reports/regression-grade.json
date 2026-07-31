@@ -1,9 +1,12 @@
 {
-  "status": "BLOCKED_NO_PLUGIN_RUNTIME_RUNS",
-  "correct": 0,
+  "status": "BLOCKED_PLUGIN_RUNTIME_TIMEOUT",
+  "completed_cases": 0,
+  "planned_cases": 60,
+  "correct": null,
   "total": 0,
-  "accuracy": 0.0,
-  "break_count": 0,
-  "must_not_violations": 0,
+  "accuracy": null,
+  "break_count": null,
+  "must_not_violations": null,
+  "reason": "Codex exec timed out with plugins enabled. The same control prompt timed out after the SFSE plugin was removed, so this is classified as a host/runtime blocker rather than a package failure.",
   "details": []
 }

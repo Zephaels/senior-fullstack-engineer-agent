@@ -37,14 +37,15 @@ Do not use this workflow to:
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/task-classifier.md`](../../core/task-classifier.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
-- [`../preflight-verification/SKILL.md`](../preflight-verification/SKILL.md)
-- [`../code-review/SKILL.md`](../code-review/SKILL.md)
-- [`../security-engineering/SKILL.md`](../security-engineering/SKILL.md) when security boundaries changed
-- [`../project-state-handoff/SKILL.md`](../project-state-handoff/SKILL.md)
-- [`../source-verification/SKILL.md`](../source-verification/SKILL.md) for current platform deployment guidance
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/task-classifier.md`](./references/core/task-classifier.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
+- [`../../core/autonomy-policy.md`](./references/core/autonomy-policy.md) for any unattended release
+- `preflight-verification`
+- `code-review`
+- `security-engineering` when security boundaries changed
+- `project-state-handoff`
+- `source-verification` for current platform deployment guidance
 
 Required inputs:
 
@@ -53,6 +54,16 @@ Required inputs:
 - Preflight result for that revision.
 - Approved release scope, change record, migration, feature-flag, observability, rollback, and communication plan.
 - Explicit operational permission.
+
+For an unattended run, additionally require the bundled authorization envelope and exact run plan. Validate both before execution. The supervisor defaults to validation-only; `--execute` is valid only after the owner has approved the exact envelope and plan. Use the files bundled with this Skill:
+
+- `references/templates/autonomy-run-envelope.json`
+- `references/templates/autonomy-run-plan.json`
+- `references/schemas/autonomy-run-envelope.schema.json`
+- `references/schemas/autonomy-run-plan.schema.json`
+- `scripts/validate_autonomy_envelope.py`
+- `scripts/validate_autonomy_plan.py`
+- `scripts/autonomy_supervisor.py`
 
 ## Release Principles
 
@@ -168,6 +179,8 @@ Summarize the exact external writes:
 - Incur cost or consume quota.
 
 Obtain required confirmation. Prior permission does not automatically transfer to a different environment, scope, or irreversible action.
+
+Unattended execution is allowed only when the exact artifact hash, commands, paths, environment, expiry, health gates, zero-cost limit, and rollback command pass the deterministic validators. Do not edit an authorization envelope on behalf of its approver.
 
 ### Step 7: Execute one controlled step
 

@@ -1,0 +1,18 @@
+# Python runtime caches
+__pycache__/
+*.py[cod]
+
+# Local qualification outputs and generated packages
+qualification-results/
+dist/
+
+# Local environment and tool state
+.venv/
+.env
+.env.*
+
+# Editor and operating-system noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp

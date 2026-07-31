@@ -1,5 +1,15 @@
 {
-  "status": "BLOCKED_NO_INDEPENDENT_JUDGE",
-  "reason": "Semantic behavior expectations require an independent judge or deterministic case-specific assertions. No score is claimed.",
-  "judgments": []
+  "status": "PARTIAL_REAL_EVIDENCE",
+  "completed_cases": 1,
+  "planned_cases": 39,
+  "green_minus_red": 1.0,
+  "reason": "B3-001 RED failed. Initial GREEN exposed a missing explicit Scope Lock; after the Skill fix, a fresh Codex judge session passed all four expectations. The full suite and a cross-model independent judge were not completed.",
+  "judgments": [
+    {
+      "case_id": "B3-001",
+      "red_pass": false,
+      "initial_green_pass": false,
+      "remediated_green_pass": true
+    }
+  ]
 }

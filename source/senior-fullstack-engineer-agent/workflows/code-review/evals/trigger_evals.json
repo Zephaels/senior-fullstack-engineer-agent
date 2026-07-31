@@ -12,7 +12,7 @@
     "should_trigger": true
   },
   {
-    "query": "Review this dependency upgrade, including changelog, lockfile, security, license, and compatibility impact.",
+    "query": "The authoritative changelog, license, and compatibility evidence are attached. Review this dependency-upgrade diff and lockfile read-only for correctness, security, and regression risk.",
     "should_trigger": true
   },
   {

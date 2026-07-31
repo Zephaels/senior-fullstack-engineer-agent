@@ -7,13 +7,13 @@
   },
   {
     "id": "AD-T02",
-    "query": "Compare a modular monolith with microservices for this actual repository and record an ADR.",
+    "query": "The repository map and requirements are approved. Compare a modular monolith with microservices and record the architecture decision in an ADR.",
     "should_trigger": true,
     "reason": "Consequential architecture options."
   },
   {
     "id": "AD-T03",
-    "query": "Design the smallest architecture delta for introducing background video generation jobs into the existing service.",
+    "query": "The existing service map and behavior baseline are complete. Design the smallest architecture delta for introducing background video generation jobs.",
     "should_trigger": true,
     "reason": "Brownfield architecture delta."
   },
@@ -26,8 +26,8 @@
   {
     "id": "AD-T05",
     "query": "Review whether tenant authorization is enforced at the right trusted boundaries. Stay read-only.",
-    "should_trigger": true,
-    "reason": "Architecture/security review."
+    "should_trigger": false,
+    "reason": "A bounded authorization audit routes to the narrower security-engineering Skill."
   },
   {
     "id": "AD-T06",
@@ -58,5 +58,20 @@
     "query": "Explain CAP theorem.",
     "should_trigger": false,
     "reason": "Conceptual explanation."
+  },
+  {
+    "id": "AD-T11",
+    "query": "The multi-tenant requirements are approved. Design authorization trust boundaries, data flow, enforcement ownership, migration, and rollback across the services.",
+    "should_trigger": true,
+    "allowed_companion_skills": [
+      "security-engineering"
+    ],
+    "reason": "Approved behavior requires cross-service architecture design; security review remains a downstream assurance step."
+  },
+  {
+    "id": "AD-T12",
+    "query": "Design the module boundaries and compatibility strategy for moving authorization decisions from controllers into a shared policy service.",
+    "should_trigger": true,
+    "reason": "The request changes system boundaries and public behavior ownership, so architecture design is primary."
   }
 ]

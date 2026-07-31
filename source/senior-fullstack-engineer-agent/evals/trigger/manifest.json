@@ -11,9 +11,9 @@
     {
       "skill": "architecture-design",
       "path": "../../workflows/architecture-design/evals/trigger_evals.json",
-      "cases": 10,
-      "positive": 5,
-      "negative": 5
+      "cases": 12,
+      "positive": 6,
+      "negative": 6
     },
     {
       "skill": "code-review",

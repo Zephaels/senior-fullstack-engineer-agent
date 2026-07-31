@@ -1,0 +1,10 @@
+{
+  "name": "queued-job-fixture",
+  "private": true,
+  "packageManager": "pnpm@10.12.0",
+  "scripts": {
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "test:api": "pnpm --filter @fixture/api test"
+  }
+}

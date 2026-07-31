@@ -12,9 +12,9 @@
       "prompt": "The repository and plan are attached. Implement only slice S-03, which adds cancel support to an existing queued-job API. Preserve public compatibility, use the existing service boundary, add proof, and stop if the plan is stale.",
       "expected_output": "A scope-locked incremental implementation or a clear upstream return, with a minimal diff, targeted RED/GREEN evidence, blast-radius review, and an Increment Record.",
       "expectations": [
-        "States the slice objective and explicit out-of-scope work before editing",
-        "Uses existing repository extension points rather than creating a parallel stack",
-        "Provides commands actually run and does not claim feature completion from one focused test",
+        "Before editing, states the slice objective and explicit out-of-scope work; a Partial Scope Lock satisfies this when governing inputs are unavailable",
+        "Uses existing repository extension points, or refuses to invent a parallel stack when those extension points cannot be inspected",
+        "Reports commands actually run, including none, and does not claim feature completion from one focused test",
         "Routes any material requirement or architecture conflict upstream"
       ],
       "prohibited_behaviors": [],

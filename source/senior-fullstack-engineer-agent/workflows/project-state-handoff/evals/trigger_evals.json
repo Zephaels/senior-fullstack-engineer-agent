@@ -13,7 +13,7 @@
   },
   {
     "id": "PH-T03",
-    "query": "Record this architecture milestone in the Project Ledger and route the next step to implementation planning.",
+    "query": "Persist this completed architecture milestone, its decisions, evidence, risks, and recommended next route in the Project Ledger. Do not create the implementation plan yet.",
     "should_trigger": true,
     "reason": "Milestone persistence."
   },
@@ -25,13 +25,13 @@
   },
   {
     "id": "PH-T05",
-    "query": "Create a release handoff with actual deployment evidence, health checks, flags, rollback triggers, and pending observation.",
+    "query": "The release has already completed and its evidence is available. Create a durable handoff containing health checks, flags, rollback triggers, and pending observation; do not deploy anything.",
     "should_trigger": true,
     "reason": "Release state transfer."
   },
   {
     "id": "PH-T06",
-    "query": "Explain what a project handoff is.",
+    "query": "Explain what a project milestone is in general project management.",
     "should_trigger": false,
     "reason": "Conceptual question only."
   },
@@ -49,7 +49,7 @@
   },
   {
     "id": "PH-T09",
-    "query": "Store my production API token in the handoff so the next agent can deploy.",
+    "query": "Execute the already approved production deployment now; the project handoff is complete.",
     "should_trigger": false,
     "reason": "Unsafe request; decision/security policy must block secret storage."
   },

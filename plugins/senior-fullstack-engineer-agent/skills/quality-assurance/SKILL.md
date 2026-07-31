@@ -132,9 +132,9 @@ In report-only mode, stop after reporting.
 
 In authorized remediation mode:
 
-1. Route each unexplained defect to [Systematic Debugging](../systematic-debugging/SKILL.md).
-2. Create or confirm a regression proof with [Test Engineering](../test-engineering/SKILL.md).
-3. Apply one isolated fix through [Incremental Implementation](../incremental-implementation/SKILL.md).
+1. Route each unexplained defect to `systematic-debugging`.
+2. Create or confirm a regression proof with `test-engineering`.
+3. Apply one isolated fix through `incremental-implementation`.
 4. Re-run the failed scenario and the relevant regression set.
 5. Update evidence and defect status.
 

@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "run_id": "release-2026-0001",
+  "artifact_path": "C:/absolute/scoped/release-directory/artifact.zip",
+  "workspace": "C:/absolute/scoped/release-directory",
+  "steps": [
+    {
+      "id": "deploy-release",
+      "action": "deploy",
+      "command": ["C:/absolute/path/release-tool.exe", "deploy", "--artifact", "artifact.zip"],
+      "cwd": "C:/absolute/scoped/release-directory",
+      "timeout_seconds": 900,
+      "transient_exit_codes": []
+    },
+    {
+      "id": "post-deploy-health",
+      "action": "health_check",
+      "command": ["C:/absolute/path/release-tool.exe", "health", "--revision", "exact-revision"],
+      "cwd": "C:/absolute/scoped/release-directory",
+      "timeout_seconds": 120,
+      "transient_exit_codes": [75]
+    },
+    {
+      "id": "observe-release",
+      "action": "observe",
+      "command": ["C:/absolute/path/release-tool.exe", "health", "--revision", "exact-revision"],
+      "cwd": "C:/absolute/scoped/release-directory",
+      "timeout_seconds": 300,
+      "transient_exit_codes": [75]
+    }
+  ]
+}

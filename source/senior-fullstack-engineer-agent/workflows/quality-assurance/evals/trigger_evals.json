@@ -20,7 +20,7 @@
     "should_trigger": true
   },
   {
-    "query": "Test and fix each bug you find, but isolate each fix, verify it, and never commit without permission.",
+    "query": "Exercise the completed feature through realistic user workflows and report every reproducible bug with evidence. Stay read-only and do not fix anything.",
     "should_trigger": true
   },
   {

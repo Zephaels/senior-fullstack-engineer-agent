@@ -28,7 +28,7 @@
     "should_trigger": false
   },
   {
-    "query": "Review only the easing values in these existing animations.",
+    "query": "Investigate why the background job queue sometimes processes the same item twice.",
     "should_trigger": false
   },
   {

@@ -138,6 +138,8 @@ Examples:
 
 Confirmation must identify the exact action, environment, expected effect, rollback, and known risk.
 
+For an unattended run, an authorized owner may provide that explicit confirmation in advance through a valid, time-bounded [Production Autonomy Policy](./autonomy-policy.md) envelope. The envelope must bind the immutable artifact, exact environment, actions, commands, scopes, limits, health gates, and rollback. It does not authorize destructive data operations, permission changes, secret rotation, money movement, force-push, or unbounded publication; those still require interactive confirmation at the point of action.
+
 ### Level E — Blocked Until Resolved
 
 Do not proceed when:

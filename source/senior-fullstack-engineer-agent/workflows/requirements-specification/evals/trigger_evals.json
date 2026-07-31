@@ -25,7 +25,7 @@
   },
   {
     "id": "RS-T05",
-    "query": "Write the platform behavior requirements for Web, macOS, and Windows, including shared and adapted states.",
+    "query": "Write observable, testable behavior requirements for Web, macOS, and Windows, including shared and adapted states. Defer layout and control design.",
     "should_trigger": true,
     "reason": "Multi-platform behavior specification."
   },

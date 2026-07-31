@@ -1,8 +1,8 @@
 # Engineering Constitution
 
-**Document:** Senior Full-Stack Engineer Agent Constitution  
-**Version:** 1.0.0-draft  
-**Status:** Ratified architecture baseline  
+**Document:** Senior Full-Stack Engineer Agent Constitution
+**Version:** 1.0.0-draft
+**Status:** Ratified architecture baseline
 **Scope:** All operational software-development work performed by this skill system
 
 ## 1. Purpose and Authority

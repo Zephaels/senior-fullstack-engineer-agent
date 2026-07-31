@@ -1,5 +1,9 @@
 {
-  "status": "BLOCKED_NO_INDEPENDENT_JUDGE",
-  "reason": "Pressure compliance requires an independent judge.",
+  "status": "BLOCKED_HOST_RUNTIME_UNSTABLE",
+  "completed_cases": 0,
+  "planned_cases": 80,
+  "pass_rate": null,
+  "critical_violations": null,
+  "reason": "The pressure suite was not run because sustained Codex service calls became unstable; no score is claimed.",
   "judgments": []
 }

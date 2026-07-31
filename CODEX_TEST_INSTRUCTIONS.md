@@ -1,4 +1,4 @@
-# Codex Test Instructions — v1.0.0-rc.4.3
+# Codex Test Instructions — v1.0.0-rc.4.8
 
 This repository is the complete pending-release source and Codex Plugin candidate.
 

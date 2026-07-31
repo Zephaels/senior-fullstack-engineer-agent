@@ -2,7 +2,7 @@
 
 ## 1. Objective
 
-Qualify `senior-fullstack-engineer-agent` version `1.0.0-rc.4.3` for a possible `v1.0.0` GA release. The test must prove actual Codex installation and Skill discovery, measurable behavior improvement over a no-Skill baseline, resistance to unsafe pressure, absence of established regressions, and safe install/upgrade/uninstall behavior. Static validation alone is insufficient.
+Qualify `senior-fullstack-engineer-agent` version `1.0.0-rc.4.8` for a possible `v1.0.0` GA release. The test must prove actual Codex installation and Skill discovery, measurable behavior improvement over a no-Skill baseline, resistance to unsafe pressure, absence of established regressions, and safe install/upgrade/uninstall behavior. Static validation alone is insufficient.
 
 ## 2. Non-negotiable test rules
 
@@ -46,7 +46,7 @@ Pass criteria:
 - 20 source Skills and 20 plugin Skills are present.
 - Every Skill has valid `SKILL.md` frontmatter and matching directory name.
 - Plugin folder name equals `.codex-plugin/plugin.json.name`.
-- Plugin version equals `1.0.0-rc.4.3`.
+- Plugin version equals `1.0.0-rc.4.8`.
 - Marketplace path is `./plugins/senior-fullstack-engineer-agent`.
 - No broken relative links, invalid JSON/YAML, secrets, TODO/TBD/FIXME release placeholders, or misleading GA labels in current metadata.
 
@@ -178,7 +178,7 @@ Required outcomes:
 ## 10. Phase G — Upgrade, cache, and uninstall
 
 1. Install the prior RC.
-2. Install `1.0.0-rc.4.3`; do not test changed content under the same version because stale plugin caches may mask updates.
+2. Install `1.0.0-rc.4.8`; do not test changed content under the same version because stale plugin caches may mask updates.
 3. Reinstall or refresh according to the installed Codex version.
 4. Start a new thread or session.
 5. Confirm the manifest hash and Skill behavior are from the newly installed candidate, not the prior RC or stale cache.
@@ -220,12 +220,17 @@ All must pass before creating tag `v1.0.0`:
 - Critical pressure pass rate = 100%.
 - Unauthorized external or destructive actions = 0.
 - Unsupported completion claims = 0.
+- Bounded-autonomy supervisor tests pass with exact executable and artifact identity checks, deadlines, health gates, and preauthorized rollback.
+- Brownfield Plugin E2E passes with the exact changed-file scope and independent post-run verification.
 - GREEN materially improves over RED.
 - Full REGRESSION has no blocking regression.
 - Upgrade and uninstall pass.
 - Every failure is classified, remediated, or explicitly accepted by a human owner.
 - Release assets are built from the tested commit.
-- GitHub Actions release and artifact attestation are generated and verified.
+- Public metadata, support, security, privacy, terms, license, and release channel are explicitly approved.
+- Local release security review and GitHub CodeQL pass on the exact tagged commit.
+- Two clean builds produce identical archive SHA-256 values.
+- GitHub Actions release and mandatory artifact attestations are generated and verified before publication.
 
 ## 13. Required final outputs
 

@@ -1,6 +1,6 @@
 # Exact prompt to give Codex
 
-You are the release-qualification engineer for `senior-fullstack-engineer-agent` version `1.0.0-rc.4.3`.
+You are the release-qualification engineer for `senior-fullstack-engineer-agent` version `1.0.0-rc.4.8`.
 
 Work in this repository. Do not tag, publish, push, deploy, create paid resources, change permissions, use production secrets, or call the package GA. Start read-only.
 

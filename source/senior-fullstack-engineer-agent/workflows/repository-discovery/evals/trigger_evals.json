@@ -7,7 +7,7 @@
   },
   {
     "id": "RD-T02",
-    "query": "This production service sometimes creates duplicate jobs. Trace the current flow before proposing a fix.",
+    "query": "Before any defect investigation, build a read-only map of the current job-creation flow, callers, idempotency controls, persistence, and tests. Do not diagnose or propose a fix yet.",
     "should_trigger": true,
     "reason": "Investigation requires repository facts and end-to-end flow."
   },
@@ -19,13 +19,13 @@
   },
   {
     "id": "RD-T04",
-    "query": "Upgrade our ORM and database schema, but first identify migrations, consumers, tests, and rollback paths.",
+    "query": "Before deciding or implementing an ORM upgrade, read-only identify the current schema, migrations, consumers, tests, compatibility constraints, and rollback paths.",
     "should_trigger": true,
     "reason": "Brownfield migration discovery."
   },
   {
     "id": "RD-T05",
-    "query": "Add keyboard shortcuts to this desktop app. Check existing command routing and platform-specific implementations first.",
+    "query": "Do not implement keyboard shortcuts yet. First map the desktop app's existing command routing, shortcut registry, platform adapters, callers, and tests read-only.",
     "should_trigger": true,
     "reason": "Existing platform project and impact analysis."
   },

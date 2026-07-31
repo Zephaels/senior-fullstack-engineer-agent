@@ -37,11 +37,11 @@ Do not use a specification to hide unresolved decisions behind vague language su
 
 Read and apply:
 
-- [`../../core/constitution.md`](../../core/constitution.md)
-- [`../../core/task-classifier.md`](../../core/task-classifier.md)
-- [`../../core/decision-policy.md`](../../core/decision-policy.md)
-- [`../intent-interview/SKILL.md`](../intent-interview/SKILL.md) when an Intent Brief exists
-- [`../repository-discovery/SKILL.md`](../repository-discovery/SKILL.md) for Brownfield work
+- [`../../core/constitution.md`](./references/core/constitution.md)
+- [`../../core/task-classifier.md`](./references/core/task-classifier.md)
+- [`../../core/decision-policy.md`](./references/core/decision-policy.md)
+- `intent-interview` when an Intent Brief exists
+- `repository-discovery` for Brownfield work
 
 Required inputs, as applicable:
 

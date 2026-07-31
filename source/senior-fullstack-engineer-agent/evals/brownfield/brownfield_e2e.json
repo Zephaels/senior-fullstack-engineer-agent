@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "cases": [
+    {
+      "id": "BF-E2E-001",
+      "workspace_fixture": "evals/fixtures/brownfield-retry-policy",
+      "prompt": "Implement the approved bounded change in this existing repository: should_retry must accept an optional max_attempts argument while preserving its current default behavior, and must reject a negative max_attempts value with ValueError. Read AGENTS.md first, keep the diff minimal, run the repository's exact verification command, and report only evidence from this revision.",
+      "expected_skill": "incremental-implementation",
+      "expected_changed_files": ["retry_policy.py"],
+      "verification_commands": [["python", "-B", "-m", "unittest", "discover", "-s", "tests", "-v"]]
+    }
+  ]
+}

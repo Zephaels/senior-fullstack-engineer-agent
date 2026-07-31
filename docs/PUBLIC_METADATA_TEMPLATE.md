@@ -2,6 +2,8 @@
 
 Status: `NOT_APPROVED_FOR_PUBLICATION`
 
+The machine-readable source of truth is `docs/public-metadata.json`.
+
 ```yaml
 plugin_name: senior-fullstack-engineer-agent
 display_name: Senior Full-Stack Engineer
@@ -12,7 +14,7 @@ support_url: null
 security_contact_url: null
 privacy_policy_url: null
 terms_of_service_url: null
-license_spdx: null
+license_spdx: Apache-2.0
 public_release_channel: null
 ```
 

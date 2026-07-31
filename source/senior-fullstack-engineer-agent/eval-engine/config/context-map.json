@@ -27,6 +27,7 @@
       "core/constitution.md",
       "core/task-classifier.md",
       "core/decision-policy.md",
+      "core/autonomy-policy.md",
       "workflows/incremental-implementation/SKILL.md"
     ],
     "intent-interview": [
@@ -68,8 +69,13 @@
       "core/constitution.md",
       "core/task-classifier.md",
       "core/decision-policy.md",
+      "core/autonomy-policy.md",
       "workflows/release-deployment/SKILL.md",
-      "templates/release-record.md"
+      "templates/release-record.md",
+      "templates/autonomy-run-envelope.json",
+      "templates/autonomy-run-plan.json",
+      "schemas/autonomy-run-envelope.schema.json",
+      "schemas/autonomy-run-plan.schema.json"
     ],
     "repository-discovery": [
       "core/constitution.md",

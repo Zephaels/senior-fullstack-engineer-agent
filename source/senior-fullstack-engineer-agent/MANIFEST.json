@@ -1,14 +1,19 @@
 {
   "schema_version": "1.0",
   "kind": "skill-source",
-  "version": "1.0.0-rc.4.3",
+  "version": "1.0.0-rc.4.8",
   "root": "senior-fullstack-engineer-agent",
-  "file_count": 163,
+  "file_count": 256,
   "files": [
     {
+      "path": "agents/openai.yaml",
+      "sha256": "f62a45f928a9b521d0ce7ed8b1c879133032c0a538f46fa3942e9c6ef912d83e",
+      "bytes": 316
+    },
+    {
       "path": "CHANGELOG.md",
-      "sha256": "c00f4dd6392f2a81547f2fb1cedfd3728473f7f4aa9ef849618a871a0508f79d",
-      "bytes": 1412
+      "sha256": "1711c8246ec14b44a74769b933e3761d3c6433266ae67be844652bc842a47110",
+      "bytes": 6624
     },
     {
       "path": "CONTRIBUTING.md",
@@ -16,64 +21,19 @@
       "bytes": 765
     },
     {
-      "path": "LICENSE",
-      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
-      "bytes": 11358
-    },
-    {
-      "path": "NOTICE",
-      "sha256": "f53c38d70af1d91c02c788ab8589ba8f17caa3840e0467abc770451ec1778101",
-      "bytes": 345
-    },
-    {
-      "path": "NOTICE.md",
-      "sha256": "6a3adb3d413005c45ed89dd2278ca850f159e51b43726ffabf173bc9f6b030c8",
-      "bytes": 1510
-    },
-    {
-      "path": "README.md",
-      "sha256": "37bb0da9654cc1944418dd98e7c77294c9403305f2123b54fb5a55e874b75e0c",
-      "bytes": 1522
-    },
-    {
-      "path": "SECURITY.md",
-      "sha256": "47c5d16fdf06d83fa868ffef987f83cf729a2475d8f3dbf5b3c3a546cb1c89bf",
-      "bytes": 882
-    },
-    {
-      "path": "SKILL.md",
-      "sha256": "2bfead3103b8be502c34039ec6144d487b67061f4ce34258c611723a347883aa",
-      "bytes": 7049
-    },
-    {
-      "path": "SUPPORT.md",
-      "sha256": "de84c33d42444bd75e60dbd0d5a1ca5cc6a8777a0931d0d2f55b4ad55f1ddce6",
-      "bytes": 435
-    },
-    {
-      "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "1efd87ddebd686490fbef077f25885a78ab06c7a04c9c0beae686e64c3cab685",
-      "bytes": 704
-    },
-    {
-      "path": "VERSION",
-      "sha256": "0d23f4f0538394398c501bee7dae6b21d00b1bbb11385bd65ffaaeca8ee56f2b",
-      "bytes": 13
-    },
-    {
-      "path": "agents/openai.yaml",
-      "sha256": "f62a45f928a9b521d0ce7ed8b1c879133032c0a538f46fa3942e9c6ef912d83e",
-      "bytes": 316
+      "path": "core/autonomy-policy.md",
+      "sha256": "7dcdc8e6d9dbe9e4a3049a37a4c6d8a38ce2c2f06ca533ef7518d4d234acc806",
+      "bytes": 4483
     },
     {
       "path": "core/constitution.md",
-      "sha256": "d0eb37b7abfb76c8d64aaefb20ed7b18b7664a3c031811186cac5123b76122b0",
-      "bytes": 11985
+      "sha256": "60cd493eeaa5fc20b6beb46618aef95d525c717d0711c6059aefba65768ced7d",
+      "bytes": 11979
     },
     {
       "path": "core/decision-policy.md",
-      "sha256": "d9e6eba1c6696ee3b76a58a3c3ca6189a699242b8676cd67ca1c88a6f87aa078",
-      "bytes": 11498
+      "sha256": "2ff92eb069f2c4efe693a02ac1ba10f63acbc5afd5c1c2ba6c5eac25a9015e0d",
+      "bytes": 12023
     },
     {
       "path": "core/router-policy.md",
@@ -102,18 +62,13 @@
     },
     {
       "path": "docs/RC_QUALIFICATION_NOTES.md",
-      "sha256": "48be849481176fd63476ee6b97101a973ff0a64b80806507075e7fcecb95c471",
-      "bytes": 419
+      "sha256": "2ac5db2f45cf384d1a16336cb6978296db7741369aefc4ba6a6e64d9fb09e646",
+      "bytes": 1524
     },
     {
       "path": "docs/RELEASE_PROCESS.md",
       "sha256": "1dfb186213798a2cdec0bfb9c0c9cc2a376538cdcdf2e51fd78a08ba2fb95e59",
       "bytes": 624
-    },
-    {
-      "path": "eval-engine/README.md",
-      "sha256": "76f959bae7bc397c824b531b9963728e62e30f3301ac3a98767496adaf8d38c4",
-      "bytes": 1042
     },
     {
       "path": "eval-engine/catalog/behavior-cases.json",
@@ -132,53 +87,58 @@
     },
     {
       "path": "eval-engine/catalog/skill-catalog.json",
-      "sha256": "f1bb91fab4497862fd20968699c890c09a8d4ab2a5cf8b000c6b58f4b2a04b4b",
-      "bytes": 12866
+      "sha256": "f615eab41ddff39578656121cdcb48bba803a8e42bcb21b0d1d2feda18a9fad7",
+      "bytes": 11008
     },
     {
       "path": "eval-engine/config/context-map.json",
-      "sha256": "fa59e3ceafa9bece16075c622c60130114fa94180cceb56c144a3a892e8780d1",
-      "bytes": 4012
+      "sha256": "2c96d38399a419041a7a7e637ddb4fa68086518c14b3df3c33972820819197f4",
+      "bytes": 4264
     },
     {
       "path": "eval-engine/graders/common.py",
-      "sha256": "c6cfe5b32e560a97cd4733c3adc9f58865ad53b990f2decc0666574e51467755",
-      "bytes": 1115
+      "sha256": "a065ee382ab0fcf4f3a86df37c29948cb7890dbbfe6ce079f598357478beb31f",
+      "bytes": 3113
     },
     {
       "path": "eval-engine/graders/generate_scorecard.py",
-      "sha256": "8dcf754cd390a93a9172c145f094fadc1ba9664362936cf767787a8f52e51fce",
-      "bytes": 3757
+      "sha256": "672bee00c6eaf537dfeaec6a68a9dd7a9c5f71f473374141b3cc0859b3e6f6ba",
+      "bytes": 13181
     },
     {
       "path": "eval-engine/graders/grade_behavior_evals.py",
-      "sha256": "5cc00b63ba5efc94d5d2af0698053388afea6536c91a326e0fa91e591c585cb4",
-      "bytes": 2313
+      "sha256": "95ed8688e0226b7af7e2e8008181f3ee178437e53a8048d7e6c95529b9ec3543",
+      "bytes": 4529
     },
     {
       "path": "eval-engine/graders/grade_pressure_evals.py",
-      "sha256": "9b21191f1c79d33831e014d25cd8b67183aeb0c8c23f8b836bc54d05c1364b28",
-      "bytes": 1690
+      "sha256": "a0791ffe5c4f79c2fb2a9bc432fc27efd21a578585cce98c46ebeb7ebe1ecec9",
+      "bytes": 3857
     },
     {
       "path": "eval-engine/graders/grade_regression_evals.py",
-      "sha256": "720038f0c890bf825e201ac8c43c84bbcfdac4fecdd247cb0ba6decf00324c1e",
-      "bytes": 1208
+      "sha256": "11cecce1926b8cef2a19a93813ced141c172b8d5b6b2256d1c4143ed32674e1d",
+      "bytes": 1257
     },
     {
       "path": "eval-engine/graders/grade_trigger_evals.py",
-      "sha256": "6b689d61a33673a6f8fbff07dd6dd432dcad9b1ec12140f90c62c675c2456ae1",
-      "bytes": 2153
+      "sha256": "045e01ebb8cef974f814801b651c37668de74ae0c53b0b715110bd86f03dd8f8",
+      "bytes": 2539
+    },
+    {
+      "path": "eval-engine/README.md",
+      "sha256": "76f959bae7bc397c824b531b9963728e62e30f3301ac3a98767496adaf8d38c4",
+      "bytes": 1042
     },
     {
       "path": "eval-engine/reports/behavior-grade.json",
-      "sha256": "f55c9ee3ce3b4a4e5e62c9d844c48a7ae611b6ebdcd119674cfcf89316aea2fc",
-      "bytes": 205
+      "sha256": "10d5c61b34fcb915ab7affce810fbb1b11daf05931c28702dd1c4b5f740dfdbf",
+      "bytes": 507
     },
     {
       "path": "eval-engine/reports/behavior-run.json",
-      "sha256": "f44786d6f9091ad8cd4e4e1fb5501edb251dbd3395cc26e52e2cf381d2794e7c",
-      "bytes": 14385
+      "sha256": "555d5a2ee7d0119cfcad1b214fedbc3082b9a6bd225c36a9e3c6b862e8df8f12",
+      "bytes": 5776
     },
     {
       "path": "eval-engine/reports/installer-grade.json",
@@ -187,8 +147,8 @@
     },
     {
       "path": "eval-engine/reports/pressure-grade.json",
-      "sha256": "ff0a88a93fa2f7e3d3a02a6fc56d57d3a0663f3b803b51aa888976dfbb707dc5",
-      "bytes": 132
+      "sha256": "cc055a21399c2ca2c79136402b47c52303364c6424657ba6d1e8fd929952317e",
+      "bytes": 288
     },
     {
       "path": "eval-engine/reports/pressure-run.json",
@@ -197,33 +157,33 @@
     },
     {
       "path": "eval-engine/reports/regression-grade.json",
-      "sha256": "3244332cc96957db3c9454bcff51887f2a41c5f93a3a7b71dc189ee037c90b8b",
-      "bytes": 163
+      "sha256": "114f0b601b84faba60f24b1db018fee43a09ce309ee1f5af6ab6f08693749901",
+      "bytes": 426
     },
     {
       "path": "eval-engine/reports/regression-run.json",
-      "sha256": "59941a771a6d26c1cd38de69582c72262aaf787abb0e373f8cd9b9bca890f070",
-      "bytes": 417
+      "sha256": "6e79d4d40faa919c8a6deb2d0998bd2073f4d7c608b7363703ed046e132facc8",
+      "bytes": 599
     },
     {
       "path": "eval-engine/reports/scorecard.json",
-      "sha256": "171ea7578735696f827c5cc8ce692630b047d4b5a34b84946845e3b0a3afb1c1",
-      "bytes": 2789
+      "sha256": "88155bfa09633bba420debbc8a14f270ff426e73615a5758531136b5ccfcbe7b",
+      "bytes": 3971
     },
     {
       "path": "eval-engine/reports/scorecard.md",
-      "sha256": "1b4d08ed399437fcfc58bb2dd56d03997d5147027e29715fd23135483bd71e80",
-      "bytes": 562
+      "sha256": "2d6841ad6fc4cffbd87a845481bfbb3576be6ee3f957ddab3867014f555cec59",
+      "bytes": 595
     },
     {
       "path": "eval-engine/reports/trigger-grade.json",
-      "sha256": "b7670a56b54c0ba7f75909a9b3aaa22006dbfacd7d242da4c2b2d079ecb2f4d9",
-      "bytes": 352
+      "sha256": "42f0720ebb0b7aa9e8ffba1dc0a1d959a0f29f299e492c97da168a43f55ce1d1",
+      "bytes": 578
     },
     {
       "path": "eval-engine/reports/trigger-run.json",
-      "sha256": "de498a48219d83750177ac298522766a32a63ec308a9d311300a89eb11a969a9",
-      "bytes": 241
+      "sha256": "72f9560e59ea68f1cfe1701d72dd991eff4a7d7119bea1d7888927c82a728e2c",
+      "bytes": 424
     },
     {
       "path": "eval-engine/runners/build_skill_catalog.py",
@@ -232,28 +192,33 @@
     },
     {
       "path": "eval-engine/runners/common.py",
-      "sha256": "7cb871d395294ee247faa37dc07f251b7621e368c6a1979c4b5d27039554dace",
-      "bytes": 1030
+      "sha256": "91fa8e2dd6af32e83cb59c3e69fb430b82c890c3bdb3ca8ef7215e4845c83550",
+      "bytes": 3128
     },
     {
       "path": "eval-engine/runners/run_behavior_evals_v2.py",
-      "sha256": "326bc23bd5851483be9ee52a6b63bcb39df4e67111c79697c18fd5d6eb758390",
-      "bytes": 2997
+      "sha256": "9c518f17d742db8c22ccceb03380167a300be8ae78fa70a73c93a6eb7684849d",
+      "bytes": 8859
+    },
+    {
+      "path": "eval-engine/runners/run_brownfield_e2e.py",
+      "sha256": "6a9e820a88ff124ac343d3597bfdcdaf7e842d625506c24b16f81b4954ae6b08",
+      "bytes": 4343
     },
     {
       "path": "eval-engine/runners/run_pressure_evals.py",
-      "sha256": "3cdd587dd1e133594e5664e0879a3eed63e980512552014c2308556c98024d6e",
-      "bytes": 1889
+      "sha256": "006b123d62cffa2297010d61af42245c3825a90cbb4e09080dbc9fbe7f67480a",
+      "bytes": 5806
     },
     {
       "path": "eval-engine/runners/run_regression_evals.py",
-      "sha256": "8d15be8dcdf1f3443cb37d82a63124ca1319d7ffdc498bbef3dc4db161682ed8",
-      "bytes": 1982
+      "sha256": "f0cba72dc59705b4c580ad353d98eb459772834d7b795c3ef2b028fc4dc7dc28",
+      "bytes": 4591
     },
     {
       "path": "eval-engine/runners/run_trigger_evals.py",
-      "sha256": "fd88c3d1b6f72b7d7699f7f9d56d430330f0951502f46ca9d00d95668d8ceb1e",
-      "bytes": 2752
+      "sha256": "2b7fd4d5a5825952f03232b54576ab92aa1bdd8a9d9a88e412da901defc23322",
+      "bytes": 8402
     },
     {
       "path": "eval-engine/schemas/runner-response.schema.json",
@@ -267,13 +232,18 @@
     },
     {
       "path": "eval-engine/tests/test_graders.py",
-      "sha256": "f69471ebf401b8670fae261105a7672c6d1fb19268890ca351fbfd8c52f3e376",
-      "bytes": 2187
+      "sha256": "f435d439d704bfd7171c4e5fda8ba2c648673ce3844356da739ae4eb0b2a69d9",
+      "bytes": 7243
     },
     {
-      "path": "evals/README.md",
-      "sha256": "f10d8a727918d8bb171236e2db7a83fd1fd2673df680fcb16b6b6183fef5a991",
-      "bytes": 1773
+      "path": "eval-engine/tests/test_runner_protocol.py",
+      "sha256": "4ee84ff275eb7474c78fa17777f58121aa139251a2445a155381153c8db455e8",
+      "bytes": 13707
+    },
+    {
+      "path": "eval-engine/tests/test_scorecard.py",
+      "sha256": "33a7148301617077c39843ed597778ced432a24cb8c1b3a9e0ebb0f2ca46b7f5",
+      "bytes": 4430
     },
     {
       "path": "evals/behavior/README.md",
@@ -287,8 +257,8 @@
     },
     {
       "path": "evals/behavior/stage3_behavior_evals.json",
-      "sha256": "8e4216bd7e65878c6d2171007b9021a0530ad5e15f7fd1aa3ff317a352c2e0ef",
-      "bytes": 12554
+      "sha256": "9cb538ed23273901aa389c0e78eca68303e53b6070343986fa66ed8a410de74b",
+      "bytes": 12696
     },
     {
       "path": "evals/behavior/stage4_behavior_evals.json",
@@ -301,14 +271,154 @@
       "bytes": 1578
     },
     {
+      "path": "evals/behavior/stage6_behavior_evals.json",
+      "sha256": "6193508a5127167245c7b3545db9aed059ed5da1c089f9eb15217bf608a07f1b",
+      "bytes": 20932
+    },
+    {
+      "path": "evals/brownfield/brownfield_e2e.json",
+      "sha256": "2b55b592868415e1a537a6b1ec438ab614a676a5654dfb1295f3f3cf234cf6bf",
+      "bytes": 750
+    },
+    {
+      "path": "evals/fixtures/brownfield-retry-policy/AGENTS.md",
+      "sha256": "1c093d4df6d8c69911ae9e2e9590ae7d0e250574b11fef7323c8c2896f6bf538",
+      "bytes": 441
+    },
+    {
+      "path": "evals/fixtures/brownfield-retry-policy/retry_policy.py",
+      "sha256": "cab6aecf7512d89622a48ce307d1711e5e76e587f6ae1b28b300b359318c981e",
+      "bytes": 98
+    },
+    {
+      "path": "evals/fixtures/brownfield-retry-policy/tests/test_retry_policy.py",
+      "sha256": "b7c0df86bbea7acfe4c227ef4aa838ea42ca7d66ee5eb7313afc866b2fad3402",
+      "bytes": 660
+    },
+    {
+      "path": "evals/fixtures/one-line-ci-change/AGENTS.md",
+      "sha256": "23e5214f85a17691840bfe9007dc77a577f4564844e64bb0b7173042c7ec0ac4",
+      "bytes": 341
+    },
+    {
+      "path": "evals/fixtures/one-line-ci-change/README.md",
+      "sha256": "de4c7c3039b061fa3cbee9ed1301377bd3fcefb59a4bf7ee01578d9e28807239",
+      "bytes": 265
+    },
+    {
+      "path": "evals/fixtures/one-line-ci-change/retry_policy.py",
+      "sha256": "cab6aecf7512d89622a48ce307d1711e5e76e587f6ae1b28b300b359318c981e",
+      "bytes": 98
+    },
+    {
+      "path": "evals/fixtures/one-line-ci-change/tests/test_retry_policy.py",
+      "sha256": "a261e63b35339db538cecbbd8998cba830d62c371348d6d4f568621346763654",
+      "bytes": 345
+    },
+    {
+      "path": "evals/fixtures/one-line-ci-change/tests/verify_retry_policy.ps1",
+      "sha256": "01319db57c39af66b377e325594c82dc2f28f8b951ebc5d8426e3cec84f67edf",
+      "bytes": 444
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/.github/workflows/ci.yml",
+      "sha256": "dafb48d90d1b801b3a1bfb6cd2ca576c016dd32a567ab5f731b05c48ac4b2653",
+      "bytes": 290
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/AGENTS.md",
+      "sha256": "71ebdd045a9926d455e2dfe47b8294a25cab05d7d912057be4f2ef465115c927",
+      "bytes": 370
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/api/package.json",
+      "sha256": "ef33974d85a2978c299bbff90779e58003cc4aeb28d70a498957691832949193",
+      "bytes": 316
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/api/src/infrastructure/audit.ts",
+      "sha256": "6e195d62287908fb75f39eca38b9426623f9adf844880509b14aa4887b754c36",
+      "bytes": 134
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/api/src/infrastructure/job-repository.ts",
+      "sha256": "8a232b7ed494a5d7bda4d37ed54a959b112d410796b5c1761e82c30c5e5e605e",
+      "bytes": 260
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/api/src/infrastructure/queue-provider.ts",
+      "sha256": "66128d56fc896aedd39ab286760f14c2782b5dcdbb76319dfe2b91f92b16ae53",
+      "bytes": 92
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/api/src/routes/jobs.ts",
+      "sha256": "2d34ac0b31227c5bd021934015e77a246e359ef9a3f400de232e0b24f695d76a",
+      "bytes": 525
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/api/src/services/cancel-job.ts",
+      "sha256": "6497a34c0d6885b197637ee00a6b0ad8afbbc48a57df43cb970e21bc9f200885",
+      "bytes": 961
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/api/tests/cancel-job.test.ts",
+      "sha256": "b8b908c417d9a486c16efe569f41a03006c9758647386da5d5ec5ea3c9974d05",
+      "bytes": 598
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/worker/package.json",
+      "sha256": "856b8ef625c7c0dd4a0f56a3998b112a16d1f785747e51e22f6b93cec185faef",
+      "bytes": 180
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/apps/worker/src/worker.ts",
+      "sha256": "92d825a9956b507f0f6afe56f59a7bf749400c8c4e7c4c035746655c147eeba5",
+      "bytes": 221
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/docker-compose.yml",
+      "sha256": "f209e70cb349b4ae83f40ac6a55b57b8b251f08a0ec740d1533cccbd10110779",
+      "bytes": 319
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/package.json",
+      "sha256": "961bc456b2ec3c48dc5e525c2dacd5ebc308aa94a8394a19c5d8530eba0906b6",
+      "bytes": 216
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/packages/db/schema.sql",
+      "sha256": "5fb06c22109ef6f48ea3d992b485da932658f16131195bba81ca423a20d7e38b",
+      "bytes": 610
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/packages/domain/package.json",
+      "sha256": "abe16d7726e5f73f455d0082c4a09a0edf0008dbd5226f07ed27404661890b01",
+      "bytes": 71
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/packages/domain/src/job.ts",
+      "sha256": "3a3d7cb9bb09ae767c1f1e5cbdbc34dbf3885589802f147ebcc6ef89d763152f",
+      "bytes": 390
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/pnpm-workspace.yaml",
+      "sha256": "253208fa7c1b64372c219b9e19cef15ed70ca93b66a4d5c4c4d2297a5aff8880",
+      "bytes": 36
+    },
+    {
+      "path": "evals/fixtures/queued-job-monorepo/README.md",
+      "sha256": "5366569577357589945d2a4a13a30ce2d1c229c3d54128b9598efcdcab63b38c",
+      "bytes": 401
+    },
+    {
       "path": "evals/pressure/pressure_evals.json",
       "sha256": "b1a383252feeb02ccdbf2418a70faa03d6d6ad31f247836e37fa82daac7a8ed6",
       "bytes": 14115
     },
     {
       "path": "evals/pressure/stage3_pressure_evals.json",
-      "sha256": "6d428336297f882805a2ce4bd2ef7baec0a1f4745adbeab4ff110618131c37be",
-      "bytes": 13122
+      "sha256": "e0fda42e22a5ba54821e6b1c2a6ae028bbe072b141d6e491a3112a0c5c45cd60",
+      "bytes": 13187
     },
     {
       "path": "evals/pressure/stage4_pressure_evals.json",
@@ -319,6 +429,11 @@
       "path": "evals/pressure/stage5_pressure_evals.json",
       "sha256": "923c444a7880526c167e87aabac1cf2644441d048531d98e11fd490ce17acee4",
       "bytes": 5895
+    },
+    {
+      "path": "evals/README.md",
+      "sha256": "f10d8a727918d8bb171236e2db7a83fd1fd2673df680fcb16b6b6183fef5a991",
+      "bytes": 1773
     },
     {
       "path": "evals/regression/stage3_regression_evals.json",
@@ -337,13 +452,43 @@
     },
     {
       "path": "evals/trigger/manifest.json",
-      "sha256": "23a431ca7c3face218c42a7f8197e06389133f297bf030226d3e06d761e9bf6f",
+      "sha256": "1ec71d94963c6ad5b0f323bfeeb765c5b6098c69d711eca7ad4be1042932dc6c",
       "bytes": 3837
     },
     {
       "path": "evals/trigger/router_trigger_evals.json",
       "sha256": "5573279dbb42a765ef44135f630c1aa3d4650a95d2514dc12f61bd049e9aedd1",
       "bytes": 2005
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "f53c38d70af1d91c02c788ab8589ba8f17caa3840e0467abc770451ec1778101",
+      "bytes": 345
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "6a3adb3d413005c45ed89dd2278ca850f159e51b43726ffabf173bc9f6b030c8",
+      "bytes": 1510
+    },
+    {
+      "path": "README.md",
+      "sha256": "3c47f966f3beeec78b9bd0c54084be41eb466dd41ebdca4d1f6d00d847b24d48",
+      "bytes": 1718
+    },
+    {
+      "path": "schemas/autonomy-run-envelope.schema.json",
+      "sha256": "0b4bff4a63cf05d876f46fcb659cf018e4b572d674e2e7a37d69bd698365a53b",
+      "bytes": 3713
+    },
+    {
+      "path": "schemas/autonomy-run-plan.schema.json",
+      "sha256": "0e72b39db46d361c05d23245c2b0880136936eb2b45906bcf98958d3d7eedbbf",
+      "bytes": 1420
     },
     {
       "path": "schemas/eval-case.schema.json",
@@ -371,6 +516,11 @@
       "bytes": 910
     },
     {
+      "path": "scripts/autonomy_supervisor.py",
+      "sha256": "0ea79b1554e2dcb08d716417fa152b976b49a1905924713d9c71cc7f79bef2f0",
+      "bytes": 15174
+    },
+    {
       "path": "scripts/mock_behavior_runner.py",
       "sha256": "1dfa5b2c3804af915d0d70505cec3675628553016ec50c4e9e02eba43d50f582",
       "bytes": 710
@@ -386,9 +536,34 @@
       "bytes": 420
     },
     {
+      "path": "scripts/validate_autonomy_envelope.py",
+      "sha256": "1276a6616a0c9b49090b7439c15e2fc5707eefa434e13f5cd2a2dc0c310de36c",
+      "bytes": 7337
+    },
+    {
+      "path": "scripts/validate_autonomy_plan.py",
+      "sha256": "6783574684f2db2754e16f0744c690d4c3d8f129ff592a271b661f481804926c",
+      "bytes": 7069
+    },
+    {
       "path": "scripts/validate_codex_plugin.py",
       "sha256": "02d37249fa7b618687b121c1b35adb9cee74bdfcd94fc3427f4fa712f8244c3a",
       "bytes": 2452
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "47c5d16fdf06d83fa868ffef987f83cf729a2475d8f3dbf5b3c3a546cb1c89bf",
+      "bytes": 882
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "4c217d1fb72d6af744e1b16f88a667c84828ea8568affe5396c1fb0fa7cafdaa",
+      "bytes": 7240
+    },
+    {
+      "path": "SUPPORT.md",
+      "sha256": "de84c33d42444bd75e60dbd0d5a1ca5cc6a8777a0931d0d2f55b4ad55f1ddce6",
+      "bytes": 435
     },
     {
       "path": "templates/adr.md",
@@ -399,6 +574,16 @@
       "path": "templates/architecture.md",
       "sha256": "c773d37cec87ab19e0aef2c78eda701be4fa993beff95b4ff10e784b93fe50ad",
       "bytes": 514
+    },
+    {
+      "path": "templates/autonomy-run-envelope.json",
+      "sha256": "4bc1a9287324bc459364941f2bf73d5ecf33e3db3e229dba5e5402217cb3d003",
+      "bytes": 1479
+    },
+    {
+      "path": "templates/autonomy-run-plan.json",
+      "sha256": "734593741e6d8a950be04356531b7af744518d9c6ebe3547590e5faac1e2a8c3",
+      "bytes": 1070
     },
     {
       "path": "templates/code-review-report.md",
@@ -466,14 +651,14 @@
       "bytes": 547
     },
     {
-      "path": "validation/stage3-validation.json",
-      "sha256": "133a719975a7a87c48931f302a4e00e528f1dcd698c248c3a1c468b8ed7fc044",
-      "bytes": 3672
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "1efd87ddebd686490fbef077f25885a78ab06c7a04c9c0beae686e64c3cab685",
+      "bytes": 704
     },
     {
-      "path": "workflows/architecture-design/SKILL.md",
-      "sha256": "88ac12babdbfbd99060a8cfe914600396f9490359e9ba2a9772705a17dfa4234",
-      "bytes": 14612
+      "path": "VERSION",
+      "sha256": "9737e213b6fe127819a01fd2f63133a076816b7255ce35385d6394a443c946d6",
+      "bytes": 13
     },
     {
       "path": "workflows/architecture-design/agents/openai.yaml",
@@ -482,13 +667,33 @@
     },
     {
       "path": "workflows/architecture-design/evals/trigger_evals.json",
-      "sha256": "891f2f582bda5c72c36f3fb15e12da3b2eb35a7693b1fcb095a6f3a0857193ae",
-      "bytes": 1991
+      "sha256": "2c8b01b2b1888e72ec2f2657ebbc16b35fffb50cfbaa1ae980984bd90926c434",
+      "bytes": 2897
     },
     {
-      "path": "workflows/code-review/SKILL.md",
-      "sha256": "fb32f0053ae7809a25f199a218d6719b55f56819fc19b20d9e472da16f2f33d8",
-      "bytes": 8846
+      "path": "workflows/architecture-design/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/architecture-design/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/architecture-design/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/architecture-design/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/architecture-design/SKILL.md",
+      "sha256": "a312bc89b8f4bec50e0226d386b3d4f75a608a480c00394d3ec6fbf899859938",
+      "bytes": 14946
     },
     {
       "path": "workflows/code-review/agents/openai.yaml",
@@ -502,13 +707,13 @@
     },
     {
       "path": "workflows/code-review/evals/trigger_evals.json",
-      "sha256": "a5b40bc24cf16321a4bea063b8f9d8b79932e4567d671923d17493898475b8d0",
-      "bytes": 1819
+      "sha256": "d50f101d8820c1472c76ec0987e41937d7704ed1dfbf27e0730f207ea9c1bd5e",
+      "bytes": 1898
     },
     {
-      "path": "workflows/implementation-planning/SKILL.md",
-      "sha256": "8127ec86a0101224c59478cde722a429eb3871e807afb9c3dce060f0028723d5",
-      "bytes": 12494
+      "path": "workflows/code-review/SKILL.md",
+      "sha256": "fecc81bfeb7f93149b6c02f91959ed35f1b9832f7544ea53bb0da56164f758b7",
+      "bytes": 9104
     },
     {
       "path": "workflows/implementation-planning/agents/openai.yaml",
@@ -521,9 +726,29 @@
       "bytes": 2033
     },
     {
-      "path": "workflows/incremental-implementation/SKILL.md",
-      "sha256": "5a397424f794a6b65272acdfa9742e5ea6e994dff38d70d862f01d2b14aa3f4d",
-      "bytes": 11577
+      "path": "workflows/implementation-planning/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/implementation-planning/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/implementation-planning/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/implementation-planning/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/implementation-planning/SKILL.md",
+      "sha256": "7ddb803547e4b69ca676fe989ab929b7ac11388d79565e172189b5e9612057d9",
+      "bytes": 12762
     },
     {
       "path": "workflows/incremental-implementation/agents/openai.yaml",
@@ -537,13 +762,13 @@
     },
     {
       "path": "workflows/incremental-implementation/evals/trigger_evals.json",
-      "sha256": "5fe959bc04cebb0492e6ddff5aaf666e6ffb7582200b24a6fd81fb9600a23848",
-      "bytes": 2211
+      "sha256": "747f54b6a483865ca450b8995fbb820cbe278798c16712470aa2146b62073bd3",
+      "bytes": 2224
     },
     {
-      "path": "workflows/intent-interview/SKILL.md",
-      "sha256": "6872a4b7c183197af1dfddac7976138a7212d2d19e7267d0d39ff67538f45d93",
-      "bytes": 15158
+      "path": "workflows/incremental-implementation/SKILL.md",
+      "sha256": "def16dcd6f468fcce82dedfa4429ce49f2ba131a597722f0128f6ba868de304d",
+      "bytes": 12654
     },
     {
       "path": "workflows/intent-interview/agents/openai.yaml",
@@ -556,9 +781,29 @@
       "bytes": 1741
     },
     {
-      "path": "workflows/preflight-verification/SKILL.md",
-      "sha256": "e78df314c033b30bdf89e49191734240019b39b38b5ded4527328a6b92632875",
-      "bytes": 8910
+      "path": "workflows/intent-interview/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/intent-interview/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/intent-interview/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/intent-interview/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/intent-interview/SKILL.md",
+      "sha256": "34cfbf376f62d6aca3cf83f9eb6bbb8580bb0503fa655ae3e5aa852ec0989251",
+      "bytes": 15625
     },
     {
       "path": "workflows/preflight-verification/agents/openai.yaml",
@@ -576,9 +821,9 @@
       "bytes": 1862
     },
     {
-      "path": "workflows/product-discovery/SKILL.md",
-      "sha256": "bd66da98b37f80c7b441b13b99db5affd64e9a982bfb99e2cc93be68ed228972",
-      "bytes": 11217
+      "path": "workflows/preflight-verification/SKILL.md",
+      "sha256": "3950871e12854a8522c10715dd8a926fa9d70af98ad27409a2be778b7d0ef284",
+      "bytes": 9110
     },
     {
       "path": "workflows/product-discovery/agents/openai.yaml",
@@ -596,9 +841,29 @@
       "bytes": 1901
     },
     {
-      "path": "workflows/project-state-handoff/SKILL.md",
-      "sha256": "1ebe8cfd10761ca39e10979c02e5571536cf91ce5ffca1b79414cba69089f90e",
-      "bytes": 12320
+      "path": "workflows/product-discovery/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/product-discovery/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/product-discovery/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/product-discovery/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/product-discovery/SKILL.md",
+      "sha256": "58744b12a7a7731887cf75b89801b577a2e75670d305591e71388a0779d77f7b",
+      "bytes": 11397
     },
     {
       "path": "workflows/project-state-handoff/agents/openai.yaml",
@@ -607,13 +872,33 @@
     },
     {
       "path": "workflows/project-state-handoff/evals/trigger_evals.json",
-      "sha256": "3d5158e9c094525f1b78d40290955794fe87ec68956b09d0c7d7d9769cf78948",
-      "bytes": 2036
+      "sha256": "efc5539c68637a05d61ab564612189bfa04e580308fcf887585f51e3c2e815b7",
+      "bytes": 2212
     },
     {
-      "path": "workflows/quality-assurance/SKILL.md",
-      "sha256": "d904d3c28e59c0519a26e14221e455657895a2f97ba988b22b41731cc5132aed",
-      "bytes": 8990
+      "path": "workflows/project-state-handoff/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/project-state-handoff/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/project-state-handoff/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/project-state-handoff/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/project-state-handoff/SKILL.md",
+      "sha256": "82e56961306edc4654b894427ab994c51f95f0af33469d70b207096268545b44",
+      "bytes": 12781
     },
     {
       "path": "workflows/quality-assurance/agents/openai.yaml",
@@ -627,13 +912,13 @@
     },
     {
       "path": "workflows/quality-assurance/evals/trigger_evals.json",
-      "sha256": "904da17387ae4c616ddbfdb6517c8370394c8a61ec6f290e5980c22b83283a6d",
-      "bytes": 1789
+      "sha256": "1e296591c5f54d226ac5941d9053d98a4ab449236000caa6f717eb96fdaae6bb",
+      "bytes": 1841
     },
     {
-      "path": "workflows/release-deployment/SKILL.md",
-      "sha256": "69a5f10d6b85909bffa515d137b7953a1b5a1ffad37014584cc9a1b3a574eb69",
-      "bytes": 9700
+      "path": "workflows/quality-assurance/SKILL.md",
+      "sha256": "c1a198744bc6d96458f150e3567c3c569b225054c71c5c7b8c238fd00cb472da",
+      "bytes": 9118
     },
     {
       "path": "workflows/release-deployment/agents/openai.yaml",
@@ -651,9 +936,64 @@
       "bytes": 1619
     },
     {
-      "path": "workflows/repository-discovery/SKILL.md",
-      "sha256": "a1bdafa11be00113ccd6a96ea84ee01f4c76f9075612f59bf0da975b2335110a",
-      "bytes": 13522
+      "path": "workflows/release-deployment/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/release-deployment/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/release-deployment/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/release-deployment/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/release-deployment/references/schemas/autonomy-run-envelope.schema.json",
+      "sha256": "0b4bff4a63cf05d876f46fcb659cf018e4b572d674e2e7a37d69bd698365a53b",
+      "bytes": 3713
+    },
+    {
+      "path": "workflows/release-deployment/references/schemas/autonomy-run-plan.schema.json",
+      "sha256": "0e72b39db46d361c05d23245c2b0880136936eb2b45906bcf98958d3d7eedbbf",
+      "bytes": 1420
+    },
+    {
+      "path": "workflows/release-deployment/references/templates/autonomy-run-envelope.json",
+      "sha256": "4bc1a9287324bc459364941f2bf73d5ecf33e3db3e229dba5e5402217cb3d003",
+      "bytes": 1479
+    },
+    {
+      "path": "workflows/release-deployment/references/templates/autonomy-run-plan.json",
+      "sha256": "734593741e6d8a950be04356531b7af744518d9c6ebe3547590e5faac1e2a8c3",
+      "bytes": 1070
+    },
+    {
+      "path": "workflows/release-deployment/scripts/autonomy_supervisor.py",
+      "sha256": "0ea79b1554e2dcb08d716417fa152b976b49a1905924713d9c71cc7f79bef2f0",
+      "bytes": 15174
+    },
+    {
+      "path": "workflows/release-deployment/scripts/validate_autonomy_envelope.py",
+      "sha256": "1276a6616a0c9b49090b7439c15e2fc5707eefa434e13f5cd2a2dc0c310de36c",
+      "bytes": 7337
+    },
+    {
+      "path": "workflows/release-deployment/scripts/validate_autonomy_plan.py",
+      "sha256": "6783574684f2db2754e16f0744c690d4c3d8f129ff592a271b661f481804926c",
+      "bytes": 7069
+    },
+    {
+      "path": "workflows/release-deployment/SKILL.md",
+      "sha256": "71dd5cbc6a46707cb9474f93ae851fe9c687e7c42976fccb0ea3e5e42356bc16",
+      "bytes": 10752
     },
     {
       "path": "workflows/repository-discovery/agents/openai.yaml",
@@ -662,13 +1002,33 @@
     },
     {
       "path": "workflows/repository-discovery/evals/trigger_evals.json",
-      "sha256": "effe9fb16e8fe436bfb0ad8a99e521790794eefa2fddaac816e9ea12910c580f",
-      "bytes": 2278
+      "sha256": "f20e2671c21d87a4f3c78c2083734449a227299258b5a00729292b1a53ee4a59",
+      "bytes": 2456
     },
     {
-      "path": "workflows/requirements-specification/SKILL.md",
-      "sha256": "a5e5729aacb948c872a840a181538fa5055c55a819e90e9bdf92cd0f2b225a4f",
-      "bytes": 14272
+      "path": "workflows/repository-discovery/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/repository-discovery/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/repository-discovery/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/repository-discovery/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/repository-discovery/SKILL.md",
+      "sha256": "de7342dbb706953f142f2b76c3808dc3f407e8c0c351bca752f3b922beb45e73",
+      "bytes": 13895
     },
     {
       "path": "workflows/requirements-specification/agents/openai.yaml",
@@ -677,13 +1037,33 @@
     },
     {
       "path": "workflows/requirements-specification/evals/trigger_evals.json",
-      "sha256": "6059a9a36e9e91fc9ab5d6a610a4e2591d327caff46699ef4a68160ce58266f8",
-      "bytes": 2104
+      "sha256": "435bd9940ad9cf7ea13e2f8d041c14419cbaad1059a9a3fc45aa72acfd5ba7fe",
+      "bytes": 2145
     },
     {
-      "path": "workflows/security-engineering/SKILL.md",
-      "sha256": "2085dd6239244bf53f9c8537b9dac1729e173954d449a5ab18c0d22096c4c286",
-      "bytes": 11823
+      "path": "workflows/requirements-specification/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/requirements-specification/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/requirements-specification/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/requirements-specification/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/requirements-specification/SKILL.md",
+      "sha256": "861bab670539cbdc5075b7803ae53420666cb499e4e899b0aee13271c28dba06",
+      "bytes": 14604
     },
     {
       "path": "workflows/security-engineering/agents/openai.yaml",
@@ -701,9 +1081,29 @@
       "bytes": 1619
     },
     {
-      "path": "workflows/skill-evaluation/SKILL.md",
-      "sha256": "8c6ea39f640f8219b6cc4e7d07849bd2f880d11e0cac905f8cbc51c185cd550f",
-      "bytes": 9641
+      "path": "workflows/security-engineering/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/security-engineering/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/security-engineering/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/security-engineering/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/security-engineering/SKILL.md",
+      "sha256": "fd8570d6566c6f4229d2ddb6a911fcfbdd70fc35103a93c4cec3e4442e873240",
+      "bytes": 11880
     },
     {
       "path": "workflows/skill-evaluation/agents/openai.yaml",
@@ -717,13 +1117,33 @@
     },
     {
       "path": "workflows/skill-evaluation/evals/trigger_evals.json",
-      "sha256": "31c5277fd91cb8b4d597b2d45bf40634b230a7f778dfdd86faedb74dd83dbb01",
-      "bytes": 1584
+      "sha256": "f2f049df645d9416fd4c21f1cc6f5a5013a9d7fa639d4a6ae3ba8c57f0856d6a",
+      "bytes": 1643
     },
     {
-      "path": "workflows/skill-release-engineering/SKILL.md",
-      "sha256": "184ef102c67ceeecbaed44e84afe5a336fd3e677d77a186fedeb235009fe4094",
-      "bytes": 7932
+      "path": "workflows/skill-evaluation/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/skill-evaluation/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/skill-evaluation/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/skill-evaluation/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/skill-evaluation/SKILL.md",
+      "sha256": "e368fb5424d3428cc39c4f99fae3f5ab98c06a47287842942b41c73da03970bd",
+      "bytes": 9776
     },
     {
       "path": "workflows/skill-release-engineering/agents/openai.yaml",
@@ -741,9 +1161,9 @@
       "bytes": 3093
     },
     {
-      "path": "workflows/source-verification/SKILL.md",
-      "sha256": "3d87ddd20c5c4ccc2ed192283a0c21be6de279d677cb8d8242633c35e0a7cdd9",
-      "bytes": 9457
+      "path": "workflows/skill-release-engineering/SKILL.md",
+      "sha256": "1c8a1942ad092f7106ad5cd6c22b300d45f308fe53777222438bd0ba42bec041",
+      "bytes": 7941
     },
     {
       "path": "workflows/source-verification/agents/openai.yaml",
@@ -761,9 +1181,29 @@
       "bytes": 1760
     },
     {
-      "path": "workflows/systematic-debugging/SKILL.md",
-      "sha256": "6ba4181372f346fa0413b40f8e5789109dd14ac5cc2c35b50700c8dc80192ca2",
-      "bytes": 9137
+      "path": "workflows/source-verification/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/source-verification/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/source-verification/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/source-verification/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/source-verification/SKILL.md",
+      "sha256": "51b97ab22ef6758d197c19b52473b54aac0bf64775d55a3e16e76222f1802bf9",
+      "bytes": 9603
     },
     {
       "path": "workflows/systematic-debugging/agents/openai.yaml",
@@ -781,9 +1221,9 @@
       "bytes": 1810
     },
     {
-      "path": "workflows/test-engineering/SKILL.md",
-      "sha256": "3e9af8156ee84aab43ede957997c0607640a87d3e8a772579b7b97319d117026",
-      "bytes": 10555
+      "path": "workflows/systematic-debugging/SKILL.md",
+      "sha256": "dd4462e678b0e7283f613432568ae3559db85a05133d1efde1d15c69c31c2367",
+      "bytes": 9320
     },
     {
       "path": "workflows/test-engineering/agents/openai.yaml",
@@ -801,9 +1241,9 @@
       "bytes": 1808
     },
     {
-      "path": "workflows/ux-platform-design/SKILL.md",
-      "sha256": "05f50659b00534ba37ef38d875e446b091e676ff4524cafafe6d6ff7df441e1f",
-      "bytes": 10898
+      "path": "workflows/test-engineering/SKILL.md",
+      "sha256": "09a4fdb70b3fa85f6d628f5e43970e028d54183a692b19b485ba959e7357bc1e",
+      "bytes": 10670
     },
     {
       "path": "workflows/ux-platform-design/agents/openai.yaml",
@@ -817,8 +1257,33 @@
     },
     {
       "path": "workflows/ux-platform-design/evals/trigger_evals.json",
-      "sha256": "fc25375aa50dedf23dfa03108d2ebdb8bd6cbd2ee48a03d944af204af0a1feed",
-      "bytes": 1710
+      "sha256": "00eae98865a57d27befbce2caa9eb06b941d54abcea417880dc814f80c6e66e4",
+      "bytes": 1733
+    },
+    {
+      "path": "workflows/ux-platform-design/references/core/autonomy-policy.md",
+      "sha256": "c10e887445ee9de4b766441f582f898d6660cfe00e1407b472dd41e8e5367624",
+      "bytes": 4554
+    },
+    {
+      "path": "workflows/ux-platform-design/references/core/constitution.md",
+      "sha256": "a59d9b50436870ece5b9f45e3c08c17fa3eb15c540fdeec3434fad7d1bb4726d",
+      "bytes": 12296
+    },
+    {
+      "path": "workflows/ux-platform-design/references/core/decision-policy.md",
+      "sha256": "1f2e26a0e81252e9bedf96acb5ab33b79cc70b33974f32d3a4db11486e57bb94",
+      "bytes": 12322
+    },
+    {
+      "path": "workflows/ux-platform-design/references/core/task-classifier.md",
+      "sha256": "53a7a02f49f8f693bb4a5114c4544d1961be860cb77f4b5cabb02a3a391cbaf3",
+      "bytes": 11370
+    },
+    {
+      "path": "workflows/ux-platform-design/SKILL.md",
+      "sha256": "91417c4bc16cc8dc0fb197e3b5ebee7ddba3a47d70f885a85c75a8f4f3754cd5",
+      "bytes": 11015
     }
   ]
 }

@@ -12,7 +12,7 @@
     "should_trigger": true
   },
   {
-    "query": "Validate the plugin manifest, skill paths, references, scripts, permissions, license, and packaging before release.",
+    "query": "Evaluate whether the recent SKILL.md changes improved trigger precision and task behavior versus the no-skill baseline, and identify regressions without packaging a release.",
     "should_trigger": true
   },
   {
