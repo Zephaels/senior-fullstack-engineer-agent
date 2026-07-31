@@ -6,12 +6,32 @@ import argparse
 import datetime as dt
 import hashlib
 import json
-from pathlib import Path, PurePath
+from pathlib import Path, PurePosixPath, PureWindowsPath
 import re
 
 ALLOWED_ACTIONS = {"build", "test", "package", "canary_deploy", "deploy", "health_check", "observe", "feature_flag", "rollback"}
 SHELL_META = re.compile(r"[;&|<>`\r\n]")
 SHA256 = re.compile(r"^[0-9a-fA-F]{64}$")
+
+
+def is_absolute_portable(value: str) -> bool:
+    """Recognize explicit POSIX and Windows absolute paths on any host."""
+
+    return PurePosixPath(value).is_absolute() or PureWindowsPath(value).is_absolute()
+
+
+def is_root_path(value: str) -> bool:
+    """Return whether a portable absolute path addresses a filesystem root."""
+
+    posix = PurePosixPath(value)
+    windows = PureWindowsPath(value)
+    return (
+        posix.is_absolute()
+        and posix == PurePosixPath(posix.anchor)
+    ) or (
+        windows.is_absolute()
+        and windows == PureWindowsPath(windows.anchor)
+    )
 
 
 def parse_time(value: str) -> dt.datetime:
@@ -39,8 +59,8 @@ def validate(data: dict, *, allow_expired: bool = False) -> list[str]:
             if not isinstance(item, dict) or set(item) != {"path", "sha256"}:
                 errors.append("each trusted executable requires only path and sha256")
                 continue
-            executable = Path(str(item.get("path", "")))
-            if not executable.is_absolute(): errors.append(f"trusted executable path must be absolute: {item.get('path')!r}")
+            executable = str(item.get("path", ""))
+            if not is_absolute_portable(executable): errors.append(f"trusted executable path must be absolute: {item.get('path')!r}")
             if not SHA256.fullmatch(str(item.get("sha256", ""))): errors.append(f"trusted executable sha256 is invalid: {item.get('path')!r}")
             trusted_paths.add(str(item.get("path")))
     bindings = data.get("environment_bindings")
@@ -68,7 +88,7 @@ def validate(data: dict, *, allow_expired: bool = False) -> list[str]:
     else:
         for value in paths:
             text = str(value).strip()
-            if not text or text in {"/", "\\", "~", "$HOME", "%USERPROFILE%"} or text == PurePath(text).anchor:
+            if not text or text in {"/", "\\", "~", "$HOME", "%USERPROFILE%"} or is_root_path(text):
                 errors.append(f"allowed path is too broad: {text!r}")
     commands = data.get("allowed_commands")
     if not isinstance(commands, list) or not commands: errors.append("allowed_commands must be non-empty token arrays")
@@ -78,7 +98,7 @@ def validate(data: dict, *, allow_expired: bool = False) -> list[str]:
                 errors.append("every allowed command must be a non-empty token array")
             elif any(SHELL_META.search(token) for token in command):
                 errors.append(f"shell control operators are forbidden in allowed command tokens: {command!r}")
-            elif not Path(command[0]).is_absolute() or command[0] not in trusted_paths:
+            elif not is_absolute_portable(command[0]) or command[0] not in trusted_paths:
                 errors.append(f"allowed command executable must be an exact trusted absolute path: {command[0]!r}")
     limits = data.get("limits")
     if not isinstance(limits, dict): errors.append("limits must be an object")
@@ -106,7 +126,14 @@ def main() -> int:
     path = Path(args.envelope)
     data = json.loads(path.read_text(encoding="utf-8"))
     errors = validate(data, allow_expired=args.allow_expired)
-    report = {"status": "PASS" if not errors else "FAIL", "envelope_sha256": hashlib.sha256(path.read_bytes()).hexdigest(), "errors": errors}
+    # Detailed validation errors can contain operator-provided paths or
+    # environment variable names. Keep them available to in-process callers,
+    # but do not copy them into CI or terminal logs.
+    report = {
+        "status": "PASS" if not errors else "FAIL",
+        "envelope_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+        "error_count": len(errors),
+    }
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not errors else 1
 

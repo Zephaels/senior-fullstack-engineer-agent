@@ -3,6 +3,7 @@ import hashlib
 import importlib
 import json
 from pathlib import Path
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -147,6 +148,25 @@ class AutonomySupervisorTests(unittest.TestCase):
         self.assertNotEqual(code, 0)
         self.assertEqual(report["status"], "rolled_back")
         self.assertIn("workspace snapshot failed", report["rollback"]["reason"])
+
+    def test_validator_and_supervisor_cli_outputs_are_redacted(self):
+        sensitive_path = str(self.root.parent / "private-customer-path")
+        self.plan["workspace"] = sensitive_path
+        envelope_path = self.root / "envelope.json"
+        plan_path = self.root / "plan.json"
+        envelope_path.write_text(json.dumps(self.envelope), encoding="utf-8")
+        plan_path.write_text(json.dumps(self.plan), encoding="utf-8")
+
+        for script in ("validate_autonomy_plan.py", "autonomy_supervisor.py"):
+            completed = subprocess.run(
+                [sys.executable, str(SCRIPTS / script), str(envelope_path), str(plan_path)],
+                text=True,
+                capture_output=True,
+            )
+            self.assertNotEqual(completed.returncode, 0, script)
+            payload = json.loads(completed.stdout)
+            self.assertGreater(payload["error_count"], 0, script)
+            self.assertNotIn(sensitive_path, completed.stdout, script)
 
 
 if __name__ == "__main__":

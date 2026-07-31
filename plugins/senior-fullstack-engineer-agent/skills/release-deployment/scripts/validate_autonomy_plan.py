@@ -125,7 +125,10 @@ def main() -> int:
         "status": "PASS" if not errors else "FAIL",
         "envelope_sha256": hashlib.sha256(envelope_path.read_bytes()).hexdigest(),
         "plan_sha256": hashlib.sha256(plan_path.read_bytes()).hexdigest(),
-        "errors": errors,
+        # Validation details may contain operator-provided command or path
+        # values. The CLI emits only the count; library callers retain access
+        # to the detailed list returned by validate_plan().
+        "error_count": len(errors),
     }
     print(json.dumps(report, ensure_ascii=False, indent=2))
     return 0 if not errors else 1

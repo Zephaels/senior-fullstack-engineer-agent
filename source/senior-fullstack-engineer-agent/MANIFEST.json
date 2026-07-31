@@ -517,8 +517,8 @@
     },
     {
       "path": "scripts/autonomy_supervisor.py",
-      "sha256": "0ea79b1554e2dcb08d716417fa152b976b49a1905924713d9c71cc7f79bef2f0",
-      "bytes": 15174
+      "sha256": "b380ee984fd3be11d42fe66b2d17134c05ae946b6d6237bab8224e42fa50da29",
+      "bytes": 15724
     },
     {
       "path": "scripts/mock_behavior_runner.py",
@@ -537,13 +537,13 @@
     },
     {
       "path": "scripts/validate_autonomy_envelope.py",
-      "sha256": "1276a6616a0c9b49090b7439c15e2fc5707eefa434e13f5cd2a2dc0c310de36c",
-      "bytes": 7337
+      "sha256": "27a6dd062249efb4882d158a1483e6c5aa0c5f14e18c7aabd9206ec6c49b640c",
+      "bytes": 8187
     },
     {
       "path": "scripts/validate_autonomy_plan.py",
-      "sha256": "6783574684f2db2754e16f0744c690d4c3d8f129ff592a271b661f481804926c",
-      "bytes": 7069
+      "sha256": "64ceae11f889c9e6cf56ecbea0ca2e6d3102abc7d5576e5e48cadef5234e611d",
+      "bytes": 7292
     },
     {
       "path": "scripts/validate_codex_plugin.py",
@@ -977,18 +977,18 @@
     },
     {
       "path": "workflows/release-deployment/scripts/autonomy_supervisor.py",
-      "sha256": "0ea79b1554e2dcb08d716417fa152b976b49a1905924713d9c71cc7f79bef2f0",
-      "bytes": 15174
+      "sha256": "b380ee984fd3be11d42fe66b2d17134c05ae946b6d6237bab8224e42fa50da29",
+      "bytes": 15724
     },
     {
       "path": "workflows/release-deployment/scripts/validate_autonomy_envelope.py",
-      "sha256": "1276a6616a0c9b49090b7439c15e2fc5707eefa434e13f5cd2a2dc0c310de36c",
-      "bytes": 7337
+      "sha256": "27a6dd062249efb4882d158a1483e6c5aa0c5f14e18c7aabd9206ec6c49b640c",
+      "bytes": 8187
     },
     {
       "path": "workflows/release-deployment/scripts/validate_autonomy_plan.py",
-      "sha256": "6783574684f2db2754e16f0744c690d4c3d8f129ff592a271b661f481804926c",
-      "bytes": 7069
+      "sha256": "64ceae11f889c9e6cf56ecbea0ca2e6d3102abc7d5576e5e48cadef5234e611d",
+      "bytes": 7292
     },
     {
       "path": "workflows/release-deployment/SKILL.md",

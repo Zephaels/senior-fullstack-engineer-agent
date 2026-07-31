@@ -74,7 +74,14 @@ def main() -> int:
     output = Path(args.output)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(result, indent=2))
+    # The report file is the controlled review artifact. Avoid copying file
+    # contents, workflow references, or secret-scanner findings into CI logs.
+    summary = {
+        "status": result["status"],
+        "scope": result["scope"],
+        "finding_count": len(findings),
+    }
+    print(json.dumps(summary, indent=2))
     return 0 if not findings else 1
 
 

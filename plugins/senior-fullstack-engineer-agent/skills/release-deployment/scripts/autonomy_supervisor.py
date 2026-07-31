@@ -314,7 +314,18 @@ def main() -> int:
         hashlib.sha256(plan_path.read_bytes()).hexdigest(),
         execute_run=args.execute,
     )
-    print(json.dumps(report, ensure_ascii=False, indent=2))
+    # The durable journal contains the detailed local evidence. Terminal and
+    # CI logs receive a bounded summary so operator-provided paths, approval
+    # references, and validation messages are not logged in clear text.
+    summary = {
+        "status": report.get("status"),
+        "phase": report.get("phase"),
+        "execute": bool(args.execute),
+        "completed_steps": len(report.get("steps", [])),
+        "error_count": len(report.get("errors", [])),
+        "rollback_status": (report.get("rollback") or {}).get("status"),
+    }
+    print(json.dumps(summary, ensure_ascii=False, indent=2))
     return code
 
 

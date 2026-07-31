@@ -3562,18 +3562,18 @@
     },
     {
       "path": "plugins/senior-fullstack-engineer-agent/skills/release-deployment/scripts/autonomy_supervisor.py",
-      "sha256": "0ea79b1554e2dcb08d716417fa152b976b49a1905924713d9c71cc7f79bef2f0",
-      "bytes": 15174
+      "sha256": "b380ee984fd3be11d42fe66b2d17134c05ae946b6d6237bab8224e42fa50da29",
+      "bytes": 15724
     },
     {
       "path": "plugins/senior-fullstack-engineer-agent/skills/release-deployment/scripts/validate_autonomy_envelope.py",
-      "sha256": "1276a6616a0c9b49090b7439c15e2fc5707eefa434e13f5cd2a2dc0c310de36c",
-      "bytes": 7337
+      "sha256": "27a6dd062249efb4882d158a1483e6c5aa0c5f14e18c7aabd9206ec6c49b640c",
+      "bytes": 8187
     },
     {
       "path": "plugins/senior-fullstack-engineer-agent/skills/release-deployment/scripts/validate_autonomy_plan.py",
-      "sha256": "6783574684f2db2754e16f0744c690d4c3d8f129ff592a271b661f481804926c",
-      "bytes": 7069
+      "sha256": "64ceae11f889c9e6cf56ecbea0ca2e6d3102abc7d5576e5e48cadef5234e611d",
+      "bytes": 7292
     },
     {
       "path": "plugins/senior-fullstack-engineer-agent/skills/release-deployment/SKILL.md",
@@ -3827,18 +3827,18 @@
     },
     {
       "path": "plugins/senior-fullstack-engineer-agent/skills/senior-fullstack-engineer-agent/scripts/autonomy_supervisor.py",
-      "sha256": "0ea79b1554e2dcb08d716417fa152b976b49a1905924713d9c71cc7f79bef2f0",
-      "bytes": 15174
+      "sha256": "b380ee984fd3be11d42fe66b2d17134c05ae946b6d6237bab8224e42fa50da29",
+      "bytes": 15724
     },
     {
       "path": "plugins/senior-fullstack-engineer-agent/skills/senior-fullstack-engineer-agent/scripts/validate_autonomy_envelope.py",
-      "sha256": "1276a6616a0c9b49090b7439c15e2fc5707eefa434e13f5cd2a2dc0c310de36c",
-      "bytes": 7337
+      "sha256": "27a6dd062249efb4882d158a1483e6c5aa0c5f14e18c7aabd9206ec6c49b640c",
+      "bytes": 8187
     },
     {
       "path": "plugins/senior-fullstack-engineer-agent/skills/senior-fullstack-engineer-agent/scripts/validate_autonomy_plan.py",
-      "sha256": "6783574684f2db2754e16f0744c690d4c3d8f129ff592a271b661f481804926c",
-      "bytes": 7069
+      "sha256": "64ceae11f889c9e6cf56ecbea0ca2e6d3102abc7d5576e5e48cadef5234e611d",
+      "bytes": 7292
     },
     {
       "path": "plugins/senior-fullstack-engineer-agent/skills/senior-fullstack-engineer-agent/SKILL.md",
@@ -4037,8 +4037,8 @@
     },
     {
       "path": "scripts/run_release_security_review.py",
-      "sha256": "a4688382f57835633838fc01f5b5a2a39d41dccafffce647f5733c61774a44c3",
-      "bytes": 3561
+      "sha256": "efcf67e6412809bd003dbe2b1922c0ff83961500760e9390ff5bac6110e71e6e",
+      "bytes": 3848
     },
     {
       "path": "scripts/sfse_installer.py",
@@ -4597,8 +4597,8 @@
     },
     {
       "path": "source/senior-fullstack-engineer-agent/scripts/autonomy_supervisor.py",
-      "sha256": "0ea79b1554e2dcb08d716417fa152b976b49a1905924713d9c71cc7f79bef2f0",
-      "bytes": 15174
+      "sha256": "b380ee984fd3be11d42fe66b2d17134c05ae946b6d6237bab8224e42fa50da29",
+      "bytes": 15724
     },
     {
       "path": "source/senior-fullstack-engineer-agent/scripts/mock_behavior_runner.py",
@@ -4617,13 +4617,13 @@
     },
     {
       "path": "source/senior-fullstack-engineer-agent/scripts/validate_autonomy_envelope.py",
-      "sha256": "1276a6616a0c9b49090b7439c15e2fc5707eefa434e13f5cd2a2dc0c310de36c",
-      "bytes": 7337
+      "sha256": "27a6dd062249efb4882d158a1483e6c5aa0c5f14e18c7aabd9206ec6c49b640c",
+      "bytes": 8187
     },
     {
       "path": "source/senior-fullstack-engineer-agent/scripts/validate_autonomy_plan.py",
-      "sha256": "6783574684f2db2754e16f0744c690d4c3d8f129ff592a271b661f481804926c",
-      "bytes": 7069
+      "sha256": "64ceae11f889c9e6cf56ecbea0ca2e6d3102abc7d5576e5e48cadef5234e611d",
+      "bytes": 7292
     },
     {
       "path": "source/senior-fullstack-engineer-agent/scripts/validate_codex_plugin.py",
@@ -5057,18 +5057,18 @@
     },
     {
       "path": "source/senior-fullstack-engineer-agent/workflows/release-deployment/scripts/autonomy_supervisor.py",
-      "sha256": "0ea79b1554e2dcb08d716417fa152b976b49a1905924713d9c71cc7f79bef2f0",
-      "bytes": 15174
+      "sha256": "b380ee984fd3be11d42fe66b2d17134c05ae946b6d6237bab8224e42fa50da29",
+      "bytes": 15724
     },
     {
       "path": "source/senior-fullstack-engineer-agent/workflows/release-deployment/scripts/validate_autonomy_envelope.py",
-      "sha256": "1276a6616a0c9b49090b7439c15e2fc5707eefa434e13f5cd2a2dc0c310de36c",
-      "bytes": 7337
+      "sha256": "27a6dd062249efb4882d158a1483e6c5aa0c5f14e18c7aabd9206ec6c49b640c",
+      "bytes": 8187
     },
     {
       "path": "source/senior-fullstack-engineer-agent/workflows/release-deployment/scripts/validate_autonomy_plan.py",
-      "sha256": "6783574684f2db2754e16f0744c690d4c3d8f129ff592a271b661f481804926c",
-      "bytes": 7069
+      "sha256": "64ceae11f889c9e6cf56ecbea0ca2e6d3102abc7d5576e5e48cadef5234e611d",
+      "bytes": 7292
     },
     {
       "path": "source/senior-fullstack-engineer-agent/workflows/release-deployment/SKILL.md",
@@ -5372,13 +5372,13 @@
     },
     {
       "path": "tests/test_autonomy_policy.py",
-      "sha256": "684f41416173350bceb3329c292dcc6fe22c2deb07c24c4c9a6bcd37dcef0560",
-      "bytes": 1984
+      "sha256": "46a081ff68a09c7d563e6e1b8022abf666e5da1431be0c0126a5c337e8f10399",
+      "bytes": 3281
     },
     {
       "path": "tests/test_autonomy_supervisor.py",
-      "sha256": "748cf6db57efac6bc6f4d71b4c5bdd7a739c7d7d3880bdea744a2ff4fd63039a",
-      "bytes": 7637
+      "sha256": "c362fce37332215cb63b659b9e70a737a7d9cc93c929c02acabd4dbd4044d258",
+      "bytes": 8635
     },
     {
       "path": "tests/test_qualification_commands.py",
