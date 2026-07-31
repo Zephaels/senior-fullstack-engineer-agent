@@ -75,6 +75,9 @@ class QualificationCommandTests(unittest.TestCase):
         validator = (ROOT / 'scripts' / 'validate_rc.py').read_text(encoding='utf-8')
         self.assertIn("f'senior-fullstack-engineer-agent-{VERSION}'", build)
         self.assertIn("f'{NAME}-{VERSION}'", manifests)
+        self.assertIn("'.venv'", build)
+        self.assertIn("'node_modules'", build)
+        self.assertIn("p.name.startswith('.env.')", build)
         for source in [build, manifests, validator]:
             self.assertIn("'validation'", source)
 

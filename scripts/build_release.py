@@ -4,10 +4,16 @@ import datetime as dt, hashlib, json, os, stat, zipfile
 from release_content import canonical_bytes
 ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'dist'; OUT.mkdir(exist_ok=True); VERSION=(ROOT/'VERSION').read_text(encoding='utf-8').strip()
 EPOCH=max(int(os.environ.get('SOURCE_DATE_EPOCH','315532800')),315532800); DT=dt.datetime.fromtimestamp(EPOCH,dt.timezone.utc); ZIP_DT=(DT.year,DT.month,DT.day,DT.hour,DT.minute,DT.second)
-EXCLUDE={'dist','.git','__pycache__','.pytest_cache','.mypy_cache','qualification-results','release-evidence','validation'}
+EXCLUDE={
+ 'dist','.git','.venv','venv','env','node_modules','.tox','.nox',
+ '__pycache__','.pytest_cache','.mypy_cache','qualification-results',
+ 'release-evidence','validation'
+}
+def excluded(p):
+ return any(part in EXCLUDE for part in p.parts) or p.name=='.env' or p.name.startswith('.env.')
 def files(source):
  for p in sorted(source.rglob('*')):
-  if not p.is_file() or any(part in EXCLUDE for part in p.parts) or p.suffix in {'.pyc','.pyo'}: continue
+  if not p.is_file() or excluded(p) or p.suffix in {'.pyc','.pyo'}: continue
   yield p
 def make(path,source,arc_root):
  with zipfile.ZipFile(path,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
