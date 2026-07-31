@@ -5,7 +5,9 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-from pathlib import Path
+import ntpath
+from pathlib import Path, PurePosixPath, PureWindowsPath
+import posixpath
 import re
 
 from validate_autonomy_envelope import SHELL_META, validate as validate_envelope
@@ -15,9 +17,26 @@ STEP_ACTIONS = SAFE_RETRY_ACTIONS | {"canary_deploy", "deploy", "feature_flag"}
 STEP_ID = re.compile(r"^[A-Za-z0-9._-]{3,128}$")
 
 
-def within(path: Path, roots: list[Path]) -> bool:
-    resolved = path.resolve()
-    return any(resolved == root or root in resolved.parents for root in roots)
+PortablePath = PurePosixPath | PureWindowsPath
+
+
+def portable_absolute_path(value: str) -> PortablePath | None:
+    """Normalize an absolute POSIX or Windows path without host dependence."""
+
+    windows = PureWindowsPath(value)
+    if windows.is_absolute():
+        return PureWindowsPath(ntpath.normpath(str(windows)))
+    posix = PurePosixPath(value)
+    if posix.is_absolute():
+        return PurePosixPath(posixpath.normpath(str(posix)))
+    return None
+
+
+def within(path: PortablePath, roots: list[PortablePath]) -> bool:
+    return any(
+        type(path) is type(root) and (path == root or root in path.parents)
+        for root in roots
+    )
 
 
 def validate_plan(envelope: dict, plan: dict, *, allow_expired: bool = False) -> list[str]:
@@ -31,18 +50,18 @@ def validate_plan(envelope: dict, plan: dict, *, allow_expired: bool = False) ->
     if plan.get("run_id") != envelope.get("run_id"):
         errors.append("plan run_id does not match envelope")
 
-    roots: list[Path] = []
+    roots: list[PortablePath] = []
     for raw in envelope.get("allowed_paths", []):
-        path = Path(raw)
-        if not path.is_absolute():
+        path = portable_absolute_path(str(raw))
+        if path is None:
             errors.append(f"allowed path must be absolute: {raw!r}")
         else:
-            roots.append(path.resolve())
+            roots.append(path)
 
-    artifact = Path(str(plan.get("artifact_path", "")))
-    workspace = Path(str(plan.get("workspace", "")))
+    artifact = portable_absolute_path(str(plan.get("artifact_path", "")))
+    workspace = portable_absolute_path(str(plan.get("workspace", "")))
     for label, path in (("artifact_path", artifact), ("workspace", workspace)):
-        if not path.is_absolute():
+        if path is None:
             errors.append(f"{label} must be absolute")
         elif roots and not within(path, roots):
             errors.append(f"{label} is outside allowed_paths")
@@ -79,8 +98,8 @@ def validate_plan(envelope: dict, plan: dict, *, allow_expired: bool = False) ->
             errors.append(f"step {index} contains shell control operators")
         elif command not in commands:
             errors.append(f"step {index} command is not an exact allowed_commands entry")
-        cwd = Path(str(step.get("cwd", "")))
-        if not cwd.is_absolute(): errors.append(f"step {index} cwd must be absolute")
+        cwd = portable_absolute_path(str(step.get("cwd", "")))
+        if cwd is None: errors.append(f"step {index} cwd must be absolute")
         elif roots and not within(cwd, roots): errors.append(f"step {index} cwd is outside allowed_paths")
         timeout = step.get("timeout_seconds")
         if not isinstance(timeout, int) or isinstance(timeout, bool) or not 1 <= timeout <= 3600: errors.append(f"step {index} timeout_seconds is invalid")

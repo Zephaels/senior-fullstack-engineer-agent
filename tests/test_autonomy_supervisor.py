@@ -76,6 +76,23 @@ class AutonomySupervisorTests(unittest.TestCase):
     def test_plan_is_exact_subset_of_envelope(self):
         self.assertEqual(plan_module.validate_plan(self.envelope, self.plan), [])
 
+    def test_windows_plan_paths_validate_on_any_host(self):
+        self.envelope["allowed_paths"] = ["C:/sfse-release"]
+        self.plan["artifact_path"] = "C:/sfse-release/artifact.zip"
+        self.plan["workspace"] = "C:/sfse-release/workspace"
+        for step in self.plan["steps"]:
+            step["cwd"] = "C:/sfse-release/workspace"
+        self.assertEqual(plan_module.validate_plan(self.envelope, self.plan), [])
+
+    def test_normalized_path_cannot_escape_allowed_root(self):
+        self.envelope["allowed_paths"] = ["C:/sfse-release"]
+        self.plan["artifact_path"] = "C:/sfse-release/artifact.zip"
+        self.plan["workspace"] = "C:/sfse-release/../private-workspace"
+        for step in self.plan["steps"]:
+            step["cwd"] = "C:/sfse-release/workspace"
+        errors = plan_module.validate_plan(self.envelope, self.plan)
+        self.assertIn("workspace is outside allowed_paths", errors)
+
     def test_dry_run_never_executes_commands(self):
         code, report = self.run_supervisor(execute=False)
         self.assertEqual(code, 0)
